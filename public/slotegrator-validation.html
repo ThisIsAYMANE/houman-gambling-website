@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slotegrator Validation - Direct Method</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 700px;
+            width: 100%;
+            padding: 40px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        .step-container {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .step-container.completed {
+            background: #e8f5e9;
+            border-left-color: #4caf50;
+        }
+        .step-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .step-desc {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+            margin-right: 10px;
+        }
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        .btn-primary:hover:not(:disabled) {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .btn-success {
+            background: #4caf50;
+            color: white;
+        }
+        .btn-success:hover:not(:disabled) {
+            background: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+        }
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+        .results {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #ddd;
+            margin-top: 20px;
+            display: none;
+        }
+        .results.show {
+            display: block;
+        }
+        .results.success {
+            border-color: #4caf50;
+            background: #f1f8f4;
+        }
+        .results.error {
+            border-color: #f44336;
+            background: #fef0f0;
+        }
+        .result-title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .result-success {
+            color: #4caf50;
+        }
+        .result-error {
+            color: #f44336;
+        }
+        .log-item {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            padding: 8px;
+            margin: 5px 0;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #ddd;
+        }
+        .log-item.failed {
+            border-left-color: #f44336;
+            background: #ffebee;
+            color: #f44336;
+        }
+        .log-item.success {
+            border-left-color: #4caf50;
+            background: #f1f8f4;
+            color: #4caf50;
+        }
+        .info-box {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: #1565c0;
+        }
+        .loading {
+            text-align: center;
+            color: #667eea;
+            font-style: italic;
+        }
+        .status-text {
+            font-size: 12px;
+            color: #999;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Slotegrator Validation</h1>
+        <p class="subtitle">Direct validation following Slotegrator protocol</p>
+
+        <div class="info-box">
+            <strong>ℹ️ Protocol:</strong> Launch game → Wait (don't touch) → Validate → Check for "failed" in results
+        </div>
+
+        <!-- STEP 1: Launch Game -->
+        <div class="step-container" id="step1">
+            <div class="step-title">1️⃣ Launch Game with /games/init</div>
+            <div class="step-desc">
+                This will POST to <code>/games/init</code> and open the game in a new window.
+            </div>
+            <button class="btn btn-primary" onclick="launchGame()">
+                🚀 Launch Game
+            </button>
+            <div class="status-text" id="step1-status"></div>
+        </div>
+
+        <!-- STEP 2: Wait -->
+        <div class="step-container" id="step2">
+            <div class="step-title">2️⃣ Game Running - Don't Touch</div>
+            <div class="step-desc">
+                The game has launched. Keep the game window open and don't click or interact with it. When ready, click the button below.
+            </div>
+            <button class="btn btn-success" onclick="gameReady()" disabled id="readyBtn">
+                ✓ Game is Ready
+            </button>
+            <div class="status-text" id="step2-status"></div>
+        </div>
+
+        <!-- STEP 3: Validate -->
+        <div class="step-container" id="step3">
+            <div class="step-title">3️⃣ Send Validation Request</div>
+            <div class="step-desc">
+                Send POST request to <code>/self-validate</code> endpoint.
+            </div>
+            <button class="btn btn-primary" onclick="sendValidation()" disabled id="validateBtn">
+                📤 Send /self-validate
+            </button>
+            <div class="status-text" id="step3-status"></div>
+        </div>
+
+        <!-- STEP 4: Results -->
+        <div class="step-container" id="step4">
+            <div class="step-title">4️⃣ Validation Results</div>
+            <div id="results" class="results"></div>
+        </div>
+    </div>
+
+    <script>
+        let gameWindow = null;
+        let sessionData = null;
+
+        async function launchGame() {
+            const btn = event.target;
+            btn.disabled = true;
+            btn.textContent = '⏳ Launching...';
+            document.getElementById('step1-status').textContent = 'Sending request...';
+
+            try {
+                // POST to /games/init
+                const params = {
+                    game_uuid: 'fe38b9de0f44ac5892261d426ba39cd1aa410807',
+                    player_id: 'P1',
+                    player_name: 'A',
+                    currency: 'EUR',
+                    session_id: 'S_' + Date.now(),
+                    device: 'desktop',
+                    return_url: 'http://localhost:3000',
+                    language: 'en',
+                    email: 'a@b.c'
+                };
+
+                // Create form and submit
+                const form = document.createElement('form');
+                form.method = 'POST';
+                form.action = 'https://staging.slotegrator.com/api/index.php/v1/games/init';
+                form.target = 'slotegrator_game';
+                form.style.display = 'none';
+
+                for (const [key, value] of Object.entries(params)) {
+                    const input = document.createElement('input');
+                    input.type = 'hidden';
+                    input.name = key;
+                    input.value = value;
+                    form.appendChild(input);
+                }
+
+                // Open game window
+                gameWindow = window.open('', 'slotegrator_game', 'width=900,height=700');
+
+                document.body.appendChild(form);
+                form.submit();
+                document.body.removeChild(form);
+
+                // Store session for later
+                sessionData = params;
+
+                btn.textContent = '✅ Game Launched';
+                document.getElementById('step1-status').textContent = 'Game window opened. Switch to it now.';
+                document.getElementById('step1').classList.add('completed');
+                
+                // Enable step 2
+                document.getElementById('readyBtn').disabled = false;
+
+            } catch (error) {
+                btn.textContent = '❌ Failed';
+                document.getElementById('step1-status').textContent = 'Error: ' + error.message;
+            }
+        }
+
+        function gameReady() {
+            const btn = event.target;
+            btn.disabled = true;
+            btn.textContent = '✅ Ready';
+            document.getElementById('step2-status').textContent = 'Proceeding to validation...';
+            document.getElementById('step2').classList.add('completed');
+
+            // Enable step 3
+            document.getElementById('validateBtn').disabled = false;
+        }
+
+        async function sendValidation() {
+            const btn = event.target;
+            const resultsDiv = document.getElementById('results');
+
+            btn.disabled = true;
+            btn.textContent = '⏳ Validating...';
+            document.getElementById('step3-status').textContent = 'Sending request to /self-validate...';
+
+            resultsDiv.className = 'results show loading';
+            resultsDiv.innerHTML = '<p>🔄 Waiting for validation response...</p>';
+
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 second timeout
+
+                const response = await fetch('https://staging.slotegrator.com/api/index.php/v1/self-validate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({}),
+                    signal: controller.signal
+                });
+
+                clearTimeout(timeoutId);
+                const data = await response.json();
+
+                // Parse and display results
+                displayResults(data);
+                btn.textContent = '✅ Complete';
+
+            } catch (error) {
+                btn.textContent = '❌ Error';
+                resultsDiv.className = 'results show error';
+                resultsDiv.innerHTML = `
+                    <div class="result-title result-error">❌ Validation Failed</div>
+                    <div class="log-item failed">${error.name === 'AbortError' ? 'Request timeout (30s)' : error.message}</div>
+                `;
+                document.getElementById('step3-status').textContent = 'Error sending request';
+            }
+        }
+
+        function displayResults(data) {
+            const resultsDiv = document.getElementById('results');
+            let html = '';
+
+            // Check for success
+            const isSuccess = data.success === true && data.status === 1;
+
+            if (isSuccess) {
+                resultsDiv.className = 'results show success';
+                html += '<div class="result-title result-success">✅ VALIDATION PASSED</div>';
+                document.getElementById('step4').classList.add('completed');
+            } else {
+                resultsDiv.className = 'results show error';
+                html += '<div class="result-title result-error">❌ VALIDATION FAILED</div>';
+            }
+
+            // Display key fields
+            html += `<div style="margin: 15px 0; padding: 10px; background: white; border-radius: 4px;">
+                <strong>Status:</strong> ${data.status || 'N/A'}<br>
+                <strong>Success:</strong> ${data.success || false}
+            </div>`;
+
+            // Display logs
+            if (data.log && Array.isArray(data.log)) {
+                html += '<div style="margin-top: 15px;"><strong>Validation Log:</strong></div>';
+                data.log.forEach(item => {
+                    const hasFailed = item.toLowerCase().includes('failed');
+                    html += `<div class="log-item ${hasFailed ? 'failed' : 'success'}">
+                        ${hasFailed ? '❌' : '✓'} ${escapeHtml(item)}
+                    </div>`;
+                });
+            }
+
+            resultsDiv.innerHTML = html;
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+    </script>
+</body>
+</html>

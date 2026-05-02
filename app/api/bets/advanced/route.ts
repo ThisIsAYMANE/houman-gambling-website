@@ -148,10 +148,28 @@ export async function POST(request: NextRequest) {
     }
 
     // Check wallet balance
-    const wallet = await queryOne<{ balance: number; bonus_balance: number }>(
-      'SELECT balance, bonus_balance FROM wallets WHERE user_id = ? AND currency = ?',
-      [userId, currency]
-    )
+    let wallet: { balance: number; bonus_balance?: number } | null = null
+    let bonusBalance = 0
+    
+    try {
+      wallet = await queryOne<{ balance: number; bonus_balance?: number }>(
+        'SELECT balance, bonus_balance FROM wallets WHERE user_id = ? AND currency = ?',
+        [userId, currency]
+      )
+      if (wallet && wallet.bonus_balance !== undefined && wallet.bonus_balance !== null) {
+        bonusBalance = parseFloat(String(wallet.bonus_balance || '0'))
+      }
+    } catch (error: any) {
+      if (error.message && error.message.includes('no such column: bonus_balance')) {
+        wallet = await queryOne<{ balance: number }>(
+          'SELECT balance FROM wallets WHERE user_id = ? AND currency = ?',
+          [userId, currency]
+        )
+        bonusBalance = 0
+      } else {
+        throw error
+      }
+    }
 
     if (!wallet) {
       return NextResponse.json(
@@ -160,7 +178,7 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    const totalBalance = wallet.balance + wallet.bonus_balance
+    const totalBalance = (wallet.balance || 0) + bonusBalance
     if (totalBalance < totalStake) {
       return NextResponse.json(
         { error: 'Insufficient balance' },

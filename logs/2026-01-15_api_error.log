@@ -1,0 +1,670 @@
+{
+  "timestamp": "2026-01-15T15:11:43.878Z",
+  "type": "error",
+  "endpoint": "/games/init",
+  "method": "POST",
+  "status": 404,
+  "statusText": "Not Found",
+  "errorMessage": "This provider is not enabled for your contract",
+  "errorDetails": {
+    "name": "Not Found",
+    "message": "This provider is not enabled for your contract",
+    "code": 0,
+    "status": 404
+  },
+  "request": {
+    "timestamp": "2026-01-15T15:11:43.659Z",
+    "endpoint": "POST /games/init",
+    "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+    "headers": {
+      "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+      "X-Timestamp": "1768489903",
+      "X-Nonce": "1c23c75487fa702bdb967947a4f6a396",
+      "X-Sign": "afe36d69...",
+      "Accept": "application/json",
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    "body": "game_uuid=447eebaff41fdc9c36cf680720ea2ce321d33b67&player_id=a5YAzMelXjuCiihUtj58Z&player_name=bananana&currency=USD&session_id=session_a5YAzMelXjuCiihUtj58Z_1768489903643_x03588&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=bananana%40gmail.com",
+    "params": {
+      "game_uuid": "447eebaff41fdc9c36cf680720ea2ce321d33b67",
+      "player_id": "a5YAzMelXjuCiihUtj58Z",
+      "player_name": "bananana",
+      "currency": "USD",
+      "session_id": "session_a5YAzMelXjuCiihUtj58Z_1768489903643_x03588",
+      "device": "desktop",
+      "return_url": "https://boztestarea.ngrok.app",
+      "language": "fr",
+      "email": "bananana@gmail.com"
+    }
+  },
+  "response": {
+    "timestamp": "2026-01-15T15:11:43.876Z",
+    "endpoint": "POST /games/init",
+    "status": 404,
+    "statusText": "Not Found",
+    "headers": {
+      "access-control-expose-headers": "",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9be64eb0db8fe1cd-MRS",
+      "connection": "keep-alive",
+      "content-encoding": "gzip",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Thu, 15 Jan 2026 15:11:44 GMT",
+      "server": "cloudflare",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding"
+    },
+    "body": {
+      "name": "Not Found",
+      "message": "This provider is not enabled for your contract",
+      "code": 0,
+      "status": 404
+    },
+    "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:11:44.123Z",
+  "type": "error",
+  "endpoint": "/games/init",
+  "method": "POST",
+  "status": 404,
+  "statusText": "Not Found",
+  "errorMessage": "This provider is not enabled for your contract",
+  "errorDetails": {
+    "name": "Not Found",
+    "message": "This provider is not enabled for your contract",
+    "code": 0,
+    "status": 404
+  },
+  "request": {
+    "timestamp": "2026-01-15T15:11:43.700Z",
+    "endpoint": "POST /games/init",
+    "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+    "headers": {
+      "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+      "X-Timestamp": "1768489903",
+      "X-Nonce": "eb419d499f81858dbd521d81783c276b",
+      "X-Sign": "940b9f70...",
+      "Accept": "application/json",
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    "body": "game_uuid=447eebaff41fdc9c36cf680720ea2ce321d33b67&player_id=a5YAzMelXjuCiihUtj58Z&player_name=bananana&currency=USD&session_id=session_a5YAzMelXjuCiihUtj58Z_1768489903699_85p5br&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=bananana%40gmail.com",
+    "params": {
+      "game_uuid": "447eebaff41fdc9c36cf680720ea2ce321d33b67",
+      "player_id": "a5YAzMelXjuCiihUtj58Z",
+      "player_name": "bananana",
+      "currency": "USD",
+      "session_id": "session_a5YAzMelXjuCiihUtj58Z_1768489903699_85p5br",
+      "device": "desktop",
+      "return_url": "https://boztestarea.ngrok.app",
+      "language": "fr",
+      "email": "bananana@gmail.com"
+    }
+  },
+  "response": {
+    "timestamp": "2026-01-15T15:11:44.121Z",
+    "endpoint": "POST /games/init",
+    "status": 404,
+    "statusText": "Not Found",
+    "headers": {
+      "access-control-expose-headers": "",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9be64eb0fd7ce161-MRS",
+      "connection": "keep-alive",
+      "content-encoding": "gzip",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Thu, 15 Jan 2026 15:11:44 GMT",
+      "server": "cloudflare",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding"
+    },
+    "body": {
+      "name": "Not Found",
+      "message": "This provider is not enabled for your contract",
+      "code": 0,
+      "status": 404
+    },
+    "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:17:33.938Z",
+  "type": "error",
+  "endpoint": "/games/init",
+  "method": "POST",
+  "status": 404,
+  "statusText": "Not Found",
+  "errorMessage": "This provider is not enabled for your contract",
+  "errorDetails": {
+    "name": "Not Found",
+    "message": "This provider is not enabled for your contract",
+    "code": 0,
+    "status": 404
+  },
+  "request": {
+    "timestamp": "2026-01-15T15:17:33.769Z",
+    "endpoint": "POST /games/init",
+    "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+    "headers": {
+      "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+      "X-Timestamp": "1768490253",
+      "X-Nonce": "6b1909512801889aa9297eecf32d713b",
+      "X-Sign": "37d4dacf...",
+      "Accept": "application/json",
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    "body": "game_uuid=5f60f72027f3650108907d92c55702953674befd&player_id=a5YAzMelXjuCiihUtj58Z&player_name=bananana&currency=USD&session_id=session_a5YAzMelXjuCiihUtj58Z_1768490253767_ro3fnl&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=bananana%40gmail.com",
+    "params": {
+      "game_uuid": "5f60f72027f3650108907d92c55702953674befd",
+      "player_id": "a5YAzMelXjuCiihUtj58Z",
+      "player_name": "bananana",
+      "currency": "USD",
+      "session_id": "session_a5YAzMelXjuCiihUtj58Z_1768490253767_ro3fnl",
+      "device": "desktop",
+      "return_url": "https://boztestarea.ngrok.app",
+      "language": "fr",
+      "email": "bananana@gmail.com"
+    }
+  },
+  "response": {
+    "timestamp": "2026-01-15T15:17:33.934Z",
+    "endpoint": "POST /games/init",
+    "status": 404,
+    "statusText": "Not Found",
+    "headers": {
+      "access-control-expose-headers": "",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9be6573ceb28e1c0-MRS",
+      "connection": "keep-alive",
+      "content-encoding": "gzip",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Thu, 15 Jan 2026 15:17:34 GMT",
+      "server": "cloudflare",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding"
+    },
+    "body": {
+      "name": "Not Found",
+      "message": "This provider is not enabled for your contract",
+      "code": 0,
+      "status": 404
+    },
+    "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:17:34.445Z",
+  "type": "error",
+  "endpoint": "/games/init",
+  "method": "POST",
+  "status": 404,
+  "statusText": "Not Found",
+  "errorMessage": "This provider is not enabled for your contract",
+  "errorDetails": {
+    "name": "Not Found",
+    "message": "This provider is not enabled for your contract",
+    "code": 0,
+    "status": 404
+  },
+  "request": {
+    "timestamp": "2026-01-15T15:17:34.236Z",
+    "endpoint": "POST /games/init",
+    "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+    "headers": {
+      "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+      "X-Timestamp": "1768490254",
+      "X-Nonce": "6b0842d054b15eecfa1cc8539bd5fe8a",
+      "X-Sign": "7278cbbb...",
+      "Accept": "application/json",
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    "body": "game_uuid=5f60f72027f3650108907d92c55702953674befd&player_id=a5YAzMelXjuCiihUtj58Z&player_name=bananana&currency=USD&session_id=session_a5YAzMelXjuCiihUtj58Z_1768490254234_wqat&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=bananana%40gmail.com",
+    "params": {
+      "game_uuid": "5f60f72027f3650108907d92c55702953674befd",
+      "player_id": "a5YAzMelXjuCiihUtj58Z",
+      "player_name": "bananana",
+      "currency": "USD",
+      "session_id": "session_a5YAzMelXjuCiihUtj58Z_1768490254234_wqat",
+      "device": "desktop",
+      "return_url": "https://boztestarea.ngrok.app",
+      "language": "fr",
+      "email": "bananana@gmail.com"
+    }
+  },
+  "response": {
+    "timestamp": "2026-01-15T15:17:34.441Z",
+    "endpoint": "POST /games/init",
+    "status": 404,
+    "statusText": "Not Found",
+    "headers": {
+      "access-control-expose-headers": "",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9be6573fdcc0a10f-LIS",
+      "connection": "keep-alive",
+      "content-encoding": "gzip",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Thu, 15 Jan 2026 15:17:35 GMT",
+      "server": "cloudflare",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding"
+    },
+    "body": {
+      "name": "Not Found",
+      "message": "This provider is not enabled for your contract",
+      "code": 0,
+      "status": 404
+    },
+    "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:18:28.918Z",
+  "type": "error",
+  "endpoint": "/games/init",
+  "method": "POST",
+  "status": 404,
+  "statusText": "Not Found",
+  "errorMessage": "This provider is not enabled for your contract",
+  "errorDetails": {
+    "name": "Not Found",
+    "message": "This provider is not enabled for your contract",
+    "code": 0,
+    "status": 404
+  },
+  "request": {
+    "timestamp": "2026-01-15T15:18:28.762Z",
+    "endpoint": "POST /games/init",
+    "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+    "headers": {
+      "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+      "X-Timestamp": "1768490308",
+      "X-Nonce": "1bfed6a5cba78f84e595e6ffa79ac2f1",
+      "X-Sign": "a2438645...",
+      "Accept": "application/json",
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    "body": "game_uuid=7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15&player_id=a5YAzMelXjuCiihUtj58Z&player_name=bananana&currency=USD&session_id=session_a5YAzMelXjuCiihUtj58Z_1768490308761_4tgxujt&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=bananana%40gmail.com",
+    "params": {
+      "game_uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+      "player_id": "a5YAzMelXjuCiihUtj58Z",
+      "player_name": "bananana",
+      "currency": "USD",
+      "session_id": "session_a5YAzMelXjuCiihUtj58Z_1768490308761_4tgxujt",
+      "device": "desktop",
+      "return_url": "https://boztestarea.ngrok.app",
+      "language": "fr",
+      "email": "bananana@gmail.com"
+    }
+  },
+  "response": {
+    "timestamp": "2026-01-15T15:18:28.913Z",
+    "endpoint": "POST /games/init",
+    "status": 404,
+    "statusText": "Not Found",
+    "headers": {
+      "access-control-expose-headers": "",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9be65894a85fe286-MRS",
+      "connection": "keep-alive",
+      "content-encoding": "gzip",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Thu, 15 Jan 2026 15:18:29 GMT",
+      "server": "cloudflare",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding"
+    },
+    "body": {
+      "name": "Not Found",
+      "message": "This provider is not enabled for your contract",
+      "code": 0,
+      "status": 404
+    },
+    "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:18:28.952Z",
+  "type": "error",
+  "endpoint": "/games/init",
+  "method": "POST",
+  "status": 404,
+  "statusText": "Not Found",
+  "errorMessage": "This provider is not enabled for your contract",
+  "errorDetails": {
+    "name": "Not Found",
+    "message": "This provider is not enabled for your contract",
+    "code": 0,
+    "status": 404
+  },
+  "request": {
+    "timestamp": "2026-01-15T15:18:28.793Z",
+    "endpoint": "POST /games/init",
+    "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+    "headers": {
+      "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+      "X-Timestamp": "1768490308",
+      "X-Nonce": "ab0bb355698e114d7089c8f830435b77",
+      "X-Sign": "c112c6a2...",
+      "Accept": "application/json",
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    "body": "game_uuid=7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15&player_id=a5YAzMelXjuCiihUtj58Z&player_name=bananana&currency=USD&session_id=session_a5YAzMelXjuCiihUtj58Z_1768490308792_6pst8p&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=bananana%40gmail.com",
+    "params": {
+      "game_uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+      "player_id": "a5YAzMelXjuCiihUtj58Z",
+      "player_name": "bananana",
+      "currency": "USD",
+      "session_id": "session_a5YAzMelXjuCiihUtj58Z_1768490308792_6pst8p",
+      "device": "desktop",
+      "return_url": "https://boztestarea.ngrok.app",
+      "language": "fr",
+      "email": "bananana@gmail.com"
+    }
+  },
+  "response": {
+    "timestamp": "2026-01-15T15:18:28.949Z",
+    "endpoint": "POST /games/init",
+    "status": 404,
+    "statusText": "Not Found",
+    "headers": {
+      "access-control-expose-headers": "",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9be65894d915a26a-MRS",
+      "connection": "keep-alive",
+      "content-encoding": "gzip",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Thu, 15 Jan 2026 15:18:29 GMT",
+      "server": "cloudflare",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding"
+    },
+    "body": {
+      "name": "Not Found",
+      "message": "This provider is not enabled for your contract",
+      "code": 0,
+      "status": 404
+    },
+    "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:19:24.325Z",
+  "type": "error",
+  "endpoint": "/games/init",
+  "method": "POST",
+  "status": 404,
+  "statusText": "Not Found",
+  "errorMessage": "This provider is not enabled for your contract",
+  "errorDetails": {
+    "name": "Not Found",
+    "message": "This provider is not enabled for your contract",
+    "code": 0,
+    "status": 404
+  },
+  "request": {
+    "timestamp": "2026-01-15T15:19:24.150Z",
+    "endpoint": "POST /games/init",
+    "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+    "headers": {
+      "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+      "X-Timestamp": "1768490364",
+      "X-Nonce": "22551a64ca0f30af1466e5a4006e9f05",
+      "X-Sign": "9e983e75...",
+      "Accept": "application/json",
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    "body": "game_uuid=7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15&player_id=a5YAzMelXjuCiihUtj58Z&player_name=bananana&currency=USD&session_id=session_a5YAzMelXjuCiihUtj58Z_1768490364148_yhgwwc&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=bananana%40gmail.com",
+    "params": {
+      "game_uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+      "player_id": "a5YAzMelXjuCiihUtj58Z",
+      "player_name": "bananana",
+      "currency": "USD",
+      "session_id": "session_a5YAzMelXjuCiihUtj58Z_1768490364148_yhgwwc",
+      "device": "desktop",
+      "return_url": "https://boztestarea.ngrok.app",
+      "language": "fr",
+      "email": "bananana@gmail.com"
+    }
+  },
+  "response": {
+    "timestamp": "2026-01-15T15:19:24.322Z",
+    "endpoint": "POST /games/init",
+    "status": 404,
+    "statusText": "Not Found",
+    "headers": {
+      "access-control-expose-headers": "",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9be659eed9cf3d46-MRS",
+      "connection": "keep-alive",
+      "content-encoding": "gzip",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Thu, 15 Jan 2026 15:19:25 GMT",
+      "server": "cloudflare",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding"
+    },
+    "body": {
+      "name": "Not Found",
+      "message": "This provider is not enabled for your contract",
+      "code": 0,
+      "status": 404
+    },
+    "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:19:24.510Z",
+  "type": "error",
+  "endpoint": "/games/init",
+  "method": "POST",
+  "status": 404,
+  "statusText": "Not Found",
+  "errorMessage": "This provider is not enabled for your contract",
+  "errorDetails": {
+    "name": "Not Found",
+    "message": "This provider is not enabled for your contract",
+    "code": 0,
+    "status": 404
+  },
+  "request": {
+    "timestamp": "2026-01-15T15:19:24.368Z",
+    "endpoint": "POST /games/init",
+    "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+    "headers": {
+      "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+      "X-Timestamp": "1768490364",
+      "X-Nonce": "7d64ce4bdd5a5bc246c1fcb1faa9b4df",
+      "X-Sign": "225d18b2...",
+      "Accept": "application/json",
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    "body": "game_uuid=7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15&player_id=a5YAzMelXjuCiihUtj58Z&player_name=bananana&currency=USD&session_id=session_a5YAzMelXjuCiihUtj58Z_1768490364366_wd445m&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=bananana%40gmail.com",
+    "params": {
+      "game_uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+      "player_id": "a5YAzMelXjuCiihUtj58Z",
+      "player_name": "bananana",
+      "currency": "USD",
+      "session_id": "session_a5YAzMelXjuCiihUtj58Z_1768490364366_wd445m",
+      "device": "desktop",
+      "return_url": "https://boztestarea.ngrok.app",
+      "language": "fr",
+      "email": "bananana@gmail.com"
+    }
+  },
+  "response": {
+    "timestamp": "2026-01-15T15:19:24.506Z",
+    "endpoint": "POST /games/init",
+    "status": 404,
+    "statusText": "Not Found",
+    "headers": {
+      "access-control-expose-headers": "",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9be659f03aa63d46-MRS",
+      "connection": "keep-alive",
+      "content-encoding": "gzip",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Thu, 15 Jan 2026 15:19:25 GMT",
+      "server": "cloudflare",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding"
+    },
+    "body": {
+      "name": "Not Found",
+      "message": "This provider is not enabled for your contract",
+      "code": 0,
+      "status": 404
+    },
+    "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:33:26.690Z",
+  "type": "error",
+  "endpoint": "/games/init",
+  "method": "POST",
+  "status": 404,
+  "statusText": "Not Found",
+  "errorMessage": "This provider is not enabled for your contract",
+  "errorDetails": {
+    "name": "Not Found",
+    "message": "This provider is not enabled for your contract",
+    "code": 0,
+    "status": 404
+  },
+  "request": {
+    "timestamp": "2026-01-15T15:33:26.521Z",
+    "endpoint": "POST /games/init",
+    "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+    "headers": {
+      "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+      "X-Timestamp": "1768491206",
+      "X-Nonce": "1f1f332be61d4340247164f0e6fb504f",
+      "X-Sign": "85facdcf...",
+      "Accept": "application/json",
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    "body": "game_uuid=7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15&player_id=q92o3gyn8kOF5pE7BW-pk&player_name=wissal&currency=USD&session_id=session_q92o3gyn8kOF5pE7BW-pk_1768491206497_c2wx6&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=wissal%40gmail.com",
+    "params": {
+      "game_uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+      "player_id": "q92o3gyn8kOF5pE7BW-pk",
+      "player_name": "wissal",
+      "currency": "USD",
+      "session_id": "session_q92o3gyn8kOF5pE7BW-pk_1768491206497_c2wx6",
+      "device": "desktop",
+      "return_url": "https://boztestarea.ngrok.app",
+      "language": "fr",
+      "email": "wissal@gmail.com"
+    }
+  },
+  "response": {
+    "timestamp": "2026-01-15T15:33:26.684Z",
+    "endpoint": "POST /games/init",
+    "status": 404,
+    "statusText": "Not Found",
+    "headers": {
+      "access-control-expose-headers": "",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9be66e7fadb0809f-MRS",
+      "connection": "keep-alive",
+      "content-encoding": "gzip",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Thu, 15 Jan 2026 15:33:27 GMT",
+      "server": "cloudflare",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding"
+    },
+    "body": {
+      "name": "Not Found",
+      "message": "This provider is not enabled for your contract",
+      "code": 0,
+      "status": 404
+    },
+    "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:33:27.279Z",
+  "type": "error",
+  "endpoint": "/games/init",
+  "method": "POST",
+  "status": 404,
+  "statusText": "Not Found",
+  "errorMessage": "This provider is not enabled for your contract",
+  "errorDetails": {
+    "name": "Not Found",
+    "message": "This provider is not enabled for your contract",
+    "code": 0,
+    "status": 404
+  },
+  "request": {
+    "timestamp": "2026-01-15T15:33:27.134Z",
+    "endpoint": "POST /games/init",
+    "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+    "headers": {
+      "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+      "X-Timestamp": "1768491207",
+      "X-Nonce": "4a28ecca42bcb986319bdf7f9d2522f5",
+      "X-Sign": "bf6ca37a...",
+      "Accept": "application/json",
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    "body": "game_uuid=7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15&player_id=q92o3gyn8kOF5pE7BW-pk&player_name=wissal&currency=USD&session_id=session_q92o3gyn8kOF5pE7BW-pk_1768491207133_1rt4bt&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=wissal%40gmail.com",
+    "params": {
+      "game_uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+      "player_id": "q92o3gyn8kOF5pE7BW-pk",
+      "player_name": "wissal",
+      "currency": "USD",
+      "session_id": "session_q92o3gyn8kOF5pE7BW-pk_1768491207133_1rt4bt",
+      "device": "desktop",
+      "return_url": "https://boztestarea.ngrok.app",
+      "language": "fr",
+      "email": "wissal@gmail.com"
+    }
+  },
+  "response": {
+    "timestamp": "2026-01-15T15:33:27.277Z",
+    "endpoint": "POST /games/init",
+    "status": 404,
+    "statusText": "Not Found",
+    "headers": {
+      "access-control-expose-headers": "",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9be66e838eed809f-MRS",
+      "connection": "keep-alive",
+      "content-encoding": "gzip",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Thu, 15 Jan 2026 15:33:28 GMT",
+      "server": "cloudflare",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding"
+    },
+    "body": {
+      "name": "Not Found",
+      "message": "This provider is not enabled for your contract",
+      "code": 0,
+      "status": 404
+    },
+    "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+  }
+}
+================================================================================
+

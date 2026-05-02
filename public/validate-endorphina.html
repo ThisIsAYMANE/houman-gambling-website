@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Endorphina Session</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex; align-items: center; justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 750px;
+            width: 100%;
+            padding: 40px;
+        }
+        h1 { color: #333; margin-bottom: 10px; font-size: 24px; }
+        .subtitle { color: #666; margin-bottom: 30px; font-size: 13px; }
+        .section {
+            margin-bottom: 25px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .section-title { font-weight: bold; color: #333; margin-bottom: 12px; font-size: 14px; }
+        .session-info {
+            font-family: 'Courier New', monospace;
+            font-size: 11px;
+            background: white;
+            padding: 12px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            line-height: 1.6;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .session-item {
+            margin: 5px 0;
+            padding: 5px;
+        }
+        .key { color: #667eea; font-weight: bold; }
+        .value { color: #333; }
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+            transition: all 0.3s;
+            margin-right: 10px;
+        }
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        .btn-primary:hover:not(:disabled) {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .btn-secondary {
+            background: #4caf50;
+            color: white;
+            margin-top: 10px;
+        }
+        .btn-secondary:hover:not(:disabled) {
+            background: #45a049;
+        }
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        #results {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            display: none;
+        }
+        #results.show { display: block; }
+        #results.success {
+            background: #f1f8f4;
+            border: 2px solid #4caf50;
+        }
+        #results.error {
+            background: #fef0f0;
+            border: 2px solid #f44336;
+        }
+        .log-item {
+            font-family: 'Courier New', monospace;
+            font-size: 11px;
+            padding: 8px;
+            margin: 5px 0;
+            background: white;
+            border-left: 3px solid #ddd;
+            border-radius: 2px;
+            word-break: break-word;
+        }
+        .log-item.failed {
+            border-left-color: #f44336;
+            color: #c62828;
+            background: #ffebee;
+        }
+        .log-item.success {
+            border-left-color: #4caf50;
+            color: #2e7d32;
+            background: #f1f8f4;
+        }
+        .note {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #1565c0;
+            margin: 15px 0;
+        }
+        .step {
+            margin: 15px 0;
+            padding: 12px;
+            background: #f5f5f5;
+            border-radius: 4px;
+            border-left: 4px solid #ff9800;
+        }
+        .step-num {
+            font-weight: bold;
+            color: #ff9800;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Endorphina Session Validator</h1>
+        <p class="subtitle">Validate your Macaroons game session from Endorphina</p>
+
+        <div class="note">
+            <strong>📍 Session Source:</strong> Endorphina (Macaroons game)<br>
+            This is the real session you captured when playing the game manually.
+        </div>
+
+        <div class="section">
+            <div class="section-title">Session Details</div>
+            <div class="session-info">
+                <div class="session-item"><span class="key">Player ID:</span> <span class="value">414097</span></div>
+                <div class="session-item"><span class="key">Session ID:</span> <span class="value">8C4581118AC3449DA10F63AC4696A5E9</span></div>
+                <div class="session-item"><span class="key">Game:</span> <span class="value">endorphina_Macaroons@ENDORPHINA</span></div>
+                <div class="session-item"><span class="key">Currency:</span> <span class="value">EUR</span></div>
+                <div class="session-item"><span class="key">Country:</span> <span class="value">MA</span></div>
+                <div class="session-item"><span class="key">State:</span> <span class="value">CREATED (Active)</span></div>
+                <div class="session-item"><span class="key">Server:</span> <span class="value">77 / Node: 479</span></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Validation Steps</div>
+            
+            <div class="step">
+                <span class="step-num">Step 1:</span>
+                Send the session data to Slotegrator's /self-validate endpoint
+            </div>
+            
+            <div class="step">
+                <span class="step-num">Step 2:</span>
+                Check if validation passes (look for "success": true and "status": 1)
+            </div>
+            
+            <div class="step">
+                <span class="step-num">Step 3:</span>
+                Look for "failed" keyword to find any validation errors
+            </div>
+
+            <button class="btn btn-primary" onclick="sendValidation()">
+                📤 Validate This Session
+            </button>
+            
+            <button class="btn btn-secondary" onclick="showRawData()">
+                📋 Show Raw Session JSON
+            </button>
+        </div>
+
+        <div id="results"></div>
+    </div>
+
+    <script>
+        const sessionData = {
+            "server_timestamp": 1775082505,
+            "player": {
+                "player": "414097",
+                "node_id": 479,
+                "server_id": 77,
+                "session": {
+                    "id": "8C4581118AC3449DA10F63AC4696A5E9",
+                    "countryCode": "MA",
+                    "serverId": 77,
+                    "nodeId": 479,
+                    "gameId": "endorphina_Macaroons@ENDORPHINA",
+                    "currency": "EUR",
+                    "player": "414097",
+                    "nickname": "1b545943fa964e82b10a45789c1332fb",
+                    "date": 1775082498396,
+                    "state": "CREATED",
+                    "active": true
+                },
+                "public_name": "77-479-41-4097",
+                "_id": "69cc44502dfd98b01a36487c"
+            },
+            "progresses": [],
+            "prizes": [],
+            "events": {
+                "in_other_games": [],
+                "in_this_game": []
+            }
+        };
+
+        function showRawData() {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.className = 'show';
+            resultsDiv.innerHTML = `
+                <h3>Raw Session JSON</h3>
+                <div class="session-info" style="white-space: pre; font-size: 10px; max-height: 400px;">
+${JSON.stringify(sessionData, null, 2)}
+                </div>
+            `;
+        }
+
+        async function sendValidation() {
+            const btn = event.target;
+            const resultsDiv = document.getElementById('results');
+
+            btn.disabled = true;
+            btn.textContent = '⏳ Sending...';
+
+            resultsDiv.className = 'show';
+            resultsDiv.innerHTML = '<p style="text-align: center;">🔄 Sending validation request...</p>';
+
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 15000);
+
+                // Use local proxy endpoint to avoid CORS issues
+                const response = await fetch('/api/casino/self-validate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(sessionData),
+                    signal: controller.signal
+                });
+
+                clearTimeout(timeoutId);
+                const data = await response.json();
+                
+                console.log('Response:', data);
+
+                let html = '';
+                const isSuccess = data.success === true && data.status === 1;
+
+                if (isSuccess) {
+                    resultsDiv.className = 'show success';
+                    html += '<h3 style="color: #4caf50; margin-bottom: 15px;">✅ VALIDATION PASSED</h3>';
+                } else {
+                    resultsDiv.className = 'show error';
+                    html += '<h3 style="color: #f44336; margin-bottom: 15px;">❌ VALIDATION RESULT</h3>';
+                }
+
+                html += `<div style="background: white; padding: 12px; border-radius: 4px; margin-bottom: 15px;">`;
+                html += `<p><strong>Status:</strong> <code>${data.status || 'N/A'}</code></p>`;
+                html += `<p><strong>Success:</strong> <code>${data.success || false}</code></p>`;
+                if (data.error) {
+                    html += `<p><strong>Error:</strong> <code>${escapeHtml(data.error)}</code></p>`;
+                }
+                html += `</div>`;
+
+                if (data.log && Array.isArray(data.log)) {
+                    html += '<div><strong style="display: block; margin-bottom: 10px;">Validation Log:</strong>';
+                    
+                    const failedItems = data.log.filter(item => 
+                        item.toLowerCase().includes('failed')
+                    );
+                    
+                    if (failedItems.length > 0) {
+                        html += '<p style="color: #f44336; font-weight: bold; margin-bottom: 10px;">❌ Found ' + failedItems.length + ' failed test(s):</p>';
+                        failedItems.forEach(item => {
+                            html += `<div class="log-item failed">❌ ${escapeHtml(item)}</div>`;
+                        });
+                    }
+                    
+                    const successItems = data.log.filter(item => 
+                        !item.toLowerCase().includes('failed')
+                    );
+                    
+                    if (successItems.length > 0) {
+                        html += '<p style="color: #4caf50; font-weight: bold; margin: 15px 0 10px 0;">✓ Passed tests:</p>';
+                        successItems.forEach(item => {
+                            html += `<div class="log-item success">✓ ${escapeHtml(item)}</div>`;
+                        });
+                    }
+                    
+                    html += '</div>';
+                }
+
+                resultsDiv.innerHTML = html;
+                btn.textContent = '✓ Complete';
+
+            } catch (error) {
+                resultsDiv.className = 'show error';
+                let errorMsg = error.message;
+                
+                if (error.name === 'AbortError') {
+                    errorMsg = 'Request timeout (15 seconds). The server might be unreachable or slow.';
+                } else if (errorMsg.includes('Failed to fetch')) {
+                    errorMsg = 'Network error. This might be due to CORS restrictions. Try from http://localhost:3000/public/validate-endorphina.html';
+                }
+                
+                resultsDiv.innerHTML = `
+                    <h3 style="color: #f44336; margin-bottom: 15px;">❌ Error</h3>
+                    <div class="log-item failed">${errorMsg}</div>
+                    <div style="margin-top: 15px; padding: 12px; background: #fff3cd; border-radius: 4px; border-left: 4px solid #ffc107;">
+                        <strong>💡 Hint:</strong> If you get a CORS error, access this page from:
+                        <br><code>http://localhost:3000/validate-endorphina.html</code>
+                    </div>
+                `;
+                btn.textContent = '❌ Error';
+            }
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = String(text);
+            return div.innerHTML;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+﻿Ô£à Configuration loaded:
+   Merchant ID: dbb46701285c1a2e24a0bf92f00501e5
+   Merchant Key: b83d51ea...
+   Base URL: https://staging.slotegrator.com/api/index.php/v1
+   Callback URL: https://bozcallback.ngrok.app/api/casino/callback
+   Currency: EUR
+
+============================================
+   SLOTEGRATOR SELF-VALIDATION PROCESS
+============================================
+
+­ƒôï STEP 1: Fetching limits to find enabled providers...
+Ô£à Found 26 enabled providers for EUR: AmigoGaming, Aviatrix, BGaming, Belatra Games, Endorphina...
+
+   Fetching games...
+   Page 1: 50 games
+   Page 2: 50 games
+   Page 3: 50 games
+   Page 4: 50 games
+   Page 5: 50 games
+   Found: 0 games with lobby, 250 games without lobby
+   ÔåÆ Selected non-lobby game: 2016 Gladiators
+Ô£à Selected game: "2016 Gladiators"
+   UUID: 7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15
+   Provider: Endorphina
+
+­ƒÜÇ STEP 2: Launching game via POST /games/init...
+   Init params: {
+  "game_uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "player_id": "5fbW-EgviQlSB0qgLmM0Z",
+  "player_name": "Test",
+  "currency": "EUR",
+  "session_id": "session_5fbW-EgviQlSB0qgLmM0Z_1775065013508_upt1vp",
+  "device": "desktop",
+  "return_url": "https://boztestarea.ngrok.app",
+  "language": "en",
+  "email": "test@example.com"
+}
+   /games/init response status: 200
+   /games/init response: {
+  "url": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWFc0dDBuTE1UNnJqeHVYYVN2MDM3SXNzeFJ0ZHFzdTNENFVYNUVwRWgzVFB4YUtBMlVtYktuRThuTVFoU0EwRzl5UVVOMHREcU5STVpSUUtzWU1ybFI5TyszVkFURHdjR2FaSDlKbDJxSSs1ZDloSnRLaElmTEM2OXNsV3h6d3NJZmRuUnRqaWc3WDR0U1hlWFVYSExXMW50ZE1KVWVJSkZYMmlPd2M1V2MyeS9zMFpjV1gxUVlkVHVmZDI4RlB2NHJ1dG1lS0lPSkdVczFXallvWElhWGxWa3VoWVNJaU83Qjc5TXF0QlF3TkxQZ0JsNTZFNXpBRnBzZUJDVDF2Z0FaS0FNQm83NUVCZ1Q2bC93M1BZaFM1dGc2VkgrSjBjekJTM2drTWZjTnRSTnlkZjJyTE9EL3F3cFEvNE9IVFV1czVoOGVaME9NODM4bENiYTRkRk5SeC9xMlRkMnNsdE41cko3R2drb01rbW1ud3VWb1Q3NklyZVo0UzVndlRYVE1xK2dwSGFFVlhYWndQWFpNWEZhQTJiaSswWFF5L3ZGOUZwdllOUjVHRis0SkVKYzRBaG1QVXpVQXMxRFhML0xuTHVSejJXUUQybVl2a3dkQlU3eTBIN0pHc2VEU3hHWm0rZnZNT1kwZ0lh"
+}
+
+Ô£à Game launched successfully!
+   Game URL: https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWFc0dDBuTE1UNnJqeHVYYVN2MDM3SXNzeFJ0ZHFzdTNENFVYNUVwRWgzVFB4YUtBMlVtYktuRThuTVFoU0EwRzl5UVVOMHREcU5STVpSUUtzWU1ybFI5TyszVkFURHdjR2FaSDlKbDJxSSs1ZDloSnRLaElmTEM2OXNsV3h6d3NJZmRuUnRqaWc3WDR0U1hlWFVYSExXMW50ZE1KVWVJSkZYMmlPd2M1V2MyeS9zMFpjV1gxUVlkVHVmZDI4RlB2NHJ1dG1lS0lPSkdVczFXallvWElhWGxWa3VoWVNJaU83Qjc5TXF0QlF3TkxQZ0JsNTZFNXpBRnBzZUJDVDF2Z0FaS0FNQm83NUVCZ1Q2bC93M1BZaFM1dGc2VkgrSjBjekJTM2drTWZjTnRSTnlkZjJyTE9EL3F3cFEvNE9IVFV1czVoOGVaME9NODM4bENiYTRkRk5SeC9xMlRkMnNsdE41cko3R2drb01rbW1ud3VWb1Q3NklyZVo0UzVndlRYVE1xK2dwSGFFVlhYWndQWFpNWEZhQTJiaSswWFF5L3ZGOUZwdllOUjVHRis0SkVKYzRBaG1QVXpVQXMxRFhML0xuTHVSejJXUUQybVl2a3dkQlU3eTBIN0pHc2VEU3hHWm0rZnZNT1kwZ0lh
+   Session ID: session_5fbW-EgviQlSB0qgLmM0Z_1775065013508_upt1vp
+
+   ­ƒæë Open this URL in your browser and do NOT interact with the game.
+   Game URL: https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWFc0dDBuTE1UNnJqeHVYYVN2MDM3SXNzeFJ0ZHFzdTNENFVYNUVwRWgzVFB4YUtBMlVtYktuRThuTVFoU0EwRzl5UVVOMHREcU5STVpSUUtzWU1ybFI5TyszVkFURHdjR2FaSDlKbDJxSSs1ZDloSnRLaElmTEM2OXNsV3h6d3NJZmRuUnRqaWc3WDR0U1hlWFVYSExXMW50ZE1KVWVJSkZYMmlPd2M1V2MyeS9zMFpjV1gxUVlkVHVmZDI4RlB2NHJ1dG1lS0lPSkdVczFXallvWElhWGxWa3VoWVNJaU83Qjc5TXF0QlF3TkxQZ0JsNTZFNXpBRnBzZUJDVDF2Z0FaS0FNQm83NUVCZ1Q2bC93M1BZaFM1dGc2VkgrSjBjekJTM2drTWZjTnRSTnlkZjJyTE9EL3F3cFEvNE9IVFV1czVoOGVaME9NODM4bENiYTRkRk5SeC9xMlRkMnNsdE41cko3R2drb01rbW1ud3VWb1Q3NklyZVo0UzVndlRYVE1xK2dwSGFFVlhYWndQWFpNWEZhQTJiaSswWFF5L3ZGOUZwdllOUjVHRis0SkVKYzRBaG1QVXpVQXMxRFhML0xuTHVSejJXUUQybVl2a3dkQlU3eTBIN0pHc2VEU3hHWm0rZnZNT1kwZ0lh
+
+ÔÅ│ STEP 3: Waiting 30 seconds (do NOT interact with the game)...
+   30...
+   29...
+   28...
+   27...
+   26...
+   25...
+   24...
+   23...
+   22...
+   21...
+   20...
+   19...
+   18...
+   17...
+   16...
+   15...
+   14...
+   13...
+   12...
+   11...
+   10...
+   9...
+   8...
+   7...
+   6...
+   5...
+   4...
+   3...
+   2...
+   1...
+   Done waiting!                    
+
+­ƒöì STEP 4: Sending POST /self-validate to Slotegrator staging...
+   Response status: 200
+
+============================================
+   SELF-VALIDATION RESULTS
+============================================
+
+ÔØî VALIDATION FAILED - Check log for details
+
+­ƒôä FULL VALIDATION LOG:
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+   [1] Active session not found
+   [2] Attempt to read property "gameContract" on null
+   [3] Attempt to read property "player" on null
+   [4] Attempt to read property "currency" on null
+   [5] Attempt to read property "currency" on null
+   [6] Attempt to read property "currency" on null
+   [7] Attempt to read property "currency" on null
+   [8] Attempt to read property "currency" on null
+   [9] Attempt to read property "currency" on null
+   [10] Attempt to read property "currency" on null
+   [11] Attempt to read property "currency" on null
+   [12] Attempt to read property "currency" on null
+   [13] Attempt to read property "currency" on null
+   [14] Attempt to read property "currency" on null
+   [15] Attempt to read property "currency" on null
+   [16] Attempt to read property "currency" on null
+   [17] Attempt to read property "currency" on null
+   [18] Attempt to read property "currency" on null
+   [19] Attempt to read property "currency" on null
+   [20] Attempt to read property "currency" on null
+   [21] Attempt to read property "currency" on null
+   [22] Attempt to read property "currency" on null
+   [23] Attempt to read property "currency" on null
+   [24] Attempt to read property "currency" on null
+   [25] Attempt to read property "currency" on null
+   [26] Attempt to read property "currency" on null
+   [27] Attempt to read property "currency" on null
+   [28] Attempt to read property "currency" on null
+   [29] Attempt to read property "gameContract" on null
+   [30] Attempt to read property "currency" on null
+   [31] Attempt to read property "currency" on null
+   [32] Attempt to read property "gameContract" on null
+   [33] Attempt to read property "gameContract" on null
+   [34] Attempt to read property "currency" on null
+   [35] Attempt to read property "currency" on null
+   [36] Attempt to read property "currency" on null
+   [37] Attempt to read property "currency" on null
+   [38] Attempt to read property "currency" on null
+   [39] Attempt to read property "currency" on null
+   [40] Attempt to read property "currency" on null
+   [41] Attempt to read property "currency" on null
+   [42] Attempt to read property "currency" on null
+   [43] Attempt to read property "currency" on null
+   [44] Attempt to read property "currency" on null
+   [45] Attempt to read property "currency" on null
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+
+Ô£à No failures found in log!
+
+­ƒôè Full JSON Response:
+{
+  "success": false,
+  "status": 0,
+  "log": [
+    "Active session not found",
+    "Attempt to read property \"gameContract\" on null",
+    "Attempt to read property \"player\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"gameContract\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"gameContract\" on null",
+    "Attempt to read property \"gameContract\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null"
+  ]
+}
+
+============================================
+   Process complete. Send the above log
+   to Slotegrator for manual review.
+============================================
+

@@ -1,0 +1,163 @@
+✅ Configuration loaded:
+   Merchant ID: dbb46701285c1a2e24a0bf92f00501e5
+   Merchant Key: b83d51ea...
+   Base URL: https://staging.slotegrator.com/api/index.php/v1
+   Callback URL: https://bozcallback.ngrok.app/api/casino/callback
+   Currency: EUR
+
+============================================
+   SLOTEGRATOR SELF-VALIDATION PROCESS
+============================================
+
+📋 STEP 1: Fetching limits to find enabled providers...
+✅ Found 26 enabled providers for EUR: AmigoGaming, Aviatrix, BGaming, Belatra Games, Endorphina...
+
+   Fetching games...
+   Page 1: 50 games
+✅ Selected game: "2016 Gladiators"
+   UUID: 7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15
+   Provider: Endorphina
+
+🚀 STEP 2: Launching game via POST /games/init...
+   Init params: {
+  "game_uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "player_id": "test_player_001",
+  "player_name": "Test Player",
+  "currency": "EUR",
+  "session_id": "session_val_1774993015380_03329079",
+  "device": "desktop",
+  "return_url": "https://boztestarea.ngrok.app",
+  "language": "en",
+  "email": "test@example.com"
+}
+   /games/init response status: 403
+   /games/init response: {
+  "name": "Forbidden",
+  "message": "Incorrect required parameter",
+  "code": 0,
+  "status": 403
+}
+
+⚠️  Attempting /self-validate anyway in case a previous session is still active...
+
+⏳ STEP 3: Waiting 2 seconds (do NOT interact with the game)...
+   2...   1...   Done waiting!                    
+
+🔍 STEP 4: Sending POST /self-validate to Slotegrator staging...
+   Response status: 200
+
+============================================
+   SELF-VALIDATION RESULTS
+============================================
+
+❌ VALIDATION FAILED - Check log for details
+
+📄 FULL VALIDATION LOG:
+────────────────────────────────────────────────────────────
+   [1] Active session not found
+   [2] Attempt to read property "gameContract" on null
+   [3] Attempt to read property "player" on null
+   [4] Attempt to read property "currency" on null
+   [5] Attempt to read property "currency" on null
+   [6] Attempt to read property "currency" on null
+   [7] Attempt to read property "currency" on null
+   [8] Attempt to read property "currency" on null
+   [9] Attempt to read property "currency" on null
+   [10] Attempt to read property "currency" on null
+   [11] Attempt to read property "currency" on null
+   [12] Attempt to read property "currency" on null
+   [13] Attempt to read property "currency" on null
+   [14] Attempt to read property "currency" on null
+   [15] Attempt to read property "currency" on null
+   [16] Attempt to read property "currency" on null
+   [17] Attempt to read property "currency" on null
+   [18] Attempt to read property "currency" on null
+   [19] Attempt to read property "currency" on null
+   [20] Attempt to read property "currency" on null
+   [21] Attempt to read property "currency" on null
+   [22] Attempt to read property "currency" on null
+   [23] Attempt to read property "currency" on null
+   [24] Attempt to read property "currency" on null
+   [25] Attempt to read property "currency" on null
+   [26] Attempt to read property "currency" on null
+   [27] Attempt to read property "currency" on null
+   [28] Attempt to read property "currency" on null
+   [29] Attempt to read property "gameContract" on null
+   [30] Attempt to read property "currency" on null
+   [31] Attempt to read property "currency" on null
+   [32] Attempt to read property "gameContract" on null
+   [33] Attempt to read property "gameContract" on null
+   [34] Attempt to read property "currency" on null
+   [35] Attempt to read property "currency" on null
+   [36] Attempt to read property "currency" on null
+   [37] Attempt to read property "currency" on null
+   [38] Attempt to read property "currency" on null
+   [39] Attempt to read property "currency" on null
+   [40] Attempt to read property "currency" on null
+   [41] Attempt to read property "currency" on null
+   [42] Attempt to read property "currency" on null
+   [43] Attempt to read property "currency" on null
+   [44] Attempt to read property "currency" on null
+   [45] Attempt to read property "currency" on null
+────────────────────────────────────────────────────────────
+
+✅ No failures found in log!
+
+📊 Full JSON Response:
+{
+  "success": false,
+  "status": 0,
+  "log": [
+    "Active session not found",
+    "Attempt to read property \"gameContract\" on null",
+    "Attempt to read property \"player\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"gameContract\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"gameContract\" on null",
+    "Attempt to read property \"gameContract\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null",
+    "Attempt to read property \"currency\" on null"
+  ]
+}
+
+============================================
+   Process complete. Send the above log
+   to Slotegrator for manual review.
+============================================
+

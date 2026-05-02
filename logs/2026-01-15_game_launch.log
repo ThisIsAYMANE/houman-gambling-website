@@ -1,0 +1,5498 @@
+{
+  "timestamp": "2026-01-15T15:11:34.239Z",
+  "gameId": "447eebaff41fdc9c36cf680720ea2ce321d33b67",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "447eebaff41fdc9c36cf680720ea2ce321d33b67"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "launch_error",
+      "status": "failed",
+      "error": "This provider is not enabled for your contract",
+      "errorDetails": {
+        "name": "Not Found",
+        "message": "This provider is not enabled for your contract",
+        "code": 0,
+        "status": 404
+      },
+      "requestLog": {
+        "timestamp": "2026-01-15T15:11:43.659Z",
+        "endpoint": "POST /games/init",
+        "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+        "headers": {
+          "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+          "X-Timestamp": "1768489903",
+          "X-Nonce": "1c23c75487fa702bdb967947a4f6a396",
+          "X-Sign": "afe36d69...",
+          "Accept": "application/json",
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        "body": "game_uuid=447eebaff41fdc9c36cf680720ea2ce321d33b67&player_id=a5YAzMelXjuCiihUtj58Z&player_name=bananana&currency=USD&session_id=session_a5YAzMelXjuCiihUtj58Z_1768489903643_x03588&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=bananana%40gmail.com",
+        "params": {
+          "game_uuid": "447eebaff41fdc9c36cf680720ea2ce321d33b67",
+          "player_id": "a5YAzMelXjuCiihUtj58Z",
+          "player_name": "bananana",
+          "currency": "USD",
+          "session_id": "session_a5YAzMelXjuCiihUtj58Z_1768489903643_x03588",
+          "device": "desktop",
+          "return_url": "https://boztestarea.ngrok.app",
+          "language": "fr",
+          "email": "bananana@gmail.com"
+        }
+      },
+      "responseLog": {
+        "timestamp": "2026-01-15T15:11:43.876Z",
+        "endpoint": "POST /games/init",
+        "status": 404,
+        "statusText": "Not Found",
+        "headers": {
+          "access-control-expose-headers": "",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "9be64eb0db8fe1cd-MRS",
+          "connection": "keep-alive",
+          "content-encoding": "gzip",
+          "content-type": "application/json; charset=UTF-8",
+          "date": "Thu, 15 Jan 2026 15:11:44 GMT",
+          "server": "cloudflare",
+          "transfer-encoding": "chunked",
+          "vary": "Accept-Encoding"
+        },
+        "body": {
+          "name": "Not Found",
+          "message": "This provider is not enabled for your contract",
+          "code": 0,
+          "status": 404
+        },
+        "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+      }
+    }
+  ],
+  "userId": "a5YAzMelXjuCiihUtj58Z",
+  "gameDetails": {
+    "uuid": "447eebaff41fdc9c36cf680720ea2ce321d33b67",
+    "name": "4 of a King",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:11:34.254Z",
+  "gameId": "447eebaff41fdc9c36cf680720ea2ce321d33b67",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "447eebaff41fdc9c36cf680720ea2ce321d33b67"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "launch_error",
+      "status": "failed",
+      "error": "This provider is not enabled for your contract",
+      "errorDetails": {
+        "name": "Not Found",
+        "message": "This provider is not enabled for your contract",
+        "code": 0,
+        "status": 404
+      },
+      "requestLog": {
+        "timestamp": "2026-01-15T15:11:43.700Z",
+        "endpoint": "POST /games/init",
+        "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+        "headers": {
+          "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+          "X-Timestamp": "1768489903",
+          "X-Nonce": "eb419d499f81858dbd521d81783c276b",
+          "X-Sign": "940b9f70...",
+          "Accept": "application/json",
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        "body": "game_uuid=447eebaff41fdc9c36cf680720ea2ce321d33b67&player_id=a5YAzMelXjuCiihUtj58Z&player_name=bananana&currency=USD&session_id=session_a5YAzMelXjuCiihUtj58Z_1768489903699_85p5br&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=bananana%40gmail.com",
+        "params": {
+          "game_uuid": "447eebaff41fdc9c36cf680720ea2ce321d33b67",
+          "player_id": "a5YAzMelXjuCiihUtj58Z",
+          "player_name": "bananana",
+          "currency": "USD",
+          "session_id": "session_a5YAzMelXjuCiihUtj58Z_1768489903699_85p5br",
+          "device": "desktop",
+          "return_url": "https://boztestarea.ngrok.app",
+          "language": "fr",
+          "email": "bananana@gmail.com"
+        }
+      },
+      "responseLog": {
+        "timestamp": "2026-01-15T15:11:44.121Z",
+        "endpoint": "POST /games/init",
+        "status": 404,
+        "statusText": "Not Found",
+        "headers": {
+          "access-control-expose-headers": "",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "9be64eb0fd7ce161-MRS",
+          "connection": "keep-alive",
+          "content-encoding": "gzip",
+          "content-type": "application/json; charset=UTF-8",
+          "date": "Thu, 15 Jan 2026 15:11:44 GMT",
+          "server": "cloudflare",
+          "transfer-encoding": "chunked",
+          "vary": "Accept-Encoding"
+        },
+        "body": {
+          "name": "Not Found",
+          "message": "This provider is not enabled for your contract",
+          "code": 0,
+          "status": 404
+        },
+        "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+      }
+    }
+  ],
+  "userId": "a5YAzMelXjuCiihUtj58Z",
+  "gameDetails": {
+    "uuid": "447eebaff41fdc9c36cf680720ea2ce321d33b67",
+    "name": "4 of a King",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:17:25.284Z",
+  "gameId": "5f60f72027f3650108907d92c55702953674befd",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "5f60f72027f3650108907d92c55702953674befd"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "USD"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "game_not_found_in_first_pages",
+      "status": "warning",
+      "message": "Game not found in first 5 pages, proceeding anyway"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "launch_error",
+      "status": "failed",
+      "error": "This provider is not enabled for your contract",
+      "errorDetails": {
+        "name": "Not Found",
+        "message": "This provider is not enabled for your contract",
+        "code": 0,
+        "status": 404
+      },
+      "requestLog": {
+        "timestamp": "2026-01-15T15:17:33.769Z",
+        "endpoint": "POST /games/init",
+        "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+        "headers": {
+          "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+          "X-Timestamp": "1768490253",
+          "X-Nonce": "6b1909512801889aa9297eecf32d713b",
+          "X-Sign": "37d4dacf...",
+          "Accept": "application/json",
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        "body": "game_uuid=5f60f72027f3650108907d92c55702953674befd&player_id=a5YAzMelXjuCiihUtj58Z&player_name=bananana&currency=USD&session_id=session_a5YAzMelXjuCiihUtj58Z_1768490253767_ro3fnl&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=bananana%40gmail.com",
+        "params": {
+          "game_uuid": "5f60f72027f3650108907d92c55702953674befd",
+          "player_id": "a5YAzMelXjuCiihUtj58Z",
+          "player_name": "bananana",
+          "currency": "USD",
+          "session_id": "session_a5YAzMelXjuCiihUtj58Z_1768490253767_ro3fnl",
+          "device": "desktop",
+          "return_url": "https://boztestarea.ngrok.app",
+          "language": "fr",
+          "email": "bananana@gmail.com"
+        }
+      },
+      "responseLog": {
+        "timestamp": "2026-01-15T15:17:33.934Z",
+        "endpoint": "POST /games/init",
+        "status": 404,
+        "statusText": "Not Found",
+        "headers": {
+          "access-control-expose-headers": "",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "9be6573ceb28e1c0-MRS",
+          "connection": "keep-alive",
+          "content-encoding": "gzip",
+          "content-type": "application/json; charset=UTF-8",
+          "date": "Thu, 15 Jan 2026 15:17:34 GMT",
+          "server": "cloudflare",
+          "transfer-encoding": "chunked",
+          "vary": "Accept-Encoding"
+        },
+        "body": {
+          "name": "Not Found",
+          "message": "This provider is not enabled for your contract",
+          "code": 0,
+          "status": 404
+        },
+        "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+      }
+    }
+  ],
+  "userId": "a5YAzMelXjuCiihUtj58Z",
+  "userCurrency": "USD",
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  },
+  "gameDetails": {
+    "uuid": "5f60f72027f3650108907d92c55702953674befd",
+    "name": "European Roulette ",
+    "provider": "Belatra Games",
+    "has_lobby": 0
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:17:25.296Z",
+  "gameId": "5f60f72027f3650108907d92c55702953674befd",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "5f60f72027f3650108907d92c55702953674befd"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "USD"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "game_not_found_in_first_pages",
+      "status": "warning",
+      "message": "Game not found in first 5 pages, proceeding anyway"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "launch_error",
+      "status": "failed",
+      "error": "This provider is not enabled for your contract",
+      "errorDetails": {
+        "name": "Not Found",
+        "message": "This provider is not enabled for your contract",
+        "code": 0,
+        "status": 404
+      },
+      "requestLog": {
+        "timestamp": "2026-01-15T15:17:34.236Z",
+        "endpoint": "POST /games/init",
+        "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+        "headers": {
+          "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+          "X-Timestamp": "1768490254",
+          "X-Nonce": "6b0842d054b15eecfa1cc8539bd5fe8a",
+          "X-Sign": "7278cbbb...",
+          "Accept": "application/json",
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        "body": "game_uuid=5f60f72027f3650108907d92c55702953674befd&player_id=a5YAzMelXjuCiihUtj58Z&player_name=bananana&currency=USD&session_id=session_a5YAzMelXjuCiihUtj58Z_1768490254234_wqat&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=bananana%40gmail.com",
+        "params": {
+          "game_uuid": "5f60f72027f3650108907d92c55702953674befd",
+          "player_id": "a5YAzMelXjuCiihUtj58Z",
+          "player_name": "bananana",
+          "currency": "USD",
+          "session_id": "session_a5YAzMelXjuCiihUtj58Z_1768490254234_wqat",
+          "device": "desktop",
+          "return_url": "https://boztestarea.ngrok.app",
+          "language": "fr",
+          "email": "bananana@gmail.com"
+        }
+      },
+      "responseLog": {
+        "timestamp": "2026-01-15T15:17:34.441Z",
+        "endpoint": "POST /games/init",
+        "status": 404,
+        "statusText": "Not Found",
+        "headers": {
+          "access-control-expose-headers": "",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "9be6573fdcc0a10f-LIS",
+          "connection": "keep-alive",
+          "content-encoding": "gzip",
+          "content-type": "application/json; charset=UTF-8",
+          "date": "Thu, 15 Jan 2026 15:17:35 GMT",
+          "server": "cloudflare",
+          "transfer-encoding": "chunked",
+          "vary": "Accept-Encoding"
+        },
+        "body": {
+          "name": "Not Found",
+          "message": "This provider is not enabled for your contract",
+          "code": 0,
+          "status": 404
+        },
+        "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+      }
+    }
+  ],
+  "userId": "a5YAzMelXjuCiihUtj58Z",
+  "userCurrency": "USD",
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  },
+  "gameDetails": {
+    "uuid": "5f60f72027f3650108907d92c55702953674befd",
+    "name": "European Roulette ",
+    "provider": "Belatra Games",
+    "has_lobby": 0
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:18:20.812Z",
+  "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "USD"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "launch_error",
+      "status": "failed",
+      "error": "This provider is not enabled for your contract",
+      "errorDetails": {
+        "name": "Not Found",
+        "message": "This provider is not enabled for your contract",
+        "code": 0,
+        "status": 404
+      },
+      "requestLog": {
+        "timestamp": "2026-01-15T15:18:28.762Z",
+        "endpoint": "POST /games/init",
+        "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+        "headers": {
+          "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+          "X-Timestamp": "1768490308",
+          "X-Nonce": "1bfed6a5cba78f84e595e6ffa79ac2f1",
+          "X-Sign": "a2438645...",
+          "Accept": "application/json",
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        "body": "game_uuid=7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15&player_id=a5YAzMelXjuCiihUtj58Z&player_name=bananana&currency=USD&session_id=session_a5YAzMelXjuCiihUtj58Z_1768490308761_4tgxujt&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=bananana%40gmail.com",
+        "params": {
+          "game_uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+          "player_id": "a5YAzMelXjuCiihUtj58Z",
+          "player_name": "bananana",
+          "currency": "USD",
+          "session_id": "session_a5YAzMelXjuCiihUtj58Z_1768490308761_4tgxujt",
+          "device": "desktop",
+          "return_url": "https://boztestarea.ngrok.app",
+          "language": "fr",
+          "email": "bananana@gmail.com"
+        }
+      },
+      "responseLog": {
+        "timestamp": "2026-01-15T15:18:28.913Z",
+        "endpoint": "POST /games/init",
+        "status": 404,
+        "statusText": "Not Found",
+        "headers": {
+          "access-control-expose-headers": "",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "9be65894a85fe286-MRS",
+          "connection": "keep-alive",
+          "content-encoding": "gzip",
+          "content-type": "application/json; charset=UTF-8",
+          "date": "Thu, 15 Jan 2026 15:18:29 GMT",
+          "server": "cloudflare",
+          "transfer-encoding": "chunked",
+          "vary": "Accept-Encoding"
+        },
+        "body": {
+          "name": "Not Found",
+          "message": "This provider is not enabled for your contract",
+          "code": 0,
+          "status": 404
+        },
+        "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+      }
+    }
+  ],
+  "userId": "a5YAzMelXjuCiihUtj58Z",
+  "userCurrency": "USD",
+  "gameDetails": {
+    "uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "name": "2016 Gladiators",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:18:20.831Z",
+  "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "USD"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "launch_error",
+      "status": "failed",
+      "error": "This provider is not enabled for your contract",
+      "errorDetails": {
+        "name": "Not Found",
+        "message": "This provider is not enabled for your contract",
+        "code": 0,
+        "status": 404
+      },
+      "requestLog": {
+        "timestamp": "2026-01-15T15:18:28.793Z",
+        "endpoint": "POST /games/init",
+        "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+        "headers": {
+          "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+          "X-Timestamp": "1768490308",
+          "X-Nonce": "ab0bb355698e114d7089c8f830435b77",
+          "X-Sign": "c112c6a2...",
+          "Accept": "application/json",
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        "body": "game_uuid=7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15&player_id=a5YAzMelXjuCiihUtj58Z&player_name=bananana&currency=USD&session_id=session_a5YAzMelXjuCiihUtj58Z_1768490308792_6pst8p&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=bananana%40gmail.com",
+        "params": {
+          "game_uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+          "player_id": "a5YAzMelXjuCiihUtj58Z",
+          "player_name": "bananana",
+          "currency": "USD",
+          "session_id": "session_a5YAzMelXjuCiihUtj58Z_1768490308792_6pst8p",
+          "device": "desktop",
+          "return_url": "https://boztestarea.ngrok.app",
+          "language": "fr",
+          "email": "bananana@gmail.com"
+        }
+      },
+      "responseLog": {
+        "timestamp": "2026-01-15T15:18:28.949Z",
+        "endpoint": "POST /games/init",
+        "status": 404,
+        "statusText": "Not Found",
+        "headers": {
+          "access-control-expose-headers": "",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "9be65894d915a26a-MRS",
+          "connection": "keep-alive",
+          "content-encoding": "gzip",
+          "content-type": "application/json; charset=UTF-8",
+          "date": "Thu, 15 Jan 2026 15:18:29 GMT",
+          "server": "cloudflare",
+          "transfer-encoding": "chunked",
+          "vary": "Accept-Encoding"
+        },
+        "body": {
+          "name": "Not Found",
+          "message": "This provider is not enabled for your contract",
+          "code": 0,
+          "status": 404
+        },
+        "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+      }
+    }
+  ],
+  "userId": "a5YAzMelXjuCiihUtj58Z",
+  "userCurrency": "USD",
+  "gameDetails": {
+    "uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "name": "2016 Gladiators",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:19:16.806Z",
+  "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "USD"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "launch_error",
+      "status": "failed",
+      "error": "This provider is not enabled for your contract",
+      "errorDetails": {
+        "name": "Not Found",
+        "message": "This provider is not enabled for your contract",
+        "code": 0,
+        "status": 404
+      },
+      "requestLog": {
+        "timestamp": "2026-01-15T15:19:24.150Z",
+        "endpoint": "POST /games/init",
+        "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+        "headers": {
+          "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+          "X-Timestamp": "1768490364",
+          "X-Nonce": "22551a64ca0f30af1466e5a4006e9f05",
+          "X-Sign": "9e983e75...",
+          "Accept": "application/json",
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        "body": "game_uuid=7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15&player_id=a5YAzMelXjuCiihUtj58Z&player_name=bananana&currency=USD&session_id=session_a5YAzMelXjuCiihUtj58Z_1768490364148_yhgwwc&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=bananana%40gmail.com",
+        "params": {
+          "game_uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+          "player_id": "a5YAzMelXjuCiihUtj58Z",
+          "player_name": "bananana",
+          "currency": "USD",
+          "session_id": "session_a5YAzMelXjuCiihUtj58Z_1768490364148_yhgwwc",
+          "device": "desktop",
+          "return_url": "https://boztestarea.ngrok.app",
+          "language": "fr",
+          "email": "bananana@gmail.com"
+        }
+      },
+      "responseLog": {
+        "timestamp": "2026-01-15T15:19:24.322Z",
+        "endpoint": "POST /games/init",
+        "status": 404,
+        "statusText": "Not Found",
+        "headers": {
+          "access-control-expose-headers": "",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "9be659eed9cf3d46-MRS",
+          "connection": "keep-alive",
+          "content-encoding": "gzip",
+          "content-type": "application/json; charset=UTF-8",
+          "date": "Thu, 15 Jan 2026 15:19:25 GMT",
+          "server": "cloudflare",
+          "transfer-encoding": "chunked",
+          "vary": "Accept-Encoding"
+        },
+        "body": {
+          "name": "Not Found",
+          "message": "This provider is not enabled for your contract",
+          "code": 0,
+          "status": 404
+        },
+        "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+      }
+    }
+  ],
+  "userId": "a5YAzMelXjuCiihUtj58Z",
+  "userCurrency": "USD",
+  "gameDetails": {
+    "uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "name": "2016 Gladiators",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:19:16.779Z",
+  "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "USD"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "launch_error",
+      "status": "failed",
+      "error": "This provider is not enabled for your contract",
+      "errorDetails": {
+        "name": "Not Found",
+        "message": "This provider is not enabled for your contract",
+        "code": 0,
+        "status": 404
+      },
+      "requestLog": {
+        "timestamp": "2026-01-15T15:19:24.368Z",
+        "endpoint": "POST /games/init",
+        "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+        "headers": {
+          "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+          "X-Timestamp": "1768490364",
+          "X-Nonce": "7d64ce4bdd5a5bc246c1fcb1faa9b4df",
+          "X-Sign": "225d18b2...",
+          "Accept": "application/json",
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        "body": "game_uuid=7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15&player_id=a5YAzMelXjuCiihUtj58Z&player_name=bananana&currency=USD&session_id=session_a5YAzMelXjuCiihUtj58Z_1768490364366_wd445m&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=bananana%40gmail.com",
+        "params": {
+          "game_uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+          "player_id": "a5YAzMelXjuCiihUtj58Z",
+          "player_name": "bananana",
+          "currency": "USD",
+          "session_id": "session_a5YAzMelXjuCiihUtj58Z_1768490364366_wd445m",
+          "device": "desktop",
+          "return_url": "https://boztestarea.ngrok.app",
+          "language": "fr",
+          "email": "bananana@gmail.com"
+        }
+      },
+      "responseLog": {
+        "timestamp": "2026-01-15T15:19:24.506Z",
+        "endpoint": "POST /games/init",
+        "status": 404,
+        "statusText": "Not Found",
+        "headers": {
+          "access-control-expose-headers": "",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "9be659f03aa63d46-MRS",
+          "connection": "keep-alive",
+          "content-encoding": "gzip",
+          "content-type": "application/json; charset=UTF-8",
+          "date": "Thu, 15 Jan 2026 15:19:25 GMT",
+          "server": "cloudflare",
+          "transfer-encoding": "chunked",
+          "vary": "Accept-Encoding"
+        },
+        "body": {
+          "name": "Not Found",
+          "message": "This provider is not enabled for your contract",
+          "code": 0,
+          "status": 404
+        },
+        "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+      }
+    }
+  ],
+  "userId": "a5YAzMelXjuCiihUtj58Z",
+  "userCurrency": "USD",
+  "gameDetails": {
+    "uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "name": "2016 Gladiators",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:21:37.623Z",
+  "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_a5YAzMelXjuCiihUtj58Z_1768490505847_ypax6",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWGRlMG5QWVNCNVR6ZUVIQi9xbmJVdnNkN2FIWlJ3U3FlaDJOOGxwZm9RMi9YaHVVRkFsZ1ducCtyK1pnYzVITURjK09ZNmFPRUxIMXRZUU16cG9yZGU1Q3l0ZENoK1pYK1k1alFiK0pZQ2piZmpuNmJsS0xsMjJLWkx4Rk1Xd0FWMkN1YzFMSzlXdWpHeHF3b3g3REpNdzE5NWtKUTQvS3p4c2o3Qlp4NHVUZktEWTUzRFBkMWVkMWV2SVcreHlwSXRpNnUxVVg1cjJjYzh3bWt2eElQTnQyM2xabkkzRCt2VUx4azNLREJOYlgwZ2xwenlJc0lXOEE0aStmLzVCRS9PaEtzb1N0YXpJdWFGN0NueUlNVDdMd3E4MGFvdWJlaWl1WEgrNlhFeVdhRGhrenltQ0tkOXJNdDNFWlJDQ0s2YjlxTmpCRXJnMmJhUWRmdTJwOEpJWWxSbGgzMTl0THY0ZGtQRnVXRlpLbFRMRHFQQ0w0OW8vU1Rremowc0dlaHh0cGh0MXNtSHFzdGlkWHNRR1k4bWp3M0s0bUxTYk43Y1N3dFZMcHJkY0hwVTBvRXlvVjltTGtKM0d2TEJUN2lQZ05QTGszblc4TFV2b3FVZWp6Y0t4WFp3amFtVFNUVVUwbG1VV1ZlQVpmK1YvcnJ5U1VSWGZzU0xRR0J4eC9GQT09",
+      "expiresAt": "2026-01-15T15:36:46.035Z"
+    },
+    {
+      "step": "launch_error",
+      "status": "failed",
+      "error": "no such table: game_sessions",
+      "errorDetails": null,
+      "requestLog": null,
+      "responseLog": null
+    }
+  ],
+  "userId": "a5YAzMelXjuCiihUtj58Z",
+  "userCurrency": "EUR",
+  "gameDetails": {
+    "uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "name": "2016 Gladiators",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:21:37.625Z",
+  "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_a5YAzMelXjuCiihUtj58Z_1768490505953_ryenln",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWFpLVU84ejgvZzA2NnI1VjdLLzhuc2dxSnFyYXQ5Ym1ReklEU3UybVdJRmJFVk5sNFhrSnF1OTlONFJxWHNIMXBuNzc0SUs5UUg4V1lDcjJmRmc0NDRLZHFWSnhUT0J3WHFLN3dYaHFpV0V3NmtYTTZtemVrZWFNb2dqekIwQk51NlBDckErVTNMZFpkZVFMY2x4eDlobFJkLzdkYWZPc3BBZ29zSERLZzdEcG16MWJKT3d5Q3o3cUwxbnBGc2Zsb2cwRzRvOFArTWJSYkcxczM3alNCcEl3RytmZXRSa2orbFlwNHhKNkl4KzFzekM5ZmZFNFVjeG8ydDRzYVhIQitBVElpS3FaSndZN0FKcE56YktURVM1TjhwajYxTGhOakxWRFBLbzFSREdhdTJNUnduYzYyZ3hIZ2NRbmhTR2dLV0JGK1FxeTJNSmdWeDVPUVJZZFB1WFkzM2lxS1pzV2N4WVk5MUsyOVgrQWdCVmw2QmpybzlSL01OU1d2K21CRVJRSjNCUVNRdSt5emJaMjZjdE56RGpWUlI1cHRCZGlpeDNpTjhiOWdtQkF6T01hT0Q1MWxLL2x2ektaTy9EbTNPU1JiRXpmdzJOS205bUUvVnhkazFJOU03OG44cGlraUJSSTlDL25vZWZZOHovYXc2M0ZZaWlVNGNLZi9zdzBWdz09",
+      "expiresAt": "2026-01-15T15:36:46.109Z"
+    },
+    {
+      "step": "launch_error",
+      "status": "failed",
+      "error": "no such table: game_sessions",
+      "errorDetails": null,
+      "requestLog": null,
+      "responseLog": null
+    }
+  ],
+  "userId": "a5YAzMelXjuCiihUtj58Z",
+  "userCurrency": "EUR",
+  "gameDetails": {
+    "uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "name": "2016 Gladiators",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:22:15.747Z",
+  "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_a5YAzMelXjuCiihUtj58Z_1768490544389_wp1y9f",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWFJ6REJweCtNVUFzL1pHdzhIZTI2OWVHTjBOVjk1cnNwTG9neFVCWTVLcEVQcTE5Q082bDZDVWwzdCttVklZRit2Rk0rOWR3K1dFYlgzYkduT1VyOE9NM3pJVHhwdmt6TjZZM1ZneGEyUHQvWE5rRW1DZm96WHhiY0dOWU5WUlBteDBOVk54NHkvbVFJaWJSY0EvQWhYS0k2L1ZxbXYvQkl6YnFZLytWSEZFOElJcndNNW5pY3Z5RUw3QnVuUWl3Yi8xQU52VTh4V1hnNUtidDF1OHhGdk1UTmdDVnlhbVdCVjljcVJCaWhtZG5NT0g5T3NraHRUNlpyOUJlcmdYendoSGRqWXd4OHAvd2ljTnVCcWRzWUJCK2FWUXh5SjZxZWhVNFQzUEpWYVowRWxCUWlXUHVFdnJsUWYwUU9mMklYcXJqVjVXS0FkeUx0OU1FRTNyWlQ3N1lDNXRud2l4SUpJbWUxNG52dzRPMDhTY1JIOERzYk85YmdxZUZIUlN6eGJYN0tqL1c0Ujd3SXFLL093aHc3R2F4djdjWXZBVHNxQUNKcVFQbEdRZ0VBV0grWTV5dWl1UG1Mb0hFL3RrQkhLTnpjWXVKZUtlcWtEeWdBa3hyOVhKVWZyaWtPYVB0OUhTaE5aYnBJSFBhc1RoVUIzMmJFSzhiSGdDL0F4YktRQT09",
+      "expiresAt": "2026-01-15T15:37:24.655Z"
+    },
+    {
+      "step": "launch_error",
+      "status": "failed",
+      "error": "no such table: game_sessions",
+      "errorDetails": null,
+      "requestLog": null,
+      "responseLog": null
+    }
+  ],
+  "userId": "a5YAzMelXjuCiihUtj58Z",
+  "userCurrency": "EUR",
+  "gameDetails": {
+    "uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "name": "2016 Gladiators",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:22:15.763Z",
+  "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_a5YAzMelXjuCiihUtj58Z_1768490544543_kfkgr",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWFV1eUhJWWU2eG1xMnpyck1UanVwOGlHeUM2TVg1cTZpMWlacDFyZEFxYmpiTk4vV1IwdmlpaW80VVc3SzJCNS8wMGhnNUI0TEkwczRjR1d5TEFMaXd5TUxNMFNjUmdhWHFwbDl3Q3l3enQ0VHIwYUx0YzV1QlgrVWQxRHFyeUtHU0dQWUo3dVp4ZEJUYnlKWlcvZEVGWThMY3dtc0FabUpjd1NUeG9sK29IV3hUTUFYOXhuY21GWUkyQzQ1UndKa2VudEJUb24yZFhCNUxKempja09wdUEyYjRWVUFSVVU1N1BkeUkvWEozaTRQc1Q4Y0dUWGZoRjVveTJEVlMyOXVrdDZXOFlqcjJqTlFDWU92T0YyRXhjYnI5ZEc0d3BJV01OM1FhcTJBVW5qYTB6dzNYTUx3NWE3SkJhSGVJOWJYT1JZeW1FKzhHc1dQKzAyckxqWUZtWm1YM3JxNm1oWlpQbkpHU0ZkWE9FQ0d2UGxRN2JaSXBjUEFVWXlaMXh3WmFDY3VaK3ZCdEJheGl6WUV4SUVKWGRwcmdWbFdBbGwrUkwzU3Evb1ExeERlaSs3ZVBaNlRKWWVjd1VzQm11UlROUWF0elFwS3RoMVZHalEzVVducGZhTG91T1h6RW1NUDRmYXJHQUhLcGRrVTh5WEUvVVVGbXByWnNSNW5NWm81dz09",
+      "expiresAt": "2026-01-15T15:37:24.876Z"
+    },
+    {
+      "step": "launch_error",
+      "status": "failed",
+      "error": "no such table: game_sessions",
+      "errorDetails": null,
+      "requestLog": null,
+      "responseLog": null
+    }
+  ],
+  "userId": "a5YAzMelXjuCiihUtj58Z",
+  "userCurrency": "EUR",
+  "gameDetails": {
+    "uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "name": "2016 Gladiators",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:24:36.673Z",
+  "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_a5YAzMelXjuCiihUtj58Z_1768490684752_u5pzlm",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWFhCRmFyRUlHNHBXS1BWQ0tCdTlvYTBwMjAzaXA5SSt0U1J5cG9lL2F0b3JMc0NuMFk1Yzk5SHM4SVczUDhzcTVSR1FmMHdPcmdRc1ZuS2hQRC8zVUhIaXBrSFErQW9McUxMK2FBUlp3MGMxZ0Z6MW5uTjlNZVJFRHJnZUdhV3FZOGlPKzBMRHQ5b2hnaXFxOWJ6SENjSFJuSnFhRmFJT01PanJCU1MwM0xIYUNScmxoN3MyUnY0UFpHSnVVODhxdTdabWpCKzhnSzQyd05OemxQcEs4S0UvVTFRL2RNcEZFK2tPRlArVlgyNmw4b3JJRUdnWE56dTFsQkxQa1VUTHYzUFE0eTFreTlBOFRhMmxuODlFLy9Bb1plMExIR3Z5bFpBc09qOFB5MkhPQS9HbS9ENTF5VmNoenluVU5CMDlFZFR4REVUTG9YWDd3dmsrR1oxWTh6ZjI2MWJ3TFRydVlrdEsvclNJZGIzNjBQSmp5QUMzL1lWNGlVTHpWT1dxVlJNM3JWYTBpNytPOEJaZTkrbmNyakw5Y0pTS0k4M0RFUUtIYzNkMU9ENHJWRkdMYnZpTFhPMytySEhPU0Jod0REeStJaE1MWU42TUkyRFVNZnN1MVVZTUdOUHRCZ3FUQkZncTIwTG9HSXU4enBqUTE5QzQyYTNpSXYybnhJY2NmQT09",
+      "expiresAt": "2026-01-15T15:39:44.928Z"
+    },
+    {
+      "step": "launch_error",
+      "status": "failed",
+      "error": "FOREIGN KEY constraint failed",
+      "errorDetails": null,
+      "requestLog": null,
+      "responseLog": null
+    }
+  ],
+  "userId": "a5YAzMelXjuCiihUtj58Z",
+  "userCurrency": "EUR",
+  "gameDetails": {
+    "uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "name": "2016 Gladiators",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:24:36.626Z",
+  "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_a5YAzMelXjuCiihUtj58Z_1768490684779_cn2e1o",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWFdCZUpCdFVQaXRQdkN5dzlqNFJzMjJvYlNZTkFJYlZnNGlyTmhrdWVFbGE3NW85R2g4OVQ3ekhCZ0w5Z1JnOC9IWXR4blNNcjdvYVR2SzNNOVh5UnRwUmhQNWJnemNQQlZpV1JkQUdLUXd1N2hXQTRIREtEN1lWa21Wb1lJTkwvUGsxRWVmcVYxQktoREtXQTJhWHQxWExyek9jZERnOHFtYkF6aVZ6UmZwYkZndWRnd1N6N1dJOEF5U1dNWkxoMklEV3NIdk9HZVNTUWZZa3orRnBRVW1HT1ZTVDVLa0hOajgycDBxWU1IeVJCRUU3K3NUOVMxb2NSMDFIbEduT2lHc21OS2NqVVhXczNzVmVKSmZLc0xXZHh1MHhzTGdHQWhlUlF5ZjZEQlNBa09RaFpvaFZUNkxvUVdWdkM2aVV2RjRNeGQ2eWNWd09pSG1VcldQOUVGM0dMYVFSdXIyNzBFVnpIdE93QlJaUzFNZFNLOEh4MHh3U0JuelpiYnAyOUJhRWxWRkw4WEpHSlJDaG5qTDNRSUptamFrYkJRZEQ3QnVuK2xRcWc1RUJiZEszQ3VKN2d2bW9hU1h4MktBdCtFZFloNm1WRUR6SitCVFczZ1lWamVSQUxuKzg2NVY3VnRaR2JuOFhKOTNVallSZ0JOV0hsZk42QVgwWS9JYkI0dz09",
+      "expiresAt": "2026-01-15T15:39:45.001Z"
+    },
+    {
+      "step": "launch_error",
+      "status": "failed",
+      "error": "FOREIGN KEY constraint failed",
+      "errorDetails": null,
+      "requestLog": null,
+      "responseLog": null
+    }
+  ],
+  "userId": "a5YAzMelXjuCiihUtj58Z",
+  "userCurrency": "EUR",
+  "gameDetails": {
+    "uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "name": "2016 Gladiators",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:24:52.131Z",
+  "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_a5YAzMelXjuCiihUtj58Z_1768490699285_jze1q9",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWGVab3UzVkgrZTlZSUZyZDk4d0tNRm9Jand0Y01TL0tNNDZaSHlFK2w0aGxpTllRZk43NkI4UitmWno0YmtnSXpFM0NuZHVZblpVZXRqTUpUTXhZWFFTNkFkY0V6UWpYTDdFaGVKMmdlaWRqU05tY3M2Ly9pR2RXeUNTL3FlSWltR2JsKzdmTlo2VDJpWW9aZU9oSk5nMWdEKzF3ZzkxYWpwS2VVaHM2M0ZmRFpHb21lWk1yTDBua3dmc2JNd0hrWXJmYWJGVDBIQ2I3YWRUZDdVM0hMcStSMW9pR0UycTYrdmJmeEFBZUNOSWdNM3FUWHJHSS9ETnhDcDY1L1l6MjZJVmZZWW16OTFXd2M3TXZXTHBsMlZFd3BGdlBxSjF0MmNSWDlyak5oVkhMN3RQckpjODRTM3F2S2tDUlk4SjRITUIwS1liYWptYmNvM1kvUjJIMXVYQ2djNENRcFVwWDliaWhvTWxYWnZ0am1qcjBkUlBTTGVWdzZmVDFrSVNMaFJ3OXNiTEpmZ0VBS0I1aUhFVzNVYk1RbmxaWkhZRThta1p3Y3lwSmpmeGtqWWo4UFB1MElOcktsVWVEOHN0cUVmRmVHeE5TaEhFMDhTZ0JyRk8veHlUVU9hQW5wSXJaaGhxOWN2alQzaFNkSFA4WUJ4Tit2MHpHNDdYZHVlZ0JpUT09",
+      "expiresAt": "2026-01-15T15:39:59.461Z"
+    },
+    {
+      "step": "launch_error",
+      "status": "failed",
+      "error": "FOREIGN KEY constraint failed",
+      "errorDetails": null,
+      "requestLog": null,
+      "responseLog": null
+    }
+  ],
+  "userId": "a5YAzMelXjuCiihUtj58Z",
+  "userCurrency": "EUR",
+  "gameDetails": {
+    "uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "name": "2016 Gladiators",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:24:52.120Z",
+  "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_a5YAzMelXjuCiihUtj58Z_1768490699570_t5qbp6",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWFlyMmRUSE4zU2h5MnV3N1NQRUJySEhVUDlCUnNDVTV3aDR2QUpLZnhvUUU3eHpibmVzMkJ0QkRMMDE0K0pxL2lHV0ZqOVhCOVJHSFZOUXF1TGFOamN5dWtYTGhlaU5ORVhxU2xQMUtZNEE3ZTd5Vm5FbTJzbWRaQnJYbmhPN2RmWGxONmw3NTVtdy82ajdGQzVmdmJUVU44ZXBoTldic2c4czZqMUdWdVFKTkVCcUR2WEJFUDdjRHRkdDBOclo1WThsdjRGeG1RcHNGOEpCUk1Ud3FKUlhkbTEvZ3NQRjFHZWV0Kzg0KzVHQnZtTUU2cGsyWTV3L2lWZ0FQclF1NHlhVE1hQXRSM1dpNklQdGgzQ25aK3hNR3hKSTFZbHJDUm9sY2RPWW5YS3JJY3BoeGFPbTh2aDhZUjZ0YjJrM0djMkJ3NmRtNGNwY3hGL3B6NHhoUTV5SU5CeDJYcStwK1pMZlNjK0ViNEVUR3ZtM3ZMUEFDVFdKME9wTVc3STN4TXFRZ2tnZ3hTZm5EWjVVQ3RPVDRLNWpueFczeHgyYTNRdmUvWXNlNXpsTTg1M3JjYkZEMFQwNHprZjg1Nmt6NzlBVWFDWFE1bldXUjBSSk1vZ0dXeXRQbDY2WnNpVWtZTFZObkZ4cVZrZ05QRDRzSWpoOXJ3N3JwcVBhWTcwQVJ4Zz09",
+      "expiresAt": "2026-01-15T15:39:59.770Z"
+    },
+    {
+      "step": "launch_error",
+      "status": "failed",
+      "error": "FOREIGN KEY constraint failed",
+      "errorDetails": null,
+      "requestLog": null,
+      "responseLog": null
+    }
+  ],
+  "userId": "a5YAzMelXjuCiihUtj58Z",
+  "userCurrency": "EUR",
+  "gameDetails": {
+    "uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "name": "2016 Gladiators",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:30:26.378Z",
+  "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15"
+    },
+    {
+      "step": "user_validation",
+      "status": "success",
+      "userId": "a5YAzMelXjuCiihUtj58Z"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_a5YAzMelXjuCiihUtj58Z_1768491034275_h151r",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWGIxaE83aDVsYk10YjZicWwwTEFITDJ2Y05ZL2J4MVhyK2JlVXJGU2JxU1ViQVJsMTZMZm4rTWZDdXllN0c5cGxyOEFzZ1FEMHVuRmsxNGhCK2xLaEg5di9qUmdCbFI1K3plcy9EWVpia1BCcUZWSFNianRUcHBWcVVqK1dZNW1LQmJ0aW9qV3BLVzBqcy9xUUhtUVpMNnpDc1h3a3NRR1A4TkNGRXYydjh4amRSL3ZBbUF3MjZrMkNKa0VtVWNkSk54UWNyazZwTzVLLy8xdWs5NVUxdWpLYXNGNy9ZR2ZnOHpmU3dtWVBieDN1czRvbHFvWitRUUFWb1MrVGFTUDc1S1htYjduUzdTMVJ2T2Z4QVJyRTdmdU8zOHI1cTNXOStwVDk5MVFtYWIvOHJuSGhRVzJycmV2ZlNla1RXQTVvenE5N0xpaC9GSWM1M2tTWFMxaFNKUGVEVUUvbDVKS1lIY2xXTDNwK21DK25pbEorU0ZKMHdhelpJUG1BUHVUTG5DaElTT1hDcVFEbG5hN012ZXlqVFdLRlRPeXA0VXowUkFkS3ArN3JBSnZ4N295a3ZySVpGT1FDeE03cmtpTEJMRUNkVlBoRjZDdnJnQ3lMMDFsQ00yemtEMmVHd2F4VldRaUxDSUhPaHFzZnRvL3czMXducUZFUEY0Q3dZVndXQT09",
+      "expiresAt": "2026-01-15T15:45:34.453Z"
+    },
+    {
+      "step": "launch_error",
+      "status": "failed",
+      "error": "FOREIGN KEY constraint failed",
+      "errorDetails": null,
+      "requestLog": null,
+      "responseLog": null
+    }
+  ],
+  "userId": "a5YAzMelXjuCiihUtj58Z",
+  "userCurrency": "EUR",
+  "gameDetails": {
+    "uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "name": "2016 Gladiators",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:30:26.375Z",
+  "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15"
+    },
+    {
+      "step": "user_validation",
+      "status": "success",
+      "userId": "a5YAzMelXjuCiihUtj58Z"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_a5YAzMelXjuCiihUtj58Z_1768491034385_degifm",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWFVrOTlmR2RZN0phWHZTNzQ0cStQaVhzbno5Mnl3bDBlUGxjb3Z4cW1tUU9yWXJ5dDRCd3BVZHdzelI5cVB5cHlqSzJBQmhUSWIwTW9uallOWDdLUTNzYnhBWVI3Wi82bFZFcGVGN0hvd3MzSThmZGlVeFRGVTlMR2lmK2pLZ1JvSmppeHJPekIreUVwRXNrcjBKZm9KSVgzQTJWSDBaU3NCM0pXRXhIZU5pSmQrUW81bVJ2ODFKQTlTeldadXNSYVprK2NQNFNZdmhFLzJ5eFBrZWFGVU9ONUJFNm9pNE9Sci8yOVNtNUU5VytybkVyYXFSMXZGSysxN29LZUM2bEdxTGJ2OTFJS2QrMzRsR1Q2R3RqRzZjU1N6ZU9iVkd2dVlDQktFNm9YUkc4dHdFYmRmRk9ER25pZTI3cVVOVUJaYjVlZ25henlpQmdhWi9Nb01ETFZuMWVscytxcVJ0Z3E0STcvRzdVSXB4ZFc2ZEJMYjZsdzBMekVYNTRzR2o0RzMwcUZ5VVpwaHFEOXZWbWhrTERUNDJYeFVLaFVWRDRHRE1rK2Rldjhsd1RrWnBQMjF4ZlJBaVZlRWFrNXB0TFRHbnRObTlzdGNVbFRXVkxLV3Q2bkpNRk9aK3lSUS9abUk0YUlocHBCUDlNSnk3ZldocGl0VWo0eTlTYW9SS1BVdz09",
+      "expiresAt": "2026-01-15T15:45:34.534Z"
+    },
+    {
+      "step": "launch_error",
+      "status": "failed",
+      "error": "FOREIGN KEY constraint failed",
+      "errorDetails": null,
+      "requestLog": null,
+      "responseLog": null
+    }
+  ],
+  "userId": "a5YAzMelXjuCiihUtj58Z",
+  "userCurrency": "EUR",
+  "gameDetails": {
+    "uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "name": "2016 Gladiators",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:33:18.599Z",
+  "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15"
+    },
+    {
+      "step": "user_validation",
+      "status": "success",
+      "userId": "q92o3gyn8kOF5pE7BW-pk"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "USD"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "launch_error",
+      "status": "failed",
+      "error": "This provider is not enabled for your contract",
+      "errorDetails": {
+        "name": "Not Found",
+        "message": "This provider is not enabled for your contract",
+        "code": 0,
+        "status": 404
+      },
+      "requestLog": {
+        "timestamp": "2026-01-15T15:33:26.521Z",
+        "endpoint": "POST /games/init",
+        "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+        "headers": {
+          "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+          "X-Timestamp": "1768491206",
+          "X-Nonce": "1f1f332be61d4340247164f0e6fb504f",
+          "X-Sign": "85facdcf...",
+          "Accept": "application/json",
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        "body": "game_uuid=7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15&player_id=q92o3gyn8kOF5pE7BW-pk&player_name=wissal&currency=USD&session_id=session_q92o3gyn8kOF5pE7BW-pk_1768491206497_c2wx6&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=wissal%40gmail.com",
+        "params": {
+          "game_uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+          "player_id": "q92o3gyn8kOF5pE7BW-pk",
+          "player_name": "wissal",
+          "currency": "USD",
+          "session_id": "session_q92o3gyn8kOF5pE7BW-pk_1768491206497_c2wx6",
+          "device": "desktop",
+          "return_url": "https://boztestarea.ngrok.app",
+          "language": "fr",
+          "email": "wissal@gmail.com"
+        }
+      },
+      "responseLog": {
+        "timestamp": "2026-01-15T15:33:26.684Z",
+        "endpoint": "POST /games/init",
+        "status": 404,
+        "statusText": "Not Found",
+        "headers": {
+          "access-control-expose-headers": "",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "9be66e7fadb0809f-MRS",
+          "connection": "keep-alive",
+          "content-encoding": "gzip",
+          "content-type": "application/json; charset=UTF-8",
+          "date": "Thu, 15 Jan 2026 15:33:27 GMT",
+          "server": "cloudflare",
+          "transfer-encoding": "chunked",
+          "vary": "Accept-Encoding"
+        },
+        "body": {
+          "name": "Not Found",
+          "message": "This provider is not enabled for your contract",
+          "code": 0,
+          "status": 404
+        },
+        "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+      }
+    }
+  ],
+  "userId": "q92o3gyn8kOF5pE7BW-pk",
+  "userCurrency": "USD",
+  "gameDetails": {
+    "uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "name": "2016 Gladiators",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:33:18.602Z",
+  "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15"
+    },
+    {
+      "step": "user_validation",
+      "status": "success",
+      "userId": "q92o3gyn8kOF5pE7BW-pk"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "USD"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "launch_error",
+      "status": "failed",
+      "error": "This provider is not enabled for your contract",
+      "errorDetails": {
+        "name": "Not Found",
+        "message": "This provider is not enabled for your contract",
+        "code": 0,
+        "status": 404
+      },
+      "requestLog": {
+        "timestamp": "2026-01-15T15:33:27.134Z",
+        "endpoint": "POST /games/init",
+        "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+        "headers": {
+          "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+          "X-Timestamp": "1768491207",
+          "X-Nonce": "4a28ecca42bcb986319bdf7f9d2522f5",
+          "X-Sign": "bf6ca37a...",
+          "Accept": "application/json",
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        "body": "game_uuid=7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15&player_id=q92o3gyn8kOF5pE7BW-pk&player_name=wissal&currency=USD&session_id=session_q92o3gyn8kOF5pE7BW-pk_1768491207133_1rt4bt&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=wissal%40gmail.com",
+        "params": {
+          "game_uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+          "player_id": "q92o3gyn8kOF5pE7BW-pk",
+          "player_name": "wissal",
+          "currency": "USD",
+          "session_id": "session_q92o3gyn8kOF5pE7BW-pk_1768491207133_1rt4bt",
+          "device": "desktop",
+          "return_url": "https://boztestarea.ngrok.app",
+          "language": "fr",
+          "email": "wissal@gmail.com"
+        }
+      },
+      "responseLog": {
+        "timestamp": "2026-01-15T15:33:27.277Z",
+        "endpoint": "POST /games/init",
+        "status": 404,
+        "statusText": "Not Found",
+        "headers": {
+          "access-control-expose-headers": "",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "9be66e838eed809f-MRS",
+          "connection": "keep-alive",
+          "content-encoding": "gzip",
+          "content-type": "application/json; charset=UTF-8",
+          "date": "Thu, 15 Jan 2026 15:33:28 GMT",
+          "server": "cloudflare",
+          "transfer-encoding": "chunked",
+          "vary": "Accept-Encoding"
+        },
+        "body": {
+          "name": "Not Found",
+          "message": "This provider is not enabled for your contract",
+          "code": 0,
+          "status": 404
+        },
+        "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+      }
+    }
+  ],
+  "userId": "q92o3gyn8kOF5pE7BW-pk",
+  "userCurrency": "USD",
+  "gameDetails": {
+    "uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "name": "2016 Gladiators",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:33:54.689Z",
+  "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15"
+    },
+    {
+      "step": "user_validation",
+      "status": "success",
+      "userId": "q92o3gyn8kOF5pE7BW-pk"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_q92o3gyn8kOF5pE7BW-pk_1768491242452_zqalx9",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWFltWTJKSGtBY1FJTW5zWmFCZU1mdTlhT2hiT0krUDRyaTE5TXhaNDNTOUo5YlJ5WGZzTHFUSGNQRDBkMGZCR0YrbnM3NEtMMFhIYTZqNHJJUzdxT21yYXRQcWhlL1l5c3FOOTAySmIraEJ0QS91amJVaDhBNkxLcUluVjdoV3RiRmVOU29KZDg3OU1tdm5MNmhPYjVaT2V2c1p5Y20yYnhkWVl4WFMwL241K1JFRC8rbUplWlJtWnh2cXVwalFKa1hHcUkrY3Y4WnAxczEzNWNIczdOYnlubGpyNVVZY3RwYlNKMGVyTExOYXJhUzZXb2lvNXVsRDdtenFPUWVJSjFXSmFjcTd3ME9sU25oQm96T1NtSTRRcmJnMEhrWmdwTGRMSmxGUktlS1l5OHBlYTRYMHVpdlhwMU5aNmhlYy9nYjR6a1Jwd0ZLWGNHOCtVNVBoWEFYeUNRenZSSGdCcVZCNC9oSVNHNzRmRWRHb1RYZFU4NGpldVZlZjB0ZXZLeFdJTGJsMnZ5WTNyVGUrdHB5eC85aXJBbDFPQVVWNGNlTHA4aGJNSGo5TmtoTWRmRVFMWWdLWm9hbDNIaUJ5S0lrYUhhbVExVnovZXpPUXpaam9MeWRPajhtSDJwQ015RGMrbjRlTnhWdVdnTERxaXdkZEI3K1U2dWt0K1phNWVrUT09",
+      "expiresAt": "2026-01-15T15:49:02.612Z"
+    },
+    {
+      "step": "launch_error",
+      "status": "failed",
+      "error": "FOREIGN KEY constraint failed",
+      "errorDetails": null,
+      "requestLog": null,
+      "responseLog": null
+    }
+  ],
+  "userId": "q92o3gyn8kOF5pE7BW-pk",
+  "userCurrency": "EUR",
+  "gameDetails": {
+    "uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "name": "2016 Gladiators",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:33:54.758Z",
+  "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15"
+    },
+    {
+      "step": "user_validation",
+      "status": "success",
+      "userId": "q92o3gyn8kOF5pE7BW-pk"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_q92o3gyn8kOF5pE7BW-pk_1768491242709_7uhp8w",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWFRXSTVqbk0veHNBcllWTTFJOW1Wc09LZ2wvdWdoVUFuWUZ6bCtBL1VvdnVBUXBWbTNBeXhuM2tkN1FvdlNxUm4zT2c5Nm9OMmtlMWNhcmZ6dHNnRzFhMitFcVlsZkpRWTI1cllpbEd0SGN6WURCYi9ZQUxkckI2bC8wV3N2U3hPKzlQUVJGamYvU2QwaFQ3WkNtRGtiWHhIY1pDUk1WYmJCWDVESXBtSGNvSkdqYURoRTh6dk5MRm9RTDVqTGxwY3A1SlY2S2I2aTd5ejNBemtFYkxDUENEc2cxbE45ZGpRT0FhcEJpVGt2Sk0zcVp4OUZJZmcxNXJNYVY2TmYrOU5JWlFDYXNxNFFGU0tKdkRWc2NXcUlHZmd1Z3N5eURKNGJqR3BZbHVQbmNTeERFY3gwSzhIREFJdEFvdDdoS1hmT3hmVml1b1dPRVNOei9WbXBlYkpqTE9NU2ZPK0tZbk01dTB2elVLdWVoc3VGVlRTZGpOaG95NWxzV1NzL0xsSTZvWDRNbHd5SEtRSWNUUno1Zi9PUEdZNm9odnltUHViV25FV2hFSlpucmUxSEIwdWZodkRCNzRNTU54bVJ4QlZoQXdsRUhJSHdRdFg3UUxvZjFXVE1QT3ZQVitiWU5Ua3FUc080Z1RCdHdUWGwyRkp5aFN3dnE3Nk52Q1lIYkdkZz09",
+      "expiresAt": "2026-01-15T15:49:02.892Z"
+    },
+    {
+      "step": "launch_error",
+      "status": "failed",
+      "error": "FOREIGN KEY constraint failed",
+      "errorDetails": null,
+      "requestLog": null,
+      "responseLog": null
+    }
+  ],
+  "userId": "q92o3gyn8kOF5pE7BW-pk",
+  "userCurrency": "EUR",
+  "gameDetails": {
+    "uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "name": "2016 Gladiators",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:41:18.283Z",
+  "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15"
+    },
+    {
+      "step": "user_validation",
+      "status": "success",
+      "userId": "q92o3gyn8kOF5pE7BW-pk"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_q92o3gyn8kOF5pE7BW-pk_1768491687354_ocblok",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWGVHTGJkTENyR0VDVVByQVN1TTY0ZVIrTmlzdjJhaTVodHRtd21NV3JwTnJaTW1neDZIMDhtbGtlU2FRUkNUQ2ZvU1FQRlY3WmlIYjVwWitROGhTTDI1bWRwenFpYmJRemZPZFJuZlhaRVppRXFxaGtjbjhjWWRkQTRqaWlyU2RlOHBTTTlPWHZyR2RzQ2lSVkdzNG5wQ2NEZDFNQVBRRTBVek1SWE83RUtCN0l2b1hIcXZMalpaMndBY1RoWm9IRGxZMU15ZVZVby9razd4OVlWa1hRbXZUS08zZDljQkN4TEhzeWFHV1diWVJMZ2Q2c3hGTHFPbTVMc2ROSHVSRnd2cStLKzZQVFJrWDJnNlI1Q0VjeDN1Z2F5enZQSlpORnJndUFpWndjQmN2RXE3OU1obnVGZ3c1dG1hM3k5THJHaStxcE1DVHYwTDhlZzN2K1dsajY3em5yQnRFcUpDQ0FncDZuaWJsd3ZGL1ZPTFJveWc3d2xjZ3l4U01lelhUcWpqaHJydG8rSi9UaTQ5QVVMWlc4RTdwT010eVUwMGREaXpSTnJHUzJTcHkvZlc3ZHI3dDFhU3BadW1BRFpmbG5LNWRhcTIzcCtHczJWYktVS1A3ckhEMnZaK0ViMVFXU25lN0J5YjZiZVoxVW8xZUdmRE5vbWlzY2RuMG5hbHNuZz09",
+      "expiresAt": "2026-01-15T15:56:27.529Z"
+    },
+    {
+      "step": "launch_complete",
+      "status": "success"
+    }
+  ],
+  "userId": "q92o3gyn8kOF5pE7BW-pk",
+  "userCurrency": "EUR",
+  "gameDetails": {
+    "uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "name": "2016 Gladiators",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  },
+  "result": {
+    "sessionId": "tlRZMMu2sGn30axmjJOx5",
+    "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWGVHTGJkTENyR0VDVVByQVN1TTY0ZVIrTmlzdjJhaTVodHRtd21NV3JwTnJaTW1neDZIMDhtbGtlU2FRUkNUQ2ZvU1FQRlY3WmlIYjVwWitROGhTTDI1bWRwenFpYmJRemZPZFJuZlhaRVppRXFxaGtjbjhjWWRkQTRqaWlyU2RlOHBTTTlPWHZyR2RzQ2lSVkdzNG5wQ2NEZDFNQVBRRTBVek1SWE83RUtCN0l2b1hIcXZMalpaMndBY1RoWm9IRGxZMU15ZVZVby9razd4OVlWa1hRbXZUS08zZDljQkN4TEhzeWFHV1diWVJMZ2Q2c3hGTHFPbTVMc2ROSHVSRnd2cStLKzZQVFJrWDJnNlI1Q0VjeDN1Z2F5enZQSlpORnJndUFpWndjQmN2RXE3OU1obnVGZ3c1dG1hM3k5THJHaStxcE1DVHYwTDhlZzN2K1dsajY3em5yQnRFcUpDQ0FncDZuaWJsd3ZGL1ZPTFJveWc3d2xjZ3l4U01lelhUcWpqaHJydG8rSi9UaTQ5QVVMWlc4RTdwT010eVUwMGREaXpSTnJHUzJTcHkvZlc3ZHI3dDFhU3BadW1BRFpmbG5LNWRhcTIzcCtHczJWYktVS1A3ckhEMnZaK0ViMVFXU25lN0J5YjZiZVoxVW8xZUdmRE5vbWlzY2RuMG5hbHNuZz09",
+    "balance": 0,
+    "expiresAt": "2026-01-15T15:56:27.529Z"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:41:18.274Z",
+  "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15"
+    },
+    {
+      "step": "user_validation",
+      "status": "success",
+      "userId": "q92o3gyn8kOF5pE7BW-pk"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_q92o3gyn8kOF5pE7BW-pk_1768491688036_0ez1aeu",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWGU0aitadEN4U1htbURhaWQyWTRyMHlaVGNycTFOTktESHNwa3VWMXdORmhWNjFPQlY2RXljNHhXamRpNWV5d3ArOVJQUjhieEJMUTVYaWs4ZDA0K2tUZjBkQ3JjZjZOY1hxaWkxS1dRaUhwVXZNN0tTNm5lQ204TEFsTlI3T3pZQ0FvRzBhOEw0RE4yKzBiaittMEhnbU1NT3JNVHVzU2oyOHNQUGF2TUdLaWowQkh2aU4yTG1FTzRzOUxEemFld04wOHhYblhQUzBEQUhraUEvVk1yek85SXBFak84WnJZL2V5cERkWTJ5VWo0bEtwaGlsT2tranQrYkliNnhVT0tyeXdkZFdJbDhmWmQvb0R5QWsrUk5MN3B6LzBtR042bVBFWmpha0t1RTRzeHNMRTd4UUZPY3oxbXB0MmYyWjhONGVzaEpIZjAwZG9rOE9hQUx1WXBoRDBxTk0yMVcrY2xUUnBrOEZMdFlmTmRoenFkZVFHZU9CYzVJVXNjeU1EQ3JpS3Z1OGN6OFkzZWhPd3pnU1JnTEVQOWowNFVFQVlVb3M4RkFJUHROdnVWSVE1bHJYMzFEL3B2aHVEbHp2RVk5UGhCL2dHQ2NXOGZlR1JNQVZ4RHdpZjYyYmpxYUtOUEFZRXA5Unh4T3UveHgwSlVIY1J6NUROS2V2VjRLeVZWQT09",
+      "expiresAt": "2026-01-15T15:56:28.278Z"
+    },
+    {
+      "step": "launch_complete",
+      "status": "success"
+    }
+  ],
+  "userId": "q92o3gyn8kOF5pE7BW-pk",
+  "userCurrency": "EUR",
+  "gameDetails": {
+    "uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "name": "2016 Gladiators",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  },
+  "result": {
+    "sessionId": "09jD6-9_VBNzVpGKXIn-U",
+    "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWGU0aitadEN4U1htbURhaWQyWTRyMHlaVGNycTFOTktESHNwa3VWMXdORmhWNjFPQlY2RXljNHhXamRpNWV5d3ArOVJQUjhieEJMUTVYaWs4ZDA0K2tUZjBkQ3JjZjZOY1hxaWkxS1dRaUhwVXZNN0tTNm5lQ204TEFsTlI3T3pZQ0FvRzBhOEw0RE4yKzBiaittMEhnbU1NT3JNVHVzU2oyOHNQUGF2TUdLaWowQkh2aU4yTG1FTzRzOUxEemFld04wOHhYblhQUzBEQUhraUEvVk1yek85SXBFak84WnJZL2V5cERkWTJ5VWo0bEtwaGlsT2tranQrYkliNnhVT0tyeXdkZFdJbDhmWmQvb0R5QWsrUk5MN3B6LzBtR042bVBFWmpha0t1RTRzeHNMRTd4UUZPY3oxbXB0MmYyWjhONGVzaEpIZjAwZG9rOE9hQUx1WXBoRDBxTk0yMVcrY2xUUnBrOEZMdFlmTmRoenFkZVFHZU9CYzVJVXNjeU1EQ3JpS3Z1OGN6OFkzZWhPd3pnU1JnTEVQOWowNFVFQVlVb3M4RkFJUHROdnVWSVE1bHJYMzFEL3B2aHVEbHp2RVk5UGhCL2dHQ2NXOGZlR1JNQVZ4RHdpZjYyYmpxYUtOUEFZRXA5Unh4T3UveHgwSlVIY1J6NUROS2V2VjRLeVZWQT09",
+    "balance": 0,
+    "expiresAt": "2026-01-15T15:56:28.278Z"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:43:13.308Z",
+  "gameId": "397f96eb2f0b70a51a3524ab6e2a4344ee717a3c",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "397f96eb2f0b70a51a3524ab6e2a4344ee717a3c"
+    },
+    {
+      "step": "user_validation",
+      "status": "success",
+      "userId": "q92o3gyn8kOF5pE7BW-pk"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_q92o3gyn8kOF5pE7BW-pk_1768491801140_benet",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWGJ0WlduMEJHMTlra1czdXQyMTNVUVl6UTBXL2wwYkJhM2hnRUdqYTdXR3BMZnVxVTNGVkRaRjlzTm8rUlA4OFhOQnl0T3ZZZHVYMHF4bEV2K2dxSTF3ajJlZFpIb1hiR1FTcnh6M3JZNlNNSXB4OWM4Ty9wNTYrVzJFMjJpVnhUdmxKMUw2aktlVWpoQkRKRENDRjAyUlJVMjlRcFB4dHpTeTczOGxsMWh4VlprMUJLSTRNWkU5dWM5YUJnUE55MWpRcVBhc0Y0dDVaa25leURLVk5NcFdXOUJBc2RxdThhR2VUOWJwdEpCTHlONThQNzc5MmRzN2ZMMVlSRTkyalZITCt1TEcxa1ZmT2hnbHJSbWFuTTBlejNIa1YvY0k5andJdDREOGdtUlRwdkZYeVZuOHViRzMwVkdKcTFSOHAyNGlyWHh5UGIrMTltRVFIOGRSL3o0dmlhSitNOUZRUGRYM2pUUG04TmFudHB5Qis0Y0U5V01PV1ZZam9CVzdTOVJlMzBORzd4N3liL2VqemZERlQ0RUVtSVFUVGwyU1ZDQTg4cHIrV0MvODY1ZmQxb0FtNlVpbzN0TDZ4dGxmZlFkWE9pQmVHOHd0bHB5QW9iRjYrSS9XbGRoZzRqMGhtTjd3a1FqOHpQNVVrbjZnOEI0b3RXWkVuOWlGUWtRYVlDQT09",
+      "expiresAt": "2026-01-15T15:58:21.299Z"
+    },
+    {
+      "step": "launch_complete",
+      "status": "success"
+    }
+  ],
+  "userId": "q92o3gyn8kOF5pE7BW-pk",
+  "userCurrency": "EUR",
+  "gameDetails": {
+    "uuid": "397f96eb2f0b70a51a3524ab6e2a4344ee717a3c",
+    "name": "Fresh Fruits",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  },
+  "result": {
+    "sessionId": "EmRCFp_Pbl5Mg60acK_o7",
+    "gameId": "397f96eb2f0b70a51a3524ab6e2a4344ee717a3c",
+    "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWGJ0WlduMEJHMTlra1czdXQyMTNVUVl6UTBXL2wwYkJhM2hnRUdqYTdXR3BMZnVxVTNGVkRaRjlzTm8rUlA4OFhOQnl0T3ZZZHVYMHF4bEV2K2dxSTF3ajJlZFpIb1hiR1FTcnh6M3JZNlNNSXB4OWM4Ty9wNTYrVzJFMjJpVnhUdmxKMUw2aktlVWpoQkRKRENDRjAyUlJVMjlRcFB4dHpTeTczOGxsMWh4VlprMUJLSTRNWkU5dWM5YUJnUE55MWpRcVBhc0Y0dDVaa25leURLVk5NcFdXOUJBc2RxdThhR2VUOWJwdEpCTHlONThQNzc5MmRzN2ZMMVlSRTkyalZITCt1TEcxa1ZmT2hnbHJSbWFuTTBlejNIa1YvY0k5andJdDREOGdtUlRwdkZYeVZuOHViRzMwVkdKcTFSOHAyNGlyWHh5UGIrMTltRVFIOGRSL3o0dmlhSitNOUZRUGRYM2pUUG04TmFudHB5Qis0Y0U5V01PV1ZZam9CVzdTOVJlMzBORzd4N3liL2VqemZERlQ0RUVtSVFUVGwyU1ZDQTg4cHIrV0MvODY1ZmQxb0FtNlVpbzN0TDZ4dGxmZlFkWE9pQmVHOHd0bHB5QW9iRjYrSS9XbGRoZzRqMGhtTjd3a1FqOHpQNVVrbjZnOEI0b3RXWkVuOWlGUWtRYVlDQT09",
+    "balance": 0,
+    "expiresAt": "2026-01-15T15:58:21.299Z"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:43:13.350Z",
+  "gameId": "397f96eb2f0b70a51a3524ab6e2a4344ee717a3c",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "397f96eb2f0b70a51a3524ab6e2a4344ee717a3c"
+    },
+    {
+      "step": "user_validation",
+      "status": "success",
+      "userId": "q92o3gyn8kOF5pE7BW-pk"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_q92o3gyn8kOF5pE7BW-pk_1768491801343_yi7f1j",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWFhTZWhEdHhRNWdrNEpMWXNWSFB4VERVUTlhVzVIMWUwQnlvRThrVEl3ektPZVdpai9ib2VCSzBEY0loOEZpQVhZQVA5bjAzUXhaVVVYVngvR2FCNTBEeWdCaURNdlh6M09xMFJldk9FblJqcWp2ZEhJQzlPaExaUnRSUlRnMGVMNHN3NUtpWnRCdlVLWVcxSHRLZlBKSHp3YVBJcTdnT0NPaERaYUhCaS9ZV2l3NDA5RCt6ZHp6UkcyclZLODRPTHdsNzlTN28vSit4ME1veHVMdkZGTXd2SnAyTlQ2Y3lvSVllRmR2K1I5WUhSOVlCOGpOb2N2R2huaDJCWDlnTjlaY2ZKVTI4MHNWTzhCOVZ3OTYraFdheWdubEIrYTNzRmtuT3ZpMTdwUHJtRWJ4NS9Xd0R6WUlxeERwNW1jaEpFbW9qVlBUWkl4N3lTTU9PL0JEVU5zazA1QXBRd0c3WVhnSmpTenZIVWlTeDJ6ckVWeUI2NUgwSUcyQjMvQTljSklhc3JNTTNvMnFqN3hUWlJqREx5MGdFNkF4cmpYdThWODBBR2NIQnN5cm5FcEhtSkJoWEg4djI2cTJWWkxqZStvempOcFBTendmVDgzSlZTQlBjRkE4NTJDcG5hWUgxS0NjV2RTOEc1UDVDSWVYSTJSQWIzS0pCR2o1N0dkN0pEZz09",
+      "expiresAt": "2026-01-15T15:58:21.516Z"
+    },
+    {
+      "step": "launch_complete",
+      "status": "success"
+    }
+  ],
+  "userId": "q92o3gyn8kOF5pE7BW-pk",
+  "userCurrency": "EUR",
+  "gameDetails": {
+    "uuid": "397f96eb2f0b70a51a3524ab6e2a4344ee717a3c",
+    "name": "Fresh Fruits",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  },
+  "result": {
+    "sessionId": "8KWj8ZrBk4QWx2xSYYv5p",
+    "gameId": "397f96eb2f0b70a51a3524ab6e2a4344ee717a3c",
+    "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWFhTZWhEdHhRNWdrNEpMWXNWSFB4VERVUTlhVzVIMWUwQnlvRThrVEl3ektPZVdpai9ib2VCSzBEY0loOEZpQVhZQVA5bjAzUXhaVVVYVngvR2FCNTBEeWdCaURNdlh6M09xMFJldk9FblJqcWp2ZEhJQzlPaExaUnRSUlRnMGVMNHN3NUtpWnRCdlVLWVcxSHRLZlBKSHp3YVBJcTdnT0NPaERaYUhCaS9ZV2l3NDA5RCt6ZHp6UkcyclZLODRPTHdsNzlTN28vSit4ME1veHVMdkZGTXd2SnAyTlQ2Y3lvSVllRmR2K1I5WUhSOVlCOGpOb2N2R2huaDJCWDlnTjlaY2ZKVTI4MHNWTzhCOVZ3OTYraFdheWdubEIrYTNzRmtuT3ZpMTdwUHJtRWJ4NS9Xd0R6WUlxeERwNW1jaEpFbW9qVlBUWkl4N3lTTU9PL0JEVU5zazA1QXBRd0c3WVhnSmpTenZIVWlTeDJ6ckVWeUI2NUgwSUcyQjMvQTljSklhc3JNTTNvMnFqN3hUWlJqREx5MGdFNkF4cmpYdThWODBBR2NIQnN5cm5FcEhtSkJoWEg4djI2cTJWWkxqZStvempOcFBTendmVDgzSlZTQlBjRkE4NTJDcG5hWUgxS0NjV2RTOEc1UDVDSWVYSTJSQWIzS0pCR2o1N0dkN0pEZz09",
+    "balance": 0,
+    "expiresAt": "2026-01-15T15:58:21.516Z"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:44:22.281Z",
+  "gameId": "642a1f708beae26a11e31fdae2df2f0fa32973ec",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "642a1f708beae26a11e31fdae2df2f0fa32973ec"
+    },
+    {
+      "step": "user_validation",
+      "status": "success",
+      "userId": "q92o3gyn8kOF5pE7BW-pk"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_q92o3gyn8kOF5pE7BW-pk_1768491869652_0kmr9i",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWFppUEZrM2hqQkpoSmlHNzh1OW1PTWt1OUZQTDBHRXAwMGpENHQ0N2ZHa2NUVHRjMVJEY05FTHBzZUhTMWdmS2dKd3dvSzNXSzI1YXBqWDJSUnpzNXJjZldpWHh4RTVHTlBCUEoxZ1gwbjZUK3RuNDBTRFBwQlJUTDhocWcyTnhIUkE1bFg0dFQ2YkRZdjRNUVgwemlDc3h5eUd4NjduREEvZjcwSVJOczlDZDZveTBhb1AxdTR1U1VZYWNDWUdSckVLN0JzMWZOMzF5QkhHK3FPZ1lVaXlJTmNvbzF0WlNFeHRpZmhzdUQyOVRWVVdaVHJQRjVLcGhNY2pvNUx6SEpubFpFTTZTU3E2d2JranJNaU5CN2VFdmhyMnF2bytzdHQyY1BiN2pYNzR2N3JIT29zM1VMUnl1dGkyOHRCeUg0d2FPc093cnYwNndVbjEzRDJLOTJTTjlYRHlUU3F2VjRMOVVIZlNxL2dIMDBuZS9aNllHYm5wS3Irb1hBbDYrenlFOHZJR1ZJd2swTnI0elErQnJRYmxWYzhWMzA4Z3BJQzMwSnZCVmxBcDQ4ZWlSTi9TQkoySm1JVEUxNVZ6Y3BUQ083c1lYWjJkMTFDN09EdnVWdFVYR1ovZWlxWXRWZnZJditQVlVtR2g3TG1aRitLTFBOV0ZqbUJlYjZwMlJhdz09",
+      "expiresAt": "2026-01-15T15:59:29.829Z"
+    },
+    {
+      "step": "launch_complete",
+      "status": "success"
+    }
+  ],
+  "userId": "q92o3gyn8kOF5pE7BW-pk",
+  "userCurrency": "EUR",
+  "gameDetails": {
+    "uuid": "642a1f708beae26a11e31fdae2df2f0fa32973ec",
+    "name": "Geisha",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  },
+  "result": {
+    "sessionId": "pmq9cygXZ1oB3d-uCrkJE",
+    "gameId": "642a1f708beae26a11e31fdae2df2f0fa32973ec",
+    "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWFppUEZrM2hqQkpoSmlHNzh1OW1PTWt1OUZQTDBHRXAwMGpENHQ0N2ZHa2NUVHRjMVJEY05FTHBzZUhTMWdmS2dKd3dvSzNXSzI1YXBqWDJSUnpzNXJjZldpWHh4RTVHTlBCUEoxZ1gwbjZUK3RuNDBTRFBwQlJUTDhocWcyTnhIUkE1bFg0dFQ2YkRZdjRNUVgwemlDc3h5eUd4NjduREEvZjcwSVJOczlDZDZveTBhb1AxdTR1U1VZYWNDWUdSckVLN0JzMWZOMzF5QkhHK3FPZ1lVaXlJTmNvbzF0WlNFeHRpZmhzdUQyOVRWVVdaVHJQRjVLcGhNY2pvNUx6SEpubFpFTTZTU3E2d2JranJNaU5CN2VFdmhyMnF2bytzdHQyY1BiN2pYNzR2N3JIT29zM1VMUnl1dGkyOHRCeUg0d2FPc093cnYwNndVbjEzRDJLOTJTTjlYRHlUU3F2VjRMOVVIZlNxL2dIMDBuZS9aNllHYm5wS3Irb1hBbDYrenlFOHZJR1ZJd2swTnI0elErQnJRYmxWYzhWMzA4Z3BJQzMwSnZCVmxBcDQ4ZWlSTi9TQkoySm1JVEUxNVZ6Y3BUQ083c1lYWjJkMTFDN09EdnVWdFVYR1ovZWlxWXRWZnZJditQVlVtR2g3TG1aRitLTFBOV0ZqbUJlYjZwMlJhdz09",
+    "balance": 0,
+    "expiresAt": "2026-01-15T15:59:29.829Z"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:44:22.252Z",
+  "gameId": "642a1f708beae26a11e31fdae2df2f0fa32973ec",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "642a1f708beae26a11e31fdae2df2f0fa32973ec"
+    },
+    {
+      "step": "user_validation",
+      "status": "success",
+      "userId": "q92o3gyn8kOF5pE7BW-pk"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_q92o3gyn8kOF5pE7BW-pk_1768491869814_rtbda",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWGVJNUROaGVBc0xQWVBQaWl6WVhQSHZPNExxdllzYlRZV2U0MGhhMjZQbm4zVVlVWUQvNm1Hb2ZhTUkzMlpab3Byd0cwV0dVQ0F3eC80S3pqbVk1YnE0QWhtSVR6VHJaQXdrcHVONVVoRW1jOTBlNEE1cG5sUVFrQmwrenFza2NXSVJrUUlaOUpuUCtkeXAzakF2WHVXek5RbTV1SE1VR0RwZDhaQzVFMm4yd0RkU0lUQ0FpaVZZRHZtMlRSZlNtZldab2NQN3dWaGZJcnJ4K0xDTk5vaFBjTWRKTDRVVlorZEhvZDM5aHBwNXpHdUZQV2FFYWpUV2ZvMW1UZDFJRGoyaFo2V2RsSHdoMXJDZWxzMUkzRlVYUVF3RCtRM09hV2dCVjU1WWtCRmFzd2hPSXQ1UlB5ZVI3WExCb3hadlV6L0ZsMVhtdFhMZ056NmdFTTR0eTlDZEVhSG5VYmZ2a3dLNE5zeFhydjU3aWk3UWdBL05kUzMzT2tvSzVjNEsranV2K2dHZjFUNHVuSzhnNHMvOTYzdEl0ckRRMkNvbWowUWF4Sks5YUpTbXZvOGVCbm5HQVh5T1dkdnJMT2I4ajlxa01FTWZmbllSWVlRb0J2anVLMnZ4TGRBS3JDMEZDUGR0Rm9OR0tZME5ITlZzU3pOanJCczB0TVR1cm1uZXFhdz09",
+      "expiresAt": "2026-01-15T15:59:30.022Z"
+    },
+    {
+      "step": "launch_complete",
+      "status": "success"
+    }
+  ],
+  "userId": "q92o3gyn8kOF5pE7BW-pk",
+  "userCurrency": "EUR",
+  "gameDetails": {
+    "uuid": "642a1f708beae26a11e31fdae2df2f0fa32973ec",
+    "name": "Geisha",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  },
+  "result": {
+    "sessionId": "cIjiFPqLGqVc78dAneatN",
+    "gameId": "642a1f708beae26a11e31fdae2df2f0fa32973ec",
+    "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWGVJNUROaGVBc0xQWVBQaWl6WVhQSHZPNExxdllzYlRZV2U0MGhhMjZQbm4zVVlVWUQvNm1Hb2ZhTUkzMlpab3Byd0cwV0dVQ0F3eC80S3pqbVk1YnE0QWhtSVR6VHJaQXdrcHVONVVoRW1jOTBlNEE1cG5sUVFrQmwrenFza2NXSVJrUUlaOUpuUCtkeXAzakF2WHVXek5RbTV1SE1VR0RwZDhaQzVFMm4yd0RkU0lUQ0FpaVZZRHZtMlRSZlNtZldab2NQN3dWaGZJcnJ4K0xDTk5vaFBjTWRKTDRVVlorZEhvZDM5aHBwNXpHdUZQV2FFYWpUV2ZvMW1UZDFJRGoyaFo2V2RsSHdoMXJDZWxzMUkzRlVYUVF3RCtRM09hV2dCVjU1WWtCRmFzd2hPSXQ1UlB5ZVI3WExCb3hadlV6L0ZsMVhtdFhMZ056NmdFTTR0eTlDZEVhSG5VYmZ2a3dLNE5zeFhydjU3aWk3UWdBL05kUzMzT2tvSzVjNEsranV2K2dHZjFUNHVuSzhnNHMvOTYzdEl0ckRRMkNvbWowUWF4Sks5YUpTbXZvOGVCbm5HQVh5T1dkdnJMT2I4ajlxa01FTWZmbllSWVlRb0J2anVLMnZ4TGRBS3JDMEZDUGR0Rm9OR0tZME5ITlZzU3pOanJCczB0TVR1cm1uZXFhdz09",
+    "balance": 0,
+    "expiresAt": "2026-01-15T15:59:30.022Z"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:45:48.289Z",
+  "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15"
+    },
+    {
+      "step": "user_validation",
+      "status": "success",
+      "userId": "q92o3gyn8kOF5pE7BW-pk"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_q92o3gyn8kOF5pE7BW-pk_1768491956055_p9gkl",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWFVVODM2YVJkMmpaZTFUVVM2ZmtGMVJPS0V3Qyt3ekdTbjZuZWhSU3lCZWN2b2JFNVdtbjRrbVRpQXV2TUp6UkhpS2orTnBkd1BsMmlTVEM0R2xPdFgrSVI5a1Z2TG04dlpXU0hUTkk2U2V5akxkMXlpdHd0N2U4aGVxRExNY2ltTzBwMExxSnE4NTd1OTRBQU1qS29mcjNLZFRGdGtjM1hkelRjZVpoaGh3Y0FlaDBxN0poM0VkMWkrVDkwUmcxOWFQK244eFdxcnJQbjNDekxwT0FleGhHYmNVNXBaQnVud2h1VnpIU3lwOEFRNloxcSt6WUdEamNlZ2lxUzlEM0xQcGl4eE5nSTYzb2xUWGoxZkJ5UGM1ZStCMUVQODlSeUxZSUpveHFua2YxUHMxNEdCclV3RWhKT05Ld2tZK1ROVm9BSDhSNFQ0Mk5BMU84M3Q5bnN5M2o0SEN5aXUzQmx3aXlwOU9UZ1hVS3F0Y0YvQjF0ME8rQXl4SzZlNTJoaFhaY0IxaGxLWlpDZ2szVmhjenY4dm9oTUtXRTBFV0ROZ28vVEd6QmRtMzZabEI1bGZRNmMxU3NUYkE4NXlBanhxOWtua1NYenAwdGwxU0EzeEtSY1NCMyszME4wRXVnNXhpTHQ2NzNlVk9vS2piTGx6Ynk0U2loOXl5V2ZIcEs2UT09",
+      "expiresAt": "2026-01-15T16:00:56.225Z"
+    },
+    {
+      "step": "launch_complete",
+      "status": "success"
+    }
+  ],
+  "userId": "q92o3gyn8kOF5pE7BW-pk",
+  "userCurrency": "EUR",
+  "gameDetails": {
+    "uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "name": "2016 Gladiators",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  },
+  "result": {
+    "sessionId": "g7oceBxo0zmW1ZrWi0HHg",
+    "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWFVVODM2YVJkMmpaZTFUVVM2ZmtGMVJPS0V3Qyt3ekdTbjZuZWhSU3lCZWN2b2JFNVdtbjRrbVRpQXV2TUp6UkhpS2orTnBkd1BsMmlTVEM0R2xPdFgrSVI5a1Z2TG04dlpXU0hUTkk2U2V5akxkMXlpdHd0N2U4aGVxRExNY2ltTzBwMExxSnE4NTd1OTRBQU1qS29mcjNLZFRGdGtjM1hkelRjZVpoaGh3Y0FlaDBxN0poM0VkMWkrVDkwUmcxOWFQK244eFdxcnJQbjNDekxwT0FleGhHYmNVNXBaQnVud2h1VnpIU3lwOEFRNloxcSt6WUdEamNlZ2lxUzlEM0xQcGl4eE5nSTYzb2xUWGoxZkJ5UGM1ZStCMUVQODlSeUxZSUpveHFua2YxUHMxNEdCclV3RWhKT05Ld2tZK1ROVm9BSDhSNFQ0Mk5BMU84M3Q5bnN5M2o0SEN5aXUzQmx3aXlwOU9UZ1hVS3F0Y0YvQjF0ME8rQXl4SzZlNTJoaFhaY0IxaGxLWlpDZ2szVmhjenY4dm9oTUtXRTBFV0ROZ28vVEd6QmRtMzZabEI1bGZRNmMxU3NUYkE4NXlBanhxOWtua1NYenAwdGwxU0EzeEtSY1NCMyszME4wRXVnNXhpTHQ2NzNlVk9vS2piTGx6Ynk0U2loOXl5V2ZIcEs2UT09",
+    "balance": 0,
+    "expiresAt": "2026-01-15T16:00:56.225Z"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:45:48.267Z",
+  "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15"
+    },
+    {
+      "step": "user_validation",
+      "status": "success",
+      "userId": "q92o3gyn8kOF5pE7BW-pk"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_q92o3gyn8kOF5pE7BW-pk_1768491956287_xaeii",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWFc2Yi9iMnp5MmE5QmRtWVZFUHZJQ2JQLzRzYkxlMXlFU2xxN0tENUdnZmpkMnVCRVA0WU9wOFZhcjB6cU9USHR3M3NQNTMzcFRQOVI5UWZ3TnlKNmJSdUNWRWhXM1pUK2tWZmxsZmFoeU1OTjJHSzB3RU9EZzNvY1c3ekpQN0V0R3NCMkREU01iWTlDYVJBZmlEa2ZqRzBKcnFMMURqeVo4STdqQ2NCQldIYkoybVZ4UTRLd3hmd3lHTVdYZjAwMWxzN2N6YzNOMnlSQ3FYbjNwbU5yRUZEQXdrMUVBdkpHSDB5bksySE9SYmtMblF4dUJQMHZNSnNQZXlROHBJaGhjblVMeEdHOXVtTE9oRlFRdG5qMlJCSjE0RmY0MVJZdU9sRUxDSDJqV3RUTkNxM1p3Tm5xWFI1M2Z3YU9rQ09xbTkrU1hJbXViSHI2SjhzWUZta2V0c3lQd0FTK1Vwc3VsYUNXZUJZUHNUNU94MlZxcnVLOGI1WStmTUJ5U0VxUEp1NVlNTTdGaCtrWXlVWTlRcXdUc2p3OFI3blFwZDJzTTFjam9neWlaVXFSOHdHMXgwck9SVVJhbVh3L053c0VmTlhBMHdjQlk3RmZDV0xZWG5oQk5GdURHME9hZmQ3bHZ4N3FhWWpMSEtSMEwzM0lzak5WcGg5a1JiQTVsWk5sQT09",
+      "expiresAt": "2026-01-15T16:00:56.446Z"
+    },
+    {
+      "step": "launch_complete",
+      "status": "success"
+    }
+  ],
+  "userId": "q92o3gyn8kOF5pE7BW-pk",
+  "userCurrency": "EUR",
+  "gameDetails": {
+    "uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "name": "2016 Gladiators",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  },
+  "result": {
+    "sessionId": "igEvfxKMGIHkMw6e6MvwO",
+    "gameId": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+    "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWFc2Yi9iMnp5MmE5QmRtWVZFUHZJQ2JQLzRzYkxlMXlFU2xxN0tENUdnZmpkMnVCRVA0WU9wOFZhcjB6cU9USHR3M3NQNTMzcFRQOVI5UWZ3TnlKNmJSdUNWRWhXM1pUK2tWZmxsZmFoeU1OTjJHSzB3RU9EZzNvY1c3ekpQN0V0R3NCMkREU01iWTlDYVJBZmlEa2ZqRzBKcnFMMURqeVo4STdqQ2NCQldIYkoybVZ4UTRLd3hmd3lHTVdYZjAwMWxzN2N6YzNOMnlSQ3FYbjNwbU5yRUZEQXdrMUVBdkpHSDB5bksySE9SYmtMblF4dUJQMHZNSnNQZXlROHBJaGhjblVMeEdHOXVtTE9oRlFRdG5qMlJCSjE0RmY0MVJZdU9sRUxDSDJqV3RUTkNxM1p3Tm5xWFI1M2Z3YU9rQ09xbTkrU1hJbXViSHI2SjhzWUZta2V0c3lQd0FTK1Vwc3VsYUNXZUJZUHNUNU94MlZxcnVLOGI1WStmTUJ5U0VxUEp1NVlNTTdGaCtrWXlVWTlRcXdUc2p3OFI3blFwZDJzTTFjam9neWlaVXFSOHdHMXgwck9SVVJhbVh3L053c0VmTlhBMHdjQlk3RmZDV0xZWG5oQk5GdURHME9hZmQ3bHZ4N3FhWWpMSEtSMEwzM0lzak5WcGg5a1JiQTVsWk5sQT09",
+    "balance": 0,
+    "expiresAt": "2026-01-15T16:00:56.446Z"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:46:21.024Z",
+  "gameId": "642a1f708beae26a11e31fdae2df2f0fa32973ec",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "642a1f708beae26a11e31fdae2df2f0fa32973ec"
+    },
+    {
+      "step": "user_validation",
+      "status": "success",
+      "userId": "q92o3gyn8kOF5pE7BW-pk"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_q92o3gyn8kOF5pE7BW-pk_1768491988898_gfte2p",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWGZvY01yMTZtalpjZUx0ZVFmNlhORVhEVktWeGdVMThLamhDV014TkQrYy9WVWt3aFE5YmYyVHhDSnpOMmJyV1A0TzNLYkFDZ0lNV2xjemxqWWZnRGZSYVdxKzdvdEQ5YStaQVc2V0RMMkFvZCtHQlBlbDg2QjJCYTlpN2t3L1FlQ3BqYTBXeWdIaFNVczlzeDNWTkFEWmxnamhJOEtNcW1icHEvNEtDWEJIM1FGQUZyNkp3R3oyRVh3KzdzSERPRzNWNnMrSlNhRkgwQXlqTFNhUEJlY0hvbkxac3lJWVZXMU1YUHhrZjUvR0wyQU9HcFhMSVpXQS82UnA5MWlxNXFuaFNLSzV2ZUMyYm8wMXBZMkNrQ2llL3BZVmlMTnRxZzl6OGZtTm9qSFV3aTNJa3lNTHBVQXprSmF0OVZiWDYyMkJpZXdKWDVrSzZQQmg2VXo2TVE1Y2ZoUTl2TTU4VjNCVnNpTFR4VGd3bHdTTzEyUFI3VGxzd3VVRGFFcTJXTTU3NzVJNktWaVYxRVdkZUpIeXprN29IZHFXVjMzMjU3Nk9SdWtxbUxwSHI3VzRrQkdJellrQXc4eHYwaXVyRlBldzg4Vm44NEZvKytDZWk0K21mdGxNQllJamxuaWZIVEpQeTVTd3RWdkVBd1FwT2xUajRvZjQ1NkZtZkFvNXNTUT09",
+      "expiresAt": "2026-01-15T16:01:29.066Z"
+    },
+    {
+      "step": "launch_complete",
+      "status": "success"
+    }
+  ],
+  "userId": "q92o3gyn8kOF5pE7BW-pk",
+  "userCurrency": "EUR",
+  "gameDetails": {
+    "uuid": "642a1f708beae26a11e31fdae2df2f0fa32973ec",
+    "name": "Geisha",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  },
+  "result": {
+    "sessionId": "jmX6WkZFMkXOY8RFSU04K",
+    "gameId": "642a1f708beae26a11e31fdae2df2f0fa32973ec",
+    "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWGZvY01yMTZtalpjZUx0ZVFmNlhORVhEVktWeGdVMThLamhDV014TkQrYy9WVWt3aFE5YmYyVHhDSnpOMmJyV1A0TzNLYkFDZ0lNV2xjemxqWWZnRGZSYVdxKzdvdEQ5YStaQVc2V0RMMkFvZCtHQlBlbDg2QjJCYTlpN2t3L1FlQ3BqYTBXeWdIaFNVczlzeDNWTkFEWmxnamhJOEtNcW1icHEvNEtDWEJIM1FGQUZyNkp3R3oyRVh3KzdzSERPRzNWNnMrSlNhRkgwQXlqTFNhUEJlY0hvbkxac3lJWVZXMU1YUHhrZjUvR0wyQU9HcFhMSVpXQS82UnA5MWlxNXFuaFNLSzV2ZUMyYm8wMXBZMkNrQ2llL3BZVmlMTnRxZzl6OGZtTm9qSFV3aTNJa3lNTHBVQXprSmF0OVZiWDYyMkJpZXdKWDVrSzZQQmg2VXo2TVE1Y2ZoUTl2TTU4VjNCVnNpTFR4VGd3bHdTTzEyUFI3VGxzd3VVRGFFcTJXTTU3NzVJNktWaVYxRVdkZUpIeXprN29IZHFXVjMzMjU3Nk9SdWtxbUxwSHI3VzRrQkdJellrQXc4eHYwaXVyRlBldzg4Vm44NEZvKytDZWk0K21mdGxNQllJamxuaWZIVEpQeTVTd3RWdkVBd1FwT2xUajRvZjQ1NkZtZkFvNXNTUT09",
+    "balance": 0,
+    "expiresAt": "2026-01-15T16:01:29.066Z"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:46:21.006Z",
+  "gameId": "642a1f708beae26a11e31fdae2df2f0fa32973ec",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "642a1f708beae26a11e31fdae2df2f0fa32973ec"
+    },
+    {
+      "step": "user_validation",
+      "status": "success",
+      "userId": "q92o3gyn8kOF5pE7BW-pk"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "provider_validation",
+      "status": "success",
+      "gameProvider": "Endorphina",
+      "isEnabled": true,
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ]
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_q92o3gyn8kOF5pE7BW-pk_1768491989212_8azixa",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWFczeUg0REFQWE1uWFdzUC9zd1hzd2VjNjZWQlpWa1lGMlczaE1PL1RJMnZWR0hNK2UrQThrbmhLZGtrbnFiajNMNlpncVpBQnNpdFk1aU9jcjdLU0g4QVZpaXJSV1RGL2I0ZnJESk1tTkpBWW9JNDYxYXkyWHlzYmhVcERiNTNQVitkWGkwMkI4dmplbktzMGoxQ2pISWtMQ2xUQ0E2ejBzTWk1bG1Dbjdkd3ZxeVpRQk12TGZ6bUhwTmEzUEgvTWpyd25XWlJrU28yQTdhbHIvVnhOdXpJQ1NrQWJMdGk2YkZuUGEvcXlxOGlpajk2RHRoNnpGQnF1ZDhqQm5vRTRNcGZ3dFpCQ1JkZjU5dnNJZERhOXQ4dHVzUWpoaGIzZGRXTlRqZXk0NkVYVlEydDV3SHpmayt1UGtBdWVXeHZJWjlUNGU5Q3RkOXJnRjdjR2VmWU1rUEZKU2FWMFJkNXFNTDZPVTFaY0pZMEZzNGFMa003QW14TmhKTkw0RVVRbUlxenRkZkxxYUMyb3RnZUZlcm1rYlBSdThnaU5MeGQvbTB3bytkeGZic0dzeU9jK1NwZTZxRFRPQTVhd2JIQyt5MHJaYnd6UEwxWk1qU1c3VG11VHRlaFFKL2ZNeFFOVEx6Z3JjeWVMdlFVVHM1TEVEQ3ZEYXQ5MldrU25KVC90dz09",
+      "expiresAt": "2026-01-15T16:01:29.380Z"
+    },
+    {
+      "step": "launch_complete",
+      "status": "success"
+    }
+  ],
+  "userId": "q92o3gyn8kOF5pE7BW-pk",
+  "userCurrency": "EUR",
+  "gameDetails": {
+    "uuid": "642a1f708beae26a11e31fdae2df2f0fa32973ec",
+    "name": "Geisha",
+    "provider": "Endorphina",
+    "has_lobby": 0
+  },
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  },
+  "result": {
+    "sessionId": "PQBRb6eJt88tLPw583lYr",
+    "gameId": "642a1f708beae26a11e31fdae2df2f0fa32973ec",
+    "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrVEQzQ0hhcVZQWVBtMDJoOFBqNzdPbW1KZW1pbngraWFhS2FpWHVjbnFOQkJFUmpoYWY4Z1RTU09qdjlIUERFSjR4MUdqWVg1eUhHQ29hVmxqdEV2M2lHdTVEVnVBRjZLcVpUUmhFVHh1cWFPTytBT01yS08rZlMyVXFGWTJhbTU1MGc2c1BJWkZqcklHYXc1cXdnc0VpelJOaW9Nb1RZc0JBYnRvTGxBRzVDeUZHQUwvbGx4bi85ejR3cmJndmlMbFFvOXEyZndxa1paQ2lobk02NWxzUnFzRVErTnU5WFNoaUVFa1RpZ0tBdVlOTStIZEU0REwxdW9COWt4bWRxWFczeUg0REFQWE1uWFdzUC9zd1hzd2VjNjZWQlpWa1lGMlczaE1PL1RJMnZWR0hNK2UrQThrbmhLZGtrbnFiajNMNlpncVpBQnNpdFk1aU9jcjdLU0g4QVZpaXJSV1RGL2I0ZnJESk1tTkpBWW9JNDYxYXkyWHlzYmhVcERiNTNQVitkWGkwMkI4dmplbktzMGoxQ2pISWtMQ2xUQ0E2ejBzTWk1bG1Dbjdkd3ZxeVpRQk12TGZ6bUhwTmEzUEgvTWpyd25XWlJrU28yQTdhbHIvVnhOdXpJQ1NrQWJMdGk2YkZuUGEvcXlxOGlpajk2RHRoNnpGQnF1ZDhqQm5vRTRNcGZ3dFpCQ1JkZjU5dnNJZERhOXQ4dHVzUWpoaGIzZGRXTlRqZXk0NkVYVlEydDV3SHpmayt1UGtBdWVXeHZJWjlUNGU5Q3RkOXJnRjdjR2VmWU1rUEZKU2FWMFJkNXFNTDZPVTFaY0pZMEZzNGFMa003QW14TmhKTkw0RVVRbUlxenRkZkxxYUMyb3RnZUZlcm1rYlBSdThnaU5MeGQvbTB3bytkeGZic0dzeU9jK1NwZTZxRFRPQTVhd2JIQyt5MHJaYnd6UEwxWk1qU1c3VG11VHRlaFFKL2ZNeFFOVEx6Z3JjeWVMdlFVVHM1TEVEQ3ZEYXQ5MldrU25KVC90dz09",
+    "balance": 0,
+    "expiresAt": "2026-01-15T16:01:29.380Z"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:46:42.210Z",
+  "gameId": "29e6dcde1cd11b432106af0937cb9e4e558b8689",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "29e6dcde1cd11b432106af0937cb9e4e558b8689"
+    },
+    {
+      "step": "user_validation",
+      "status": "success",
+      "userId": "q92o3gyn8kOF5pE7BW-pk"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "game_not_found_in_first_pages",
+      "status": "warning",
+      "message": "Game not found in first 5 pages, proceeding anyway"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_q92o3gyn8kOF5pE7BW-pk_1768492009893_vet2s",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrYm1vc0VVTExSZGZrdTdKTENjM2hDYkprZ0VrMGN5ckJvWWlPZWVaUG9weGdjdDh5bHBoMUFRdS9mUVA2RldETFRSSHluSDRmTG1Oc3IwZWNpcVptdzByQi9WcXZuN2tZYW5NRS91RzE4TnlIRGlYdDBESzlZWFBYNDhTRmtVT2hiOHpiWWhkVWxXdUo2cm95VEUyekdua2lXWHVYWmQxRnY2Rll1Skh2c2FnbjBKZEFzQkJDYU1aTGFpMFE2QXhnaVR3U3NBbmFDUnEvbUNJWkFKTlpzVWlTcyt1ZmwvODRXNmdzc2V1VVlwRm5WWGV6a1VubkJrMWN5S0toWXV4VFVSd281aUZWYmMwV01MV3JIMW1pVURnam84ak41NUV5TlY4QmRmbktSMWNGMVB1c1lINm9CbDhMSk1ZdzhUS2ZCbmRuSnlvS0tvaCtuN3RWeDZFMmNmTXEyY29QYWFBWFd4T1JlOU1kb2lOZDhCL3pwNy85L0RYRzlVV2VxVkF5eDBKWG5NQ0c0aWJ4b0J0dFBCZnllWDEwcDRaVnNNOUt1VFZ4OXZIcjhNK1NJbW5LOWc4UDZjL0lxUkFabnQxVWQ0TmllUS9pZjA5eW16clJFbGVXL3V2SXpDZ3krQ0dLNlEzQXJLNTF5blFkSkZoamlpUWNPN0NnOGVLMEhFNnNybWZtc0JuaEpQUlhueS9GQzZJQ3pxUmk0TUxMUy9pUFJ3a0xSY2MzbjZnWE8xSlRoN2V4R1NEeE9sVXF1V1ZFT3I2RlhNU3RkRkNFUW1pTzhjUmpETzB1RHA0M1MyZ0NyVjRSckNZTjJqcjBJSlFpTzlYR3VXc0ZaQ0RsSUR5c0RORUtrK0s5dmtIdGRwNUF2MXcrTnVjQW84aFh0bnlMRHpwYS9acUlObVZ0RlozSkIwQnIvMy9Yc3dNa2czRnFweHhBWUV2T2dndDNVdkdSa2VHQjMwUzVrR29xV0t0VkdNemRLdXhidDBUclVNdXBFTExKdVN3Y0dmRzRjZytmQT09",
+      "expiresAt": "2026-01-15T16:01:50.070Z"
+    },
+    {
+      "step": "launch_complete",
+      "status": "success"
+    }
+  ],
+  "userId": "q92o3gyn8kOF5pE7BW-pk",
+  "userCurrency": "EUR",
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  },
+  "gameDetails": {
+    "uuid": "29e6dcde1cd11b432106af0937cb9e4e558b8689",
+    "name": "American Roulette ",
+    "provider": "Belatra Games",
+    "has_lobby": 0
+  },
+  "result": {
+    "sessionId": "cu2QUaecyWIe7kwJj298r",
+    "gameId": "29e6dcde1cd11b432106af0937cb9e4e558b8689",
+    "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrYm1vc0VVTExSZGZrdTdKTENjM2hDYkprZ0VrMGN5ckJvWWlPZWVaUG9weGdjdDh5bHBoMUFRdS9mUVA2RldETFRSSHluSDRmTG1Oc3IwZWNpcVptdzByQi9WcXZuN2tZYW5NRS91RzE4TnlIRGlYdDBESzlZWFBYNDhTRmtVT2hiOHpiWWhkVWxXdUo2cm95VEUyekdua2lXWHVYWmQxRnY2Rll1Skh2c2FnbjBKZEFzQkJDYU1aTGFpMFE2QXhnaVR3U3NBbmFDUnEvbUNJWkFKTlpzVWlTcyt1ZmwvODRXNmdzc2V1VVlwRm5WWGV6a1VubkJrMWN5S0toWXV4VFVSd281aUZWYmMwV01MV3JIMW1pVURnam84ak41NUV5TlY4QmRmbktSMWNGMVB1c1lINm9CbDhMSk1ZdzhUS2ZCbmRuSnlvS0tvaCtuN3RWeDZFMmNmTXEyY29QYWFBWFd4T1JlOU1kb2lOZDhCL3pwNy85L0RYRzlVV2VxVkF5eDBKWG5NQ0c0aWJ4b0J0dFBCZnllWDEwcDRaVnNNOUt1VFZ4OXZIcjhNK1NJbW5LOWc4UDZjL0lxUkFabnQxVWQ0TmllUS9pZjA5eW16clJFbGVXL3V2SXpDZ3krQ0dLNlEzQXJLNTF5blFkSkZoamlpUWNPN0NnOGVLMEhFNnNybWZtc0JuaEpQUlhueS9GQzZJQ3pxUmk0TUxMUy9pUFJ3a0xSY2MzbjZnWE8xSlRoN2V4R1NEeE9sVXF1V1ZFT3I2RlhNU3RkRkNFUW1pTzhjUmpETzB1RHA0M1MyZ0NyVjRSckNZTjJqcjBJSlFpTzlYR3VXc0ZaQ0RsSUR5c0RORUtrK0s5dmtIdGRwNUF2MXcrTnVjQW84aFh0bnlMRHpwYS9acUlObVZ0RlozSkIwQnIvMy9Yc3dNa2czRnFweHhBWUV2T2dndDNVdkdSa2VHQjMwUzVrR29xV0t0VkdNemRLdXhidDBUclVNdXBFTExKdVN3Y0dmRzRjZytmQT09",
+    "balance": 0,
+    "expiresAt": "2026-01-15T16:01:50.070Z"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-01-15T15:46:42.273Z",
+  "gameId": "29e6dcde1cd11b432106af0937cb9e4e558b8689",
+  "steps": [
+    {
+      "step": "game_id_validation",
+      "status": "success",
+      "gameId": "29e6dcde1cd11b432106af0937cb9e4e558b8689"
+    },
+    {
+      "step": "user_validation",
+      "status": "success",
+      "userId": "q92o3gyn8kOF5pE7BW-pk"
+    },
+    {
+      "step": "provider_check_start",
+      "status": "in_progress",
+      "currency": "EUR"
+    },
+    {
+      "step": "get_enabled_providers",
+      "status": "success",
+      "enabledProviders": [
+        "AmigoGaming",
+        "Aviatrix",
+        "BGaming",
+        "Belatra Games",
+        "Endorphina",
+        "Fazi",
+        "Gamebeat",
+        "Evolution",
+        "Gamzix",
+        "NetEnt",
+        "No Limit City",
+        "PlayNGo",
+        "Relax Gaming",
+        "Yggdrasil",
+        "Hacksaw Gaming",
+        "Igrosoft",
+        "KAGaming",
+        "Mascot",
+        "NetGame",
+        "PGSoft",
+        "Platipus2",
+        "Playson",
+        "PragmaticPlay",
+        "Rollback Test",
+        "TaDaGaming",
+        "Thunderkick"
+      ],
+      "count": 26
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "in_progress"
+    },
+    {
+      "step": "fetch_game_details",
+      "status": "success",
+      "gamesFound": 250,
+      "totalPages": 1
+    },
+    {
+      "step": "game_not_found_in_first_pages",
+      "status": "warning",
+      "message": "Game not found in first 5 pages, proceeding anyway"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "in_progress"
+    },
+    {
+      "step": "get_wallet_balance",
+      "status": "success",
+      "totalBalance": 0
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "in_progress"
+    },
+    {
+      "step": "check_game_lobby_requirement",
+      "status": "success",
+      "requiresLobby": false,
+      "note": "Game does not require lobby - can call /games/init directly"
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "in_progress",
+      "note": "Calling POST /games/init",
+      "hasLobbyData": false
+    },
+    {
+      "step": "initialize_game_session",
+      "status": "success",
+      "sessionId": "session_q92o3gyn8kOF5pE7BW-pk_1768492010879_4ntnon",
+      "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrYm1vc0VVTExSZGZrdTdKTENjM2hDYkprZ0VrMGN5ckJvWWlPZWVaUG9weGdjdDh5bHBoMUFRdS9mUVA2RldETFRSSHluSDRmTG1Oc3IwZWNpcVptdzByQi9WcXZuN2tZYW5NRS91RzE4TnlIRGlYdDBESzlZWFBYNDhTRmtVT2hiOHpiWWhkVWxXdUo2cm95VEUyekdua2lXWHVYWmQxRnY2Rll1Skh2c2FnbjBKZEFzQkJDYU1aTGFpMFE2QXhnaVR3U3NBbmFDUnEvbUNJWkFKTlpzVWlTcyt1ZmwvODRXNmdzc2V1VVlwRm5WWGV6a1VubkJrMWN5S0toWXV4VGNwaDF4WlNaQVFjL3A1WXBHWWlKOGpzUlRYSkllanRaRFVCUVAvNkFwaC9rYi9qeXdrL1liVGNrN0E1Ykpjdk55b1dWa2JNYmNZU3k3YnRSU2N0RERwb1c3YTdocWNFZGYxSjVvR0NySlV1eUZKaUxZNGU1NnZ6NldPV2RJYjVjUUJxT0dmakZCT0Y2L1pCeDU4SjVqU085K1hOTW9TSkpGTkhYZXFIWlFZeUdvUGd4cVFLdzdFdEhjY1BTS0RQVUU1UXB0SFlZVFgxeXozZWRIL1B6Y3ZGQVRYUGNoTXVjT0pXZjVTVXViYzVERHJGU0R3NFRWWkxmL0dpMVdsRnhoZUhPbHhTTEhoRTd1QXpvL09sSitDcjBxWHpqYzhHVGRHbWtzVitNZ1oxUEFNb0VWa3g3MXVtTVkzWlJtWUZBTjZTWGo5TkhaRDRBVVBnb2lXUm92K2QwTXFkd1dKOG9uRHYvZkZaWm9uUytPQzVuN0dscy9WSnNFN3BaV05Na2FBR3FpZ3ZKUnV2ZkNWdWRrckFXU1Z5bDRDNkFOdGs2U2N5MlgzV290bzZOZzhSSUc3dXhCUzJXL1FweWRjaFdxbG43eXAvUG1HTGVpODZ1c0FlKy92Ym1tc3BJbmhHMFJRTEl4OW9zdTZQTUtsTElnRlZBZnpsR1ZwNkN3ZXhndz09",
+      "expiresAt": "2026-01-15T16:01:51.067Z"
+    },
+    {
+      "step": "launch_complete",
+      "status": "success"
+    }
+  ],
+  "userId": "q92o3gyn8kOF5pE7BW-pk",
+  "userCurrency": "EUR",
+  "wallet": {
+    "balance": 0,
+    "bonus_balance": 0,
+    "totalBalance": 0
+  },
+  "gameDetails": {
+    "uuid": "29e6dcde1cd11b432106af0937cb9e4e558b8689",
+    "name": "American Roulette ",
+    "provider": "Belatra Games",
+    "has_lobby": 0
+  },
+  "result": {
+    "sessionId": "uaDIlcDCefvc2fOY37tj5",
+    "gameId": "29e6dcde1cd11b432106af0937cb9e4e558b8689",
+    "gameUrl": "https://staging.slotegrator.com/api/index.php/v1/client/games/launch/MkFSTHBUOC9RZFZMSDVTK0JnMVJJVTJOcktLcFoxU3IrekZOVFRYc3REWjNxWEcyaEduRHltb1MwWVl3aWJWUQ%3D%3D/TnlpUk13Tk9VOEdqZ0d4clVPaTFrYm1vc0VVTExSZGZrdTdKTENjM2hDYkprZ0VrMGN5ckJvWWlPZWVaUG9weGdjdDh5bHBoMUFRdS9mUVA2RldETFRSSHluSDRmTG1Oc3IwZWNpcVptdzByQi9WcXZuN2tZYW5NRS91RzE4TnlIRGlYdDBESzlZWFBYNDhTRmtVT2hiOHpiWWhkVWxXdUo2cm95VEUyekdua2lXWHVYWmQxRnY2Rll1Skh2c2FnbjBKZEFzQkJDYU1aTGFpMFE2QXhnaVR3U3NBbmFDUnEvbUNJWkFKTlpzVWlTcyt1ZmwvODRXNmdzc2V1VVlwRm5WWGV6a1VubkJrMWN5S0toWXV4VGNwaDF4WlNaQVFjL3A1WXBHWWlKOGpzUlRYSkllanRaRFVCUVAvNkFwaC9rYi9qeXdrL1liVGNrN0E1Ykpjdk55b1dWa2JNYmNZU3k3YnRSU2N0RERwb1c3YTdocWNFZGYxSjVvR0NySlV1eUZKaUxZNGU1NnZ6NldPV2RJYjVjUUJxT0dmakZCT0Y2L1pCeDU4SjVqU085K1hOTW9TSkpGTkhYZXFIWlFZeUdvUGd4cVFLdzdFdEhjY1BTS0RQVUU1UXB0SFlZVFgxeXozZWRIL1B6Y3ZGQVRYUGNoTXVjT0pXZjVTVXViYzVERHJGU0R3NFRWWkxmL0dpMVdsRnhoZUhPbHhTTEhoRTd1QXpvL09sSitDcjBxWHpqYzhHVGRHbWtzVitNZ1oxUEFNb0VWa3g3MXVtTVkzWlJtWUZBTjZTWGo5TkhaRDRBVVBnb2lXUm92K2QwTXFkd1dKOG9uRHYvZkZaWm9uUytPQzVuN0dscy9WSnNFN3BaV05Na2FBR3FpZ3ZKUnV2ZkNWdWRrckFXU1Z5bDRDNkFOdGs2U2N5MlgzV290bzZOZzhSSUc3dXhCUzJXL1FweWRjaFdxbG43eXAvUG1HTGVpODZ1c0FlKy92Ym1tc3BJbmhHMFJRTEl4OW9zdTZQTUtsTElnRlZBZnpsR1ZwNkN3ZXhndz09",
+    "balance": 0,
+    "expiresAt": "2026-01-15T16:01:51.067Z"
+  }
+}
+================================================================================
+

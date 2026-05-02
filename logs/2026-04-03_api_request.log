@@ -1,0 +1,6476 @@
+{
+  "timestamp": "2026-04-03T14:53:15.206Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775227995",
+    "X-Nonce": "87aa31af69dd2d5145075a1348b31845",
+    "X-Sign": "03e6966b...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": null
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:16.700Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=2",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775227996",
+    "X-Nonce": "b6a27db087f4e85ac1aed8dfc094d6af",
+    "X-Sign": "fc5fa019...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 2
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:17.636Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=3",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775227997",
+    "X-Nonce": "21b2337088c943185459badfc70d1480",
+    "X-Sign": "7ac8b9c9...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 3
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:18.559Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=4",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775227998",
+    "X-Nonce": "b2012f66dc95fda11e587608e24b7fad",
+    "X-Sign": "4c12ffed...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 4
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:18.708Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775227998",
+    "X-Nonce": "bdc92cf22359b7d2524367c4bf5a799c",
+    "X-Sign": "57b06127...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": null
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:18.862Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775227998",
+    "X-Nonce": "271f5c9eb6337d201f845d22464d48b0",
+    "X-Sign": "b229f2a7...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:19.179Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=5",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775227999",
+    "X-Nonce": "76f9008edf8337a6d8fd4a745f640300",
+    "X-Sign": "0d598fa4...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 5
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:19.546Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=2",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775227999",
+    "X-Nonce": "645b859a7eeb826e6e92bb7df70bdb08",
+    "X-Sign": "defb7f86...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 2
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:19.624Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=2",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775227999",
+    "X-Nonce": "6207a7893bcab522d3669231357b8a01",
+    "X-Sign": "2aae0f8d...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 2
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:19.938Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=6",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775227999",
+    "X-Nonce": "0d13ca9a36abf92558addd2493903eb0",
+    "X-Sign": "3c646f1b...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 6
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:20.147Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=3",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228000",
+    "X-Nonce": "1887ca0f2b636972da09674e474eb01c",
+    "X-Sign": "348cb448...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 3
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:20.202Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=3",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228000",
+    "X-Nonce": "f190a2788ac55412531439e0f2914f45",
+    "X-Sign": "8c5ac4a0...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 3
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:20.589Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=7",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228000",
+    "X-Nonce": "b6a6dd7a99806d9889f08c893fcf5fc3",
+    "X-Sign": "126e059f...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 7
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:20.834Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=4",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228000",
+    "X-Nonce": "02b34f28ffbb32e52e964f48a5c586cf",
+    "X-Sign": "2124a99b...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 4
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:20.853Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=4",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228000",
+    "X-Nonce": "32a193b3272d1e7e141fa091621cf4c8",
+    "X-Sign": "b6e2bdc3...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 4
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:21.147Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=8",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228001",
+    "X-Nonce": "9df27876f6d87b0eca38096df9d0a563",
+    "X-Sign": "08075b04...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 8
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:21.437Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=5",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228001",
+    "X-Nonce": "375886c80dfb5b7f3262da2766a5aa9b",
+    "X-Sign": "9a8b0cc7...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 5
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:21.538Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=5",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228001",
+    "X-Nonce": "2d8bd0c595f0dd389a8217973f60d4e1",
+    "X-Sign": "dadcda71...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 5
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:21.858Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=9",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228001",
+    "X-Nonce": "26043fe53a3979d56aae91ad79f3d7ea",
+    "X-Sign": "95f66f97...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 9
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:21.899Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228001",
+    "X-Nonce": "f302238ea8a3b01c7ccb7b5388cccbfe",
+    "X-Sign": "a99cd892...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": null
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:22.212Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=6",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228002",
+    "X-Nonce": "859179ef1f899410faa02526de3a11ee",
+    "X-Sign": "c73f850d...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 6
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:22.272Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=6",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228002",
+    "X-Nonce": "8b7ba7d9c7c0fbd87e40e63ec77b4652",
+    "X-Sign": "8e82dff9...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 6
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:22.471Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=10",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228002",
+    "X-Nonce": "ee5e2dc5d0a00e658794434b28dfc50f",
+    "X-Sign": "06862824...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 10
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:22.929Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=7",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228002",
+    "X-Nonce": "6c5732d3261759442b4b572ed8389158",
+    "X-Sign": "d17b9b8d...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 7
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:23.006Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=7",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228003",
+    "X-Nonce": "0f61446d0cfbb80780ddf6fcc2c0fc7e",
+    "X-Sign": "75adfd3a...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 7
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:23.072Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=2",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228003",
+    "X-Nonce": "1ba92e09822a956102b98d349a1025ff",
+    "X-Sign": "cc3f8ce3...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 2
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:23.187Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=11",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228003",
+    "X-Nonce": "90601782dbcba8e21dfcbe9a9e581dda",
+    "X-Sign": "b9bdbaf7...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 11
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:23.618Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=8",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228003",
+    "X-Nonce": "eb966b027ef67f3024b4126cddd5bf0a",
+    "X-Sign": "52a70d39...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 8
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:23.666Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=8",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228003",
+    "X-Nonce": "aeb3b3771ed3cc3b81c60b0f1474e340",
+    "X-Sign": "5f98e6a6...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 8
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:23.685Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=3",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228003",
+    "X-Nonce": "28d796c45ae785abe8b3d2e1edc9c2f6",
+    "X-Sign": "afd554e1...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 3
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:23.881Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=12",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228003",
+    "X-Nonce": "bc927c80bedadd2008f2141630076c61",
+    "X-Sign": "81f4cb7b...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 12
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:24.245Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=9",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228004",
+    "X-Nonce": "ace7a046193495e80026aaadab46a832",
+    "X-Sign": "79198e5e...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 9
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:24.330Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=9",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228004",
+    "X-Nonce": "7bfa01048aeaacd6f9bbe7cbfb2175f7",
+    "X-Sign": "00e710a5...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 9
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:24.408Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=4",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228004",
+    "X-Nonce": "98e8bd186e173277ec8b13092936d245",
+    "X-Sign": "fba7db3f...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 4
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:24.616Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=13",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228004",
+    "X-Nonce": "c9185af74cbf375884a0f1c9b1e2ba99",
+    "X-Sign": "94ad8ae7...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 13
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:24.807Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=10",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228004",
+    "X-Nonce": "c1d9ab0a0668c4d5c17980d9e9081ed9",
+    "X-Sign": "01e51707...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 10
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:24.922Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=10",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228004",
+    "X-Nonce": "857ec9d0408702991b18ad7669275861",
+    "X-Sign": "38c82ba0...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 10
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:25.005Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=5",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228005",
+    "X-Nonce": "a9e1c4e72a47661090358093c0e97448",
+    "X-Sign": "6ba4b82d...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 5
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:25.322Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=14",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228005",
+    "X-Nonce": "831d947ac05f94904daa91dcd4b53e35",
+    "X-Sign": "0354a73b...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 14
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:25.374Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=11",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228005",
+    "X-Nonce": "8d5864e9b3607f60649b2d9ac1044a43",
+    "X-Sign": "581f2824...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 11
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:25.471Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=11",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228005",
+    "X-Nonce": "bea6e73bb08352649dd2aa8428368974",
+    "X-Sign": "ddc4918b...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 11
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:25.610Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=6",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228005",
+    "X-Nonce": "ba5e62ec2f81a4b1504c40adfa7e775c",
+    "X-Sign": "d3890cff...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 6
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:25.933Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=12",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228005",
+    "X-Nonce": "62698a033e887669801315300ec7ab65",
+    "X-Sign": "364836b7...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 12
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:25.954Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=15",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228005",
+    "X-Nonce": "371c1cbca5eaeda9461285abf12033b6",
+    "X-Sign": "7192aae5...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 15
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:26.022Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=12",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228006",
+    "X-Nonce": "73d5308a06bca44626056f00c197e903",
+    "X-Sign": "92f7bbde...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 12
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:26.221Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=7",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228006",
+    "X-Nonce": "ba2d88f814e452614b2bf3cde414b9b4",
+    "X-Sign": "db89faa4...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 7
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:26.544Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=13",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228006",
+    "X-Nonce": "8ab483675d181083d7249c13c979f3ef",
+    "X-Sign": "30e9a7ba...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 13
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:26.606Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=16",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228006",
+    "X-Nonce": "1b37f8ee5ca63b9d7192a8d16edab896",
+    "X-Sign": "61b4fe1d...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 16
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:26.622Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=13",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228006",
+    "X-Nonce": "654a3f6fe65cdeb25d9ed4c61c831ba2",
+    "X-Sign": "dddbf6bb...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 13
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:26.804Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=8",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228006",
+    "X-Nonce": "eed1d4b657999ca33712ea7bada64545",
+    "X-Sign": "81f7a31e...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 8
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:27.138Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=14",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228007",
+    "X-Nonce": "1f30e6dc03e834417c9600ac7f5db230",
+    "X-Sign": "3963b6b9...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 14
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:27.236Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=17",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228007",
+    "X-Nonce": "c9e2fa6d76e23956e1ef0bf6b4389280",
+    "X-Sign": "dcc8cca8...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 17
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:27.303Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=14",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228007",
+    "X-Nonce": "28f4728b32ee287e416e09c888c22a89",
+    "X-Sign": "aa979cf6...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 14
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:27.384Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=9",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228007",
+    "X-Nonce": "90c28f20ee40ebe083394d00d0c0ae5c",
+    "X-Sign": "7b0b2f65...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 9
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:27.768Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=15",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228007",
+    "X-Nonce": "abfe2c6636ffc49b52a11454ddb65580",
+    "X-Sign": "47d45f10...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 15
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:27.905Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=18",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228007",
+    "X-Nonce": "9cd4d725fbf7a50632fb4375c0999fa0",
+    "X-Sign": "77459ecd...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 18
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:27.998Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=15",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228007",
+    "X-Nonce": "f1e772e839b310f450b9aa48c707858a",
+    "X-Sign": "fea54164...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 15
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:28.009Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=10",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228008",
+    "X-Nonce": "feddec8609c78d0517c38952b13a1763",
+    "X-Sign": "f34d2e75...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 10
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:28.351Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=16",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228008",
+    "X-Nonce": "04c49665e0a89fdc198c256f4a20ecfa",
+    "X-Sign": "7dc722a8...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 16
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:28.471Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=19",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228008",
+    "X-Nonce": "eb8801da05c9809004c59f43d711d65b",
+    "X-Sign": "f932a1d1...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 19
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:28.604Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=16",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228008",
+    "X-Nonce": "a6cd26e8209e1d25b7c99849f596792a",
+    "X-Sign": "4534a332...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 16
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:28.737Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=11",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228008",
+    "X-Nonce": "2a16ccbd085fb360b3d29eed0ce5030c",
+    "X-Sign": "05ed96c6...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 11
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:28.904Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=17",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228008",
+    "X-Nonce": "3a5cc466abf4fde6cbea703a9178b176",
+    "X-Sign": "364002c5...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 17
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:29.087Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=20",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228009",
+    "X-Nonce": "23a996482827da90300c35bd0683f035",
+    "X-Sign": "5ec068d3...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 20
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:29.221Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=17",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228009",
+    "X-Nonce": "02825d86ac6c1b06dc8192e2bcaee14d",
+    "X-Sign": "3ade71b9...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 17
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:29.388Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=12",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228009",
+    "X-Nonce": "489955e179b706c0f65a1e2859ac7f1b",
+    "X-Sign": "093b677e...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 12
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:29.471Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=18",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228009",
+    "X-Nonce": "4de4f9743ee6574a6c84d0bfb12a1f7c",
+    "X-Sign": "6c690221...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 18
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:29.671Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=21",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228009",
+    "X-Nonce": "a1f6bacd161bf5b370f5f83f48278425",
+    "X-Sign": "3b4fbdd4...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 21
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:29.818Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=18",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228009",
+    "X-Nonce": "2947f59ef3f781c0a5f8bdae213aa114",
+    "X-Sign": "853fae96...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 18
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:30.035Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=13",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228010",
+    "X-Nonce": "523a3a34e7db763e45b6ec8cc0d7e5c7",
+    "X-Sign": "2a5fd474...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 13
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:30.073Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=19",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228010",
+    "X-Nonce": "a26e796fc44c56ee7e519d541a9ad623",
+    "X-Sign": "d596908a...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 19
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:30.304Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=22",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228010",
+    "X-Nonce": "733cca0cc1219e394ed0d57d562975ad",
+    "X-Sign": "a3b83b19...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 22
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:30.435Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=19",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228010",
+    "X-Nonce": "04bcae463a21ea813594d813e8fa32b8",
+    "X-Sign": "77691ef0...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 19
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:30.668Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=14",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228010",
+    "X-Nonce": "b335ed5ec74cf219ecca945aa3c4c073",
+    "X-Sign": "f8fa2019...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 14
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:30.739Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=20",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228010",
+    "X-Nonce": "6b0b82e572d6b82c7e47f49563e46a96",
+    "X-Sign": "efe9e3d7...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 20
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:30.884Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=23",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228010",
+    "X-Nonce": "ef48217fb7dd1532954ec955e39c815b",
+    "X-Sign": "8a3c0d82...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 23
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:31.057Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=20",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228011",
+    "X-Nonce": "3e6a0322504c6a1018d361ec2ad44457",
+    "X-Sign": "62aa628a...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 20
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:31.237Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=15",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228011",
+    "X-Nonce": "4ab1ad8d526c4c6ab79b28afbaf70c75",
+    "X-Sign": "4f715f85...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 15
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:31.423Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=21",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228011",
+    "X-Nonce": "8b1fa61c80ca74cb90b038abcad370b5",
+    "X-Sign": "299ddcef...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 21
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:31.486Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=24",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228011",
+    "X-Nonce": "9fb798178ea71998c83cf173d1758daa",
+    "X-Sign": "622ac807...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 24
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:31.607Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=21",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228011",
+    "X-Nonce": "f3fc3c4d9a656f148bf6bda8070f04b5",
+    "X-Sign": "01c28200...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 21
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:31.786Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=16",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228011",
+    "X-Nonce": "451eed4529c24424f39b8c278141ca80",
+    "X-Sign": "108a6263...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 16
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:32.008Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=22",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228012",
+    "X-Nonce": "012376225483a7e8ea611633c5a35bb2",
+    "X-Sign": "45a5803c...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 22
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:32.158Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=25",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228012",
+    "X-Nonce": "42500f0871087e73743dbe393e39a00e",
+    "X-Sign": "603baa9f...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 25
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:32.209Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=22",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228012",
+    "X-Nonce": "2444e382e6cf3a33e0ca92d0275c3eaa",
+    "X-Sign": "23649eea...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 22
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:32.396Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=17",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228012",
+    "X-Nonce": "76c62d18bf16a673b05d3a6fcbb75ae2",
+    "X-Sign": "c9780158...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 17
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:32.580Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=23",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228012",
+    "X-Nonce": "88c89dbebc0407c0e1ae428ed4d447fe",
+    "X-Sign": "9e29e82d...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 23
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:32.814Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=26",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228012",
+    "X-Nonce": "c1f5dc766ee09096ac992475fed7571d",
+    "X-Sign": "9b3b2788...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 26
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:32.834Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=23",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228012",
+    "X-Nonce": "e4a6a9d1597aa4b5396e380500741695",
+    "X-Sign": "8e634ade...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 23
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:32.954Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=18",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228012",
+    "X-Nonce": "e1ec7a16cc8b18eed826ba3c17ce57ec",
+    "X-Sign": "a183aa75...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 18
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:33.075Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=24",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228013",
+    "X-Nonce": "3eac0cedac9dca304326819fcb5c969d",
+    "X-Sign": "70016d82...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 24
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:33.354Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=27",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228013",
+    "X-Nonce": "aebe3702b59b9e3556bca6a08e46b01e",
+    "X-Sign": "6b79bab3...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 27
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:33.440Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=24",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228013",
+    "X-Nonce": "e3b4f8c00e54ada7d80e44da3d1a7345",
+    "X-Sign": "4ed84c3a...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 24
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:33.486Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=19",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228013",
+    "X-Nonce": "a63e6738ea8e8a4197cc2ca41b56f73e",
+    "X-Sign": "302b3881...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 19
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:33.673Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=25",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228013",
+    "X-Nonce": "ba5ef0bd3528a9215d7d82c29a414370",
+    "X-Sign": "883d19f3...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 25
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:33.954Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=28",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228013",
+    "X-Nonce": "39ec810996af6bce420e5808d46826fd",
+    "X-Sign": "5d529033...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 28
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:34.071Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=25",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228014",
+    "X-Nonce": "1b7798147a2a1f646760760936d15702",
+    "X-Sign": "ba79f023...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 25
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:34.081Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=20",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228014",
+    "X-Nonce": "83af74fa9b8a315226d4756f876e1d37",
+    "X-Sign": "8b7d5cca...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 20
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:34.238Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=26",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228014",
+    "X-Nonce": "12e5c82ae2a70be183302fd1553e5851",
+    "X-Sign": "39320b44...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 26
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:34.522Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=29",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228014",
+    "X-Nonce": "33dfee6d8d69fec5e68aa3bcef2722f4",
+    "X-Sign": "effa6da9...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 29
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:34.654Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=26",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228014",
+    "X-Nonce": "7a99c8717eedc5815cef1593c6b8eb1a",
+    "X-Sign": "c7af132a...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 26
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:34.804Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=21",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228014",
+    "X-Nonce": "6790fc4d1f9a24487398d316dac8c1dd",
+    "X-Sign": "318e7f9f...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 21
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:34.817Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=27",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228014",
+    "X-Nonce": "b01bcaf3ecbf1f3c8a06fd3f8b772dd0",
+    "X-Sign": "576d6397...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 27
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:35.048Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=30",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228015",
+    "X-Nonce": "4fca5275b5c7deea4c2d55ac842381c6",
+    "X-Sign": "30b87a3b...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 30
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:35.174Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=27",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228015",
+    "X-Nonce": "f52fd654c92f4af0e28d56b4d3e58e7f",
+    "X-Sign": "0357d2b3...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 27
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:35.449Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=22",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228015",
+    "X-Nonce": "d3d8a695effdd026ba9e44bbbe539a3c",
+    "X-Sign": "a31eb59a...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 22
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:35.498Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=28",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228015",
+    "X-Nonce": "6df989c8a763ddcd2b559dde1bf6c78d",
+    "X-Sign": "70e4aa29...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 28
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:35.756Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=28",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228015",
+    "X-Nonce": "b92b446b87a6894e4fda15d0cc8487d1",
+    "X-Sign": "24ac8611...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 28
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:36.229Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=23",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228016",
+    "X-Nonce": "03c446cdffa9a467425f00bfc9315b7d",
+    "X-Sign": "3172fe45...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 23
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:36.381Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=29",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228016",
+    "X-Nonce": "64a4c28f531e9657391b046164a705d9",
+    "X-Sign": "32285a96...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 29
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:36.390Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=29",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228016",
+    "X-Nonce": "15e9e71c7eefd5c5d590c938d9386c71",
+    "X-Sign": "fe931c42...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 29
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:36.943Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=24",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228016",
+    "X-Nonce": "aa5c5dfc8b0e895be6061823fd0d0b0e",
+    "X-Sign": "03b52985...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 24
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:37.114Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228017",
+    "X-Nonce": "2e384ea920ce82a3e07c1016abaef85a",
+    "X-Sign": "a28fc228...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:37.200Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228017",
+    "X-Nonce": "fdcce6f2148cbf0409dab3b948ebd2d8",
+    "X-Sign": "c4d2e5d2...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": null
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:37.352Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=30",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228017",
+    "X-Nonce": "0756940b1d4a1a32c19dcd11e8e1c436",
+    "X-Sign": "0989e336...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 30
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:37.441Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=30",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228017",
+    "X-Nonce": "afe5e496478c40fe5193aff1095e1440",
+    "X-Sign": "5714c92f...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 30
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:37.494Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228017",
+    "X-Nonce": "144cd67856a3ef6d279acbc049f8e6b9",
+    "X-Sign": "b18e2412...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:37.702Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=25",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228017",
+    "X-Nonce": "bbc6554dde49f165df0b8e8372b9f2c8",
+    "X-Sign": "1f417038...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 25
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:37.868Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=2",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228017",
+    "X-Nonce": "228f72440900a665165d18cc1badeb58",
+    "X-Sign": "96718104...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 2
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:37.880Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=2",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228017",
+    "X-Nonce": "93ede88b68e0b47daada8f0b85fe431c",
+    "X-Sign": "0af83f11...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 2
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:38.306Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=2",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228018",
+    "X-Nonce": "4f28578edfaf1e254f5a5b9e7aff994d",
+    "X-Sign": "a054688f...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 2
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:38.440Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=31",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228018",
+    "X-Nonce": "d3d0bec530fe3dd17c78f119e532e0d1",
+    "X-Sign": "f9144284...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 31
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:38.636Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=26",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228018",
+    "X-Nonce": "1b12b314169519142aea263a4d993506",
+    "X-Sign": "990b7a66...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 26
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:38.672Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=3",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228018",
+    "X-Nonce": "d3a8950624a5067aecc416ef8504b1e7",
+    "X-Sign": "74c3b67c...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 3
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:38.707Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=3",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228018",
+    "X-Nonce": "c1e2295f54f21001cd83b5b917220b22",
+    "X-Sign": "e46269c5...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 3
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:38.979Z",
+  "type": "request",
+  "endpoint": "GET /limits",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/limits",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228018",
+    "X-Nonce": "9572fc9f1271cbdce1f03889a308add3",
+    "X-Sign": "10336c69...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": null
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:39.054Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=32",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228019",
+    "X-Nonce": "271a901600f58ff4688ae318c73a6a65",
+    "X-Sign": "9fd786f1...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 32
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:39.311Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=27",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228019",
+    "X-Nonce": "ad3d9ec0b418270b99a983cd9e108b05",
+    "X-Sign": "b1b7a143...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 27
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:39.321Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=4",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228019",
+    "X-Nonce": "b5b820b40b147e4eae9f6d801513d32c",
+    "X-Sign": "bb21648f...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 4
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:39.405Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=4",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228019",
+    "X-Nonce": "e1973c98325768c5ef3cb3dc5b74dda5",
+    "X-Sign": "3a1b53a5...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 4
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:39.669Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=33",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228019",
+    "X-Nonce": "de859dac08684a4faaf9b894dcf2a3e0",
+    "X-Sign": "4ad3ba6f...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 33
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:39.877Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=28",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228019",
+    "X-Nonce": "0a423c5e0dcabf48e5bbfb2b95e5bbc2",
+    "X-Sign": "46a4497f...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 28
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:39.974Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=5",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228019",
+    "X-Nonce": "b3c707973584adb93098736d9c6f51d8",
+    "X-Sign": "3cb1a099...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 5
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:40.077Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=5",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228020",
+    "X-Nonce": "434ec78f66ea241e339fb06ea89d70fa",
+    "X-Sign": "efe855f4...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 5
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:40.730Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=34",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228020",
+    "X-Nonce": "12ef3414c5a5c0817ed19c60eb2ba58f",
+    "X-Sign": "c066a2f1...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 34
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:41.090Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=29",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228021",
+    "X-Nonce": "1095b7478d9cdc36d849891588da801b",
+    "X-Sign": "3b4e7c8c...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 29
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:41.247Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=6",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228021",
+    "X-Nonce": "8c07fcd1d24eb5f8723d9f8c363a1d48",
+    "X-Sign": "749d2005...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 6
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:41.265Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=6",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228021",
+    "X-Nonce": "2852632cdce7b1db0dcf55f7dc59079a",
+    "X-Sign": "1c355b78...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 6
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:41.402Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=35",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228021",
+    "X-Nonce": "4adfba95185512c07d259da56518c1b3",
+    "X-Sign": "27c4112f...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 35
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:43.759Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=30",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228023",
+    "X-Nonce": "9ac723673808144b5dba3e5b386dbb3a",
+    "X-Sign": "c54737f9...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 30
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:43.901Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=7",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228023",
+    "X-Nonce": "0b92124bd0b6b1576092c0fa579f5a40",
+    "X-Sign": "e7519daf...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 7
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:43.908Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=7",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228023",
+    "X-Nonce": "76303e810cdc02e8eace8afedbda5d5d",
+    "X-Sign": "2ebfb758...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 7
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:44.063Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=36",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228024",
+    "X-Nonce": "29c47b110ce40b9d3e969842855c1636",
+    "X-Sign": "7a15d62e...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 36
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:44.612Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=8",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228024",
+    "X-Nonce": "2aaa999f4ae580d01e2828c47a2c5453",
+    "X-Sign": "7d7f2461...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 8
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:44.667Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=8",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228024",
+    "X-Nonce": "113d4fb81bd973e1a82633f42d9b18a6",
+    "X-Sign": "d1f0a79b...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 8
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:44.910Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=37",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228024",
+    "X-Nonce": "6316e9844d0884a94534ca7c78ccc0e5",
+    "X-Sign": "2bf6c257...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 37
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:45.279Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=9",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228025",
+    "X-Nonce": "ca7ca5dcbe48ef425c2c063fb3425261",
+    "X-Sign": "418ecc40...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 9
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:45.382Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=9",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228025",
+    "X-Nonce": "1108195ef211cec6487e7f470fd77707",
+    "X-Sign": "641d5491...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 9
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:45.546Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=38",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228025",
+    "X-Nonce": "ac626ebb10b0012892962eed60ad2761",
+    "X-Sign": "17c3966b...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 38
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:45.838Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=10",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228025",
+    "X-Nonce": "40c34a5d6c38bb1af471159f2a09fd33",
+    "X-Sign": "546ca0f5...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 10
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:45.971Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=10",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228025",
+    "X-Nonce": "2b2c28fe019510b7ffe2acb29fe93ec2",
+    "X-Sign": "131fd45e...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 10
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:46.054Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=39",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228026",
+    "X-Nonce": "40220a697c0cdbc5708e0c8747ccdcff",
+    "X-Sign": "53d47213...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 39
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:46.354Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=11",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228026",
+    "X-Nonce": "071a475e8a01cd3c8047f438c57301eb",
+    "X-Sign": "3bd69e82...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 11
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:46.554Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=11",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228026",
+    "X-Nonce": "9e41952056b622a83c9882a869706017",
+    "X-Sign": "13900b54...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 11
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:46.602Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=40",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228026",
+    "X-Nonce": "bc8e13b388757998a7f3e03e2c0efa55",
+    "X-Sign": "e5e50dc7...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 40
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:46.929Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=12",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228026",
+    "X-Nonce": "ba64df2e34b541afd84acd1e226d1a8b",
+    "X-Sign": "c844d4be...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 12
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:47.128Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=12",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228027",
+    "X-Nonce": "13ce0a2d6875ab5c95447d60dcaec5f8",
+    "X-Sign": "c91fc707...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 12
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:47.167Z",
+  "type": "request",
+  "endpoint": "GET /limits",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/limits",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228027",
+    "X-Nonce": "30e8075739a2fc265b73a60095b4bcd4",
+    "X-Sign": "f119615e...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": null
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:47.519Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=13",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228027",
+    "X-Nonce": "c824149bb8f323d7521c9501c8d6b1ed",
+    "X-Sign": "c266e4ca...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 13
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:47.736Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=13",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228027",
+    "X-Nonce": "c2c98543b8346bea96f07734fc4bec6d",
+    "X-Sign": "89b390ca...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 13
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:48.096Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=14",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228028",
+    "X-Nonce": "dc5450019a8d6a6aca55bcafb6d67cf4",
+    "X-Sign": "449d449d...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 14
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:48.316Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=14",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228028",
+    "X-Nonce": "aaa570963e0416a6254135db11536321",
+    "X-Sign": "8a0ed6d1...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 14
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:48.678Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=15",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228028",
+    "X-Nonce": "0ca063192f22c06e9cd3ebe1c61746a1",
+    "X-Sign": "fa0e2999...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 15
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:48.993Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=15",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228028",
+    "X-Nonce": "4f2fc4ece863908f231784847c266811",
+    "X-Sign": "32a6ebff...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 15
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:49.397Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=16",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228029",
+    "X-Nonce": "984de1d68d9511926080c9b1f162fae4",
+    "X-Sign": "693d977b...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 16
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:49.425Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228029",
+    "X-Nonce": "bae34ab7333690f8f7d4946ace5ba70a",
+    "X-Sign": "28c47a55...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:49.556Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=16",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228029",
+    "X-Nonce": "0c7ee6185a4171718332e88c103fc519",
+    "X-Sign": "1c607551...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 16
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:50.022Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=17",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228030",
+    "X-Nonce": "72c0b01bc5b614cc1373f64e80cf5f8f",
+    "X-Sign": "cb33de58...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 17
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:50.192Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=2",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228030",
+    "X-Nonce": "539a3e31344ca404219d96a9a75f8ac4",
+    "X-Sign": "942e4cbc...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 2
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:50.275Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=17",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228030",
+    "X-Nonce": "ddb11cfede6846907d635345aaf48c77",
+    "X-Sign": "39c62f69...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 17
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:50.556Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=18",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228030",
+    "X-Nonce": "b6f4cec57d3ede89a00717eee36a5ce7",
+    "X-Sign": "9fb36401...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 18
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:50.778Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=3",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228030",
+    "X-Nonce": "dcfb47ff9b965fe88ab72d8a4a0d724f",
+    "X-Sign": "34aefcc7...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 3
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:50.855Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=18",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228030",
+    "X-Nonce": "ef202ec8fb1aa72a0674fdb296f249f1",
+    "X-Sign": "edebc193...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 18
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:51.105Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=19",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228031",
+    "X-Nonce": "778b70ec9c7a013c7f4385aa3ccf0d7a",
+    "X-Sign": "f33e20bb...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 19
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:51.417Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=4",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228031",
+    "X-Nonce": "27fb5b4c20a0f1f3a8709700ba969364",
+    "X-Sign": "7bbff913...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 4
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:51.488Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=19",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228031",
+    "X-Nonce": "9d06c21181cc494f3717f49b4b8327cf",
+    "X-Sign": "5ffc8a5d...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 19
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:51.686Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=20",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228031",
+    "X-Nonce": "f5a687b19a8d625962d23fdfc8149c8f",
+    "X-Sign": "1ad06e5c...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 20
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:51.972Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=5",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228031",
+    "X-Nonce": "cd32d38b3d9001963db5bc4cbad52b72",
+    "X-Sign": "98a0fb4b...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 5
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:52.057Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=20",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228032",
+    "X-Nonce": "ab84b993c033797d2e58038f9fdac0a4",
+    "X-Sign": "fa088bcb...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 20
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:52.206Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=21",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228032",
+    "X-Nonce": "e49ff85b9c1da37d7cd801aa8fbf3da9",
+    "X-Sign": "9f21acce...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 21
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:52.519Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=6",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228032",
+    "X-Nonce": "2760ef7432c02357b13202ed7348851f",
+    "X-Sign": "c3559ea1...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 6
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:52.623Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=21",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228032",
+    "X-Nonce": "c939d2e226bf71a18b6d4f1565ea94e3",
+    "X-Sign": "905b72ea...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 21
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:52.773Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=22",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228032",
+    "X-Nonce": "fab9c48f48e0fda7b59e635b050c4c93",
+    "X-Sign": "bb60e93b...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 22
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:53.087Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=7",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228033",
+    "X-Nonce": "54a6ee31e24cb04d6dec351f971e7a24",
+    "X-Sign": "11ed8331...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 7
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:53.189Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=22",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228033",
+    "X-Nonce": "95145df55c58b46a5d6b7e822c63a6dd",
+    "X-Sign": "5093e2a4...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 22
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:53.338Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=23",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228033",
+    "X-Nonce": "a0f4b1182498aec1cc86ee7014331606",
+    "X-Sign": "2832f2f2...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 23
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:53.684Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=8",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228033",
+    "X-Nonce": "0ca09dfed29fcd2b8108eb4a66cfd14f",
+    "X-Sign": "78e22691...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 8
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:53.772Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=23",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228033",
+    "X-Nonce": "ca8e1f8e96edd6fa91cbfda8d3ff3c6b",
+    "X-Sign": "bce79626...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 23
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:53.921Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=24",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228033",
+    "X-Nonce": "d0c1cf3e9f71d9def6ad03371451e74d",
+    "X-Sign": "b70b00e5...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 24
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:54.320Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=9",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228034",
+    "X-Nonce": "b54e5f5bfafcdd72ae41f410b43a58a5",
+    "X-Sign": "90b2accb...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 9
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:54.388Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=24",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228034",
+    "X-Nonce": "0578c3de4e8672da6f6c8a472ca2b765",
+    "X-Sign": "bd3bbd25...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 24
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:54.538Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=25",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228034",
+    "X-Nonce": "3b8f9b6b94764eeeefc181b30bdfea1d",
+    "X-Sign": "a63c3655...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 25
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:54.901Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=10",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228034",
+    "X-Nonce": "d7a0713c8c4bce63a1f922007bdf2f2e",
+    "X-Sign": "a3b34ebc...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 10
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:54.958Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=25",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228034",
+    "X-Nonce": "60b87c46ba5f9ff989a4ea46a7e36fd3",
+    "X-Sign": "b8f9a0a3...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 25
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:55.102Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=26",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228035",
+    "X-Nonce": "c4a61e15b7dd42738761166350919af9",
+    "X-Sign": "212461d4...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 26
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:55.453Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=11",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228035",
+    "X-Nonce": "ae519ae1229ab9c23f13f42032a9c465",
+    "X-Sign": "ec0f4b10...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 11
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:55.553Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=26",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228035",
+    "X-Nonce": "232c242792a08e61f788e655cc32e9ab",
+    "X-Sign": "2f61db64...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 26
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:55.670Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=27",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228035",
+    "X-Nonce": "909b958c940508732b44fbfbdb0992fb",
+    "X-Sign": "27522a4d...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 27
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:55.988Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=12",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228035",
+    "X-Nonce": "8c1981ff8fbe9178a2a96a724a714cab",
+    "X-Sign": "c2cf51d9...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 12
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:56.252Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=27",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228036",
+    "X-Nonce": "d7923ee70eecc67f48ed0c42cf8ac7db",
+    "X-Sign": "c71a76b3...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 27
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:56.271Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=28",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228036",
+    "X-Nonce": "edd7600740b21ceb807fa92fadcd0467",
+    "X-Sign": "383c25c7...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 28
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:56.539Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=13",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228036",
+    "X-Nonce": "e820447678ecc01c19e0937ac58b9a24",
+    "X-Sign": "3b447781...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 13
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:56.757Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=28",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228036",
+    "X-Nonce": "6227f4aaf72a8f9a1a06b3c938c2d25b",
+    "X-Sign": "fa5483c0...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 28
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:56.822Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=29",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228036",
+    "X-Nonce": "76e64426ff45503d0501d6ecfa718c23",
+    "X-Sign": "e50613a0...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 29
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:57.048Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=14",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228037",
+    "X-Nonce": "87237e4a25e1bce34d4a41c2ea23b315",
+    "X-Sign": "21a8ffa8...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 14
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:57.277Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=29",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228037",
+    "X-Nonce": "921b3eece2b06ba9411e9f71a01c1d52",
+    "X-Sign": "4053253c...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 29
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:57.388Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?page=30",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228037",
+    "X-Nonce": "e31b772e89b2bcf7bf5d3efad2f58207",
+    "X-Sign": "7c0a9014...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "page": 30
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:57.637Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=15",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228037",
+    "X-Nonce": "19cdb52da732993bf999cda15d541db4",
+    "X-Sign": "9a4e1526...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 15
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:57.820Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=30",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228037",
+    "X-Nonce": "de6e4ce4f9584e37d6c350a614ddfbdf",
+    "X-Sign": "7efc0735...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 30
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:58.153Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=16",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228038",
+    "X-Nonce": "82f465de6c50375351bde8c939d1f353",
+    "X-Sign": "f2e687b4...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 16
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:58.354Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=31",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228038",
+    "X-Nonce": "7c5dfbb9820509488a519e564e624916",
+    "X-Sign": "1ab28eca...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 31
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:58.767Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=17",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228038",
+    "X-Nonce": "485ff9ecaa5f67e11f80de867bf75c0a",
+    "X-Sign": "a33012f4...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 17
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:58.923Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=32",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228038",
+    "X-Nonce": "cda3f260eade90a4fc8b303d876233dc",
+    "X-Sign": "6a98805e...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 32
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:59.271Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=18",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228039",
+    "X-Nonce": "0465464f91c376b5d8dc26382fa90a78",
+    "X-Sign": "0183a972...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 18
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:59.469Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=33",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228039",
+    "X-Nonce": "c2c2efdee23696ece31595d3877e332e",
+    "X-Sign": "eed20423...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 33
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:59.804Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=19",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228039",
+    "X-Nonce": "f0252719efd5341733178b12d50db2f4",
+    "X-Sign": "89bbd842...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 19
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:53:59.993Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=34",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228039",
+    "X-Nonce": "1d0171b9298850d6e640114747cff6e0",
+    "X-Sign": "d38d403e...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 34
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:00.405Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=20",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228040",
+    "X-Nonce": "e88f9df41348f1fd882c0c4d3d307883",
+    "X-Sign": "e1077e3e...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 20
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:00.539Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=35",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228040",
+    "X-Nonce": "e1fe73d872f7ecddfc61457eb7258f60",
+    "X-Sign": "7637668f...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 35
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:01.005Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=21",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228041",
+    "X-Nonce": "ca7348cb5ee5bd8e32fab27aca592e2e",
+    "X-Sign": "92c0a0a2...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 21
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:01.106Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=36",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228041",
+    "X-Nonce": "42a575d63a16d5b1843feb788c89671c",
+    "X-Sign": "aea50f70...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 36
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:01.492Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=22",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228041",
+    "X-Nonce": "f5b363fcce36d35e1a000b82fc165626",
+    "X-Sign": "f44b8270...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 22
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:01.614Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=37",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228041",
+    "X-Nonce": "c2cfd69b8878222d1fa901cc1cf1f507",
+    "X-Sign": "0ea438c2...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 37
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:02.004Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=23",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228042",
+    "X-Nonce": "18fc9bab19a23e3302f8bc99aa089c96",
+    "X-Sign": "72cb72e2...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 23
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:02.126Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=38",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228042",
+    "X-Nonce": "0530f786281e9de0689a34467d3e8cb2",
+    "X-Sign": "51e2fbf4...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 38
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:02.553Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=24",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228042",
+    "X-Nonce": "b519d3eb07a0a3ef7437dced3ecac989",
+    "X-Sign": "6396a4f3...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 24
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:02.739Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=39",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228042",
+    "X-Nonce": "7ef605e4f144e63aee3d4449feeca959",
+    "X-Sign": "90daa81d...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 39
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:03.238Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=25",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228043",
+    "X-Nonce": "4f8e4d0a44fc08364882581959109b98",
+    "X-Sign": "09f19c40...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 25
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:03.344Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=40",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228043",
+    "X-Nonce": "b595aad7ea7c8fcee3dc941936bd1ccd",
+    "X-Sign": "2ba29605...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 40
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:03.868Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=26",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228043",
+    "X-Nonce": "6c6a83920b833c3eac16ee1e171a1e4b",
+    "X-Sign": "1a200033...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 26
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:04.418Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=27",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228044",
+    "X-Nonce": "72f2f18394235c9af164d8023e144cb8",
+    "X-Sign": "e58b7021...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 27
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:05.005Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=28",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228045",
+    "X-Nonce": "a92aa75142db2c4effa8f5a39c1f62cf",
+    "X-Sign": "f0dd976d...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 28
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:05.554Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=29",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228045",
+    "X-Nonce": "09b85e930f78df38ff831d5ed2a55faf",
+    "X-Sign": "2377721d...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 29
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:06.077Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=30",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228046",
+    "X-Nonce": "99594c0d688218edafabd43212b6f2c8",
+    "X-Sign": "d3b7a5fe...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 30
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:06.629Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228046",
+    "X-Nonce": "aadb0d1c88fb935fe8800553f2dcd851",
+    "X-Sign": "328c8083...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:06.937Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=31",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228046",
+    "X-Nonce": "1bb2a03139b02bddd6b4d7d0e39aee2d",
+    "X-Sign": "65fd6e52...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 31
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:07.143Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=2",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228047",
+    "X-Nonce": "a71ae64be00c2697454ce70864476549",
+    "X-Sign": "a0f09e82...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 2
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:07.491Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=32",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228047",
+    "X-Nonce": "339bb111859eee409dee270dcdb0890b",
+    "X-Sign": "d800f829...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 32
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:07.672Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=3",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228047",
+    "X-Nonce": "73eb64461ab8929dadbe899ed0e00be0",
+    "X-Sign": "b8b3289b...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 3
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:08.002Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=33",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228048",
+    "X-Nonce": "bb72702aa6edd18b965dd4756d76e92a",
+    "X-Sign": "d9020e78...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 33
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:08.187Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=4",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228048",
+    "X-Nonce": "2397aa3b23aabd88094fc3ac8fd300b2",
+    "X-Sign": "0d6af824...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 4
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:08.518Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=34",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228048",
+    "X-Nonce": "9caa703a2bcc8e490e8bb731f7c955c8",
+    "X-Sign": "d3c132ec...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 34
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:08.720Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=5",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228048",
+    "X-Nonce": "89285cd3119c8a421f1d9a893d065fe9",
+    "X-Sign": "89a8502b...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 5
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:09.053Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=35",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228049",
+    "X-Nonce": "791112dd7be5c1905123dbe4e219197f",
+    "X-Sign": "5fe10b42...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 35
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:09.272Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=6",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228049",
+    "X-Nonce": "e285eb4b1c38a6ca782aa75a09903dc5",
+    "X-Sign": "d573b31d...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 6
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:09.582Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=36",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228049",
+    "X-Nonce": "d9d5cd0fc600326276a0c115b29ae790",
+    "X-Sign": "99050b3b...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 36
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:09.825Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=7",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228049",
+    "X-Nonce": "9e82711de842c34c285666943e33dff0",
+    "X-Sign": "47de1325...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 7
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:10.077Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=37",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228050",
+    "X-Nonce": "36de6586e9ce23bfba14120391b5f01c",
+    "X-Sign": "d23c6a58...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 37
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:10.370Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=8",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228050",
+    "X-Nonce": "68cdfc810368f9e2698e1c70753d20d6",
+    "X-Sign": "290c129a...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 8
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:10.586Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=38",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228050",
+    "X-Nonce": "fb95ebc7d1634148d3d6960d92424de2",
+    "X-Sign": "fbd16e91...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 38
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:10.878Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=9",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228050",
+    "X-Nonce": "6443777ed82b29f75c7b718a31720bdb",
+    "X-Sign": "7026f5c7...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 9
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:11.157Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=39",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228051",
+    "X-Nonce": "93b33afd2ef3304d03e09679fdddfa42",
+    "X-Sign": "a796016d...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 39
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:11.453Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=10",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228051",
+    "X-Nonce": "1e006926a3fc18dd28e18b001766640c",
+    "X-Sign": "28e8d82e...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 10
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:11.703Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=40",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228051",
+    "X-Nonce": "52689404207bb67318b1af02541ed763",
+    "X-Sign": "431d39e4...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 40
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:12.003Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=11",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228052",
+    "X-Nonce": "9d825ec07762a2dc0c86537bec76fea5",
+    "X-Sign": "990b67d6...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 11
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:12.190Z",
+  "type": "request",
+  "endpoint": "GET /limits",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/limits",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228052",
+    "X-Nonce": "ab01f32d520ddd7292391eab7daf56c8",
+    "X-Sign": "52e82ac2...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": null
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:12.498Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=12",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228052",
+    "X-Nonce": "02d0180eeb184792174e3d8ade8cecde",
+    "X-Sign": "71bd92dd...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 12
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:13.024Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=13",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228053",
+    "X-Nonce": "650b2314826c4f4e9b4fa33c5b3644e2",
+    "X-Sign": "ec6fe045...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 13
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:13.519Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=14",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228053",
+    "X-Nonce": "09aa48c87d4829330569f3e7d71b6999",
+    "X-Sign": "f63d0d47...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 14
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:14.055Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=15",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228054",
+    "X-Nonce": "e9693d1ce145a4a1bd4b78a88b452065",
+    "X-Sign": "53b02e1d...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 15
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:14.553Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=16",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228054",
+    "X-Nonce": "76145872956f80d23d252fdd181c7c7a",
+    "X-Sign": "1fff4fca...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 16
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:15.848Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=17",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228055",
+    "X-Nonce": "0549cb54522870d13d70dc6edee0db0c",
+    "X-Sign": "20b02da3...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 17
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:20.805Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=18",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228060",
+    "X-Nonce": "d039bd806ff5f9e87297cf2ee703abed",
+    "X-Sign": "0c08652b...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 18
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:21.395Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=19",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228061",
+    "X-Nonce": "abaebc2c2b87a160e4af264a6f625331",
+    "X-Sign": "30843268...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 19
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:21.907Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=20",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228061",
+    "X-Nonce": "4783e54e4eed865eb8311e8941271a08",
+    "X-Sign": "b68142b3...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 20
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:22.488Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=21",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228062",
+    "X-Nonce": "05be8cc3c7961e1d3aed68dc66aebeed",
+    "X-Sign": "7ab75bac...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 21
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:23.030Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=22",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228063",
+    "X-Nonce": "a23356c86f5b73ec5b864d64f74382a6",
+    "X-Sign": "5bf4b677...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 22
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:23.638Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=23",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228063",
+    "X-Nonce": "4e24295116ed9977a40d645a670fc80e",
+    "X-Sign": "949f266c...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 23
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:24.199Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=24",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228064",
+    "X-Nonce": "d557c158edf138ffcd5a7e59eb87217a",
+    "X-Sign": "c1f05a64...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 24
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:24.568Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228064",
+    "X-Nonce": "14be508aa335787353e0f915cd1c0e25",
+    "X-Sign": "bdafc48a...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:24.859Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=25",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228064",
+    "X-Nonce": "b8c7f078d9d9c3f6b633a0bb4e83dbe6",
+    "X-Sign": "e2d32214...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 25
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:25.446Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=26",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228065",
+    "X-Nonce": "16661b5b31b9dba62c33ee7107fbbbcc",
+    "X-Sign": "94364591...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 26
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:25.554Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=2",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228065",
+    "X-Nonce": "a3f818ec534f02f0bfac5165376daacb",
+    "X-Sign": "c7192e16...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 2
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:25.996Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=27",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228065",
+    "X-Nonce": "20e95b2f301d3b411d40d2ad735f7d83",
+    "X-Sign": "ca54b7df...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 27
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:26.186Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=3",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228066",
+    "X-Nonce": "d61b1c6f1e1c4b6245c0e976ea7798bd",
+    "X-Sign": "a1ef52c6...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 3
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:26.573Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=28",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228066",
+    "X-Nonce": "67ea434371bdaf02da624cea852b00ca",
+    "X-Sign": "30af81a3...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 28
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:26.823Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=4",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228066",
+    "X-Nonce": "4c75f7621fd43d4689f703a924c4e165",
+    "X-Sign": "48d4f480...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 4
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:27.203Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=29",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228067",
+    "X-Nonce": "849119570f68ac2dc076c953ee5b19f0",
+    "X-Sign": "6c26c025...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 29
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:27.436Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=5",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228067",
+    "X-Nonce": "f2f164ea3fc00672d3b5a392fa5d01bb",
+    "X-Sign": "86fbd01d...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 5
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:27.719Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=30",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228067",
+    "X-Nonce": "14386798b9009c2c5c1c082c31c8fbd9",
+    "X-Sign": "355b4efa...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 30
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:28.068Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=6",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228068",
+    "X-Nonce": "ff6279c1cf457a82b7b73dab040a575f",
+    "X-Sign": "1ec705f6...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 6
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:28.254Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=31",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228068",
+    "X-Nonce": "183530ac6c4c1edd2955ff06d2f3736c",
+    "X-Sign": "4b64a700...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 31
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:28.703Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=7",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228068",
+    "X-Nonce": "24cd86c83c5b27d608db75c454c9a8fb",
+    "X-Sign": "fb21b191...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 7
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:28.837Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=32",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228068",
+    "X-Nonce": "e321f8d5f287439209dd2df2cb335743",
+    "X-Sign": "c0ebc565...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 32
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:29.384Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=8",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228069",
+    "X-Nonce": "0b8649e674deb829812befd9f600af6b",
+    "X-Sign": "76e32951...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 8
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:29.437Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=33",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228069",
+    "X-Nonce": "afdfbc08a30146544d98efdf9930d818",
+    "X-Sign": "5e98bb80...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 33
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:30.026Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=9",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228070",
+    "X-Nonce": "af25907ac4a69dca5dea11cec359263a",
+    "X-Sign": "bfad350d...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 9
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:30.104Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=34",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228070",
+    "X-Nonce": "cdb9864c97635545f3b799f52fb52e06",
+    "X-Sign": "b3d67169...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 34
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:30.536Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=10",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228070",
+    "X-Nonce": "4342dc2e60dfa118ec5bda259516cac5",
+    "X-Sign": "0f77379a...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 10
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:30.686Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=35",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228070",
+    "X-Nonce": "df581ce92ee4c6b0bce5dbdc8f7f8956",
+    "X-Sign": "8cea2638...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 35
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:31.088Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=11",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228071",
+    "X-Nonce": "d89c7ecf76643e3358e5a0f387a9d1a8",
+    "X-Sign": "b790d7bd...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 11
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:31.319Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=36",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228071",
+    "X-Nonce": "b7ed47dc446f1ce0371fbf74414a4f76",
+    "X-Sign": "fd850fda...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 36
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:31.669Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=12",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228071",
+    "X-Nonce": "46b9cde61594b11192c522f6ef7a4c8b",
+    "X-Sign": "1763b20a...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 12
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:31.965Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=37",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228071",
+    "X-Nonce": "0920538f6ed0381cf76b4dc6412750ff",
+    "X-Sign": "d62e0f89...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 37
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:32.190Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=13",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228072",
+    "X-Nonce": "3293dbae7f7b49492c06125a7f4684b4",
+    "X-Sign": "3ebdf24e...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 13
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:32.563Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=38",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228072",
+    "X-Nonce": "a24bcec524a9af5c5165024a9ffd9b38",
+    "X-Sign": "c2633c0c...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 38
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:32.803Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=14",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228072",
+    "X-Nonce": "86c6d7f6d230858591c3fd18f6a41eb0",
+    "X-Sign": "2a271de1...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 14
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:33.147Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=39",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228073",
+    "X-Nonce": "8f812f6d948dad98f5d49104595bf168",
+    "X-Sign": "2a60b463...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 39
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:33.379Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=15",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228073",
+    "X-Nonce": "0933236063b9dae7672ce793919c9a4c",
+    "X-Sign": "3936d15a...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 15
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:33.746Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=40",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228073",
+    "X-Nonce": "f3629bfa56cf0a4f6192405b0db80267",
+    "X-Sign": "2c524588...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 40
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:33.968Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=16",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228073",
+    "X-Nonce": "0bdd0fd9441dc6125321a74daf294c4b",
+    "X-Sign": "13d1a47e...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 16
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:34.481Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=17",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228074",
+    "X-Nonce": "56b33b94ef526b0d379d2366ae5aa3af",
+    "X-Sign": "706b939f...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 17
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:35.024Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=18",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228075",
+    "X-Nonce": "9af1fde7541ee4d76f83f60bdb73b0da",
+    "X-Sign": "250a7c00...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 18
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:35.849Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=19",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228075",
+    "X-Nonce": "6c2d8b544b7ebfde0fa398068d0b9866",
+    "X-Sign": "905afc94...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 19
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:36.351Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=20",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228076",
+    "X-Nonce": "f518f8747118b71e7456ff8c7f91a8ca",
+    "X-Sign": "87e1740e...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 20
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:36.969Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=21",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228076",
+    "X-Nonce": "aca80fde096954158026b9ca8378281c",
+    "X-Sign": "451b985d...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 21
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:37.514Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=22",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228077",
+    "X-Nonce": "129d92fd5a4a6032cc0d48a5d7cfa4af",
+    "X-Sign": "231f76bd...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 22
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:38.098Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=23",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228078",
+    "X-Nonce": "eb2fb68b7bcf0d1615a95868bdd7cf68",
+    "X-Sign": "9cd4d98d...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 23
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:38.580Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=24",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228078",
+    "X-Nonce": "72faf0dd29d7ea33ab268b90198a9abf",
+    "X-Sign": "0c19c547...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 24
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:39.149Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=25",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228079",
+    "X-Nonce": "0b7f62931bf64eda86cf3771f4ca4f4f",
+    "X-Sign": "2dc9556d...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 25
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:40.014Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=26",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228080",
+    "X-Nonce": "2312995a35ec14f4e6b5499adc014c62",
+    "X-Sign": "00f0191a...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 26
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:40.620Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=27",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228080",
+    "X-Nonce": "87f0351fb63c79985fbcab000bd40db0",
+    "X-Sign": "e7672526...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 27
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:41.182Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=28",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228081",
+    "X-Nonce": "0b2e48def9c14e09aa6edfd4afb45865",
+    "X-Sign": "5a26c246...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 28
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:41.714Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=29",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228081",
+    "X-Nonce": "1440635f51cb51d246b1da6a3f01086a",
+    "X-Sign": "82e8b196...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 29
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:42.766Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=30",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228082",
+    "X-Nonce": "84630c35f587edbda880950b1b8df404",
+    "X-Sign": "d6af3794...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 30
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:43.432Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=31",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228083",
+    "X-Nonce": "ef3b021208b1466e1eafa80616d79de5",
+    "X-Sign": "3a825379...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 31
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:45.379Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=32",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228085",
+    "X-Nonce": "e25681d1da9178e547efa3c7e583ecbb",
+    "X-Sign": "2c246780...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 32
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:45.479Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228085",
+    "X-Nonce": "450a626c4cd684aad3c1d21c651ea392",
+    "X-Sign": "f4180f00...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:45.973Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=33",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228085",
+    "X-Nonce": "b88ccefecaae4af177f56e9493f199df",
+    "X-Sign": "eeb56111...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 33
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:46.234Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=2",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228086",
+    "X-Nonce": "d5ac76f0292d9b317edfb7306b2e2561",
+    "X-Sign": "1517a6b9...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 2
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:46.547Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=34",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228086",
+    "X-Nonce": "5b83ae49a98e8635ed89e42858f060a0",
+    "X-Sign": "c50d7240...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 34
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:46.777Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=3",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228086",
+    "X-Nonce": "29cc7b8b9da69f92945771ca0dc4777d",
+    "X-Sign": "67e1c0cb...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 3
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:47.096Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=35",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228087",
+    "X-Nonce": "bb1d215541e479d53b85ef2bceabcd87",
+    "X-Sign": "b4ee26fe...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 35
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:47.330Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=4",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228087",
+    "X-Nonce": "17289c873d17cd6e42d51580e60163e1",
+    "X-Sign": "a93bd8fe...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 4
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:47.661Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=36",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228087",
+    "X-Nonce": "dc936780cc1329ae00eecebb972fe39f",
+    "X-Sign": "333562cc...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 36
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:48.258Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=5",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228088",
+    "X-Nonce": "d17062250b1473517071b305a347da3d",
+    "X-Sign": "0b856f6e...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 5
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:48.269Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=37",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228088",
+    "X-Nonce": "01ef4069f29dccd8e9fb2d6399e4ddcf",
+    "X-Sign": "b5ee1d72...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 37
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:48.871Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=6",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228088",
+    "X-Nonce": "8ab56d69a3f23a17a5629ff49ec8c215",
+    "X-Sign": "5cf03cc6...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 6
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:48.880Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=38",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228088",
+    "X-Nonce": "34604b758233f864ed1f8ca032cc6077",
+    "X-Sign": "9477e08b...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 38
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:49.481Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=7",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228089",
+    "X-Nonce": "beeb9d45cab5d5487e973e213d2bcaa7",
+    "X-Sign": "1aabf610...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 7
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-04-03T14:54:49.499Z",
+  "type": "request",
+  "endpoint": "GET /games",
+  "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games?expand=images&page=39",
+  "headers": {
+    "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+    "X-Timestamp": "1775228089",
+    "X-Nonce": "fdff1c51450ee34fac7ab453bf7a65a8",
+    "X-Sign": "a7978637...",
+    "Accept": "application/json"
+  },
+  "body": null,
+  "params": {
+    "expand": "images",
+    "page": 39
+  }
+}
+================================================================================
+

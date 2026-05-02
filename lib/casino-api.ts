@@ -50,7 +50,7 @@ export function getCasinoConfig(): CasinoApiConfig {
 
 /**
  * Calculate X-Sign for outgoing requests
- * 
+ *
  * Algorithm:
  * 1. Merge request parameters with authorization headers
  * 2. Sort resulting array by key (ascending)
@@ -60,42 +60,120 @@ export function getCasinoConfig(): CasinoApiConfig {
 export function calculateXSign(
   params: Record<string, any>,
   headers: Record<string, string>,
-  merchantKey: string
+  merchantKey: string,
+  useRawValues: boolean = false
 ): string {
-  // Merge params and headers
-  const mergedParams = { ...params, ...headers }
+  // Filter out X-Sign if it was accidentally passed in headers
+  const filteredHeaders = Object.entries(headers).reduce(
+    (acc, [key, value]) => {
+      if (key.toLowerCase() !== 'x-sign') {
+        acc[key] = value
+      }
+      return acc
+    },
+    {} as Record<string, string>
+  )
 
-  // Sort by key (ascending)
-  const sortedKeys = Object.keys(mergedParams).sort()
+  // Merge params and headers for signing (as per Slotegrator documentation)
+  const allParams = { ...params, ...filteredHeaders }
+
+  // Sort by key (ascending, ASCII order)
+  const sortedKeys = Object.keys(allParams).sort()
+
+  /**
+   * Perfectly mimic PHP's http_build_query (RFC 1738)
+   */
+  const encodePHP = (str: string) => {
+    return encodeURIComponent(str)
+      .replace(/%20/g, '+')
+      .replace(/!/g, '%21')
+      .replace(/'/g, '%27')
+      .replace(/\(/g, '%28')
+      .replace(/\)/g, '%29')
+      .replace(/\*/g, '%2A')
+      .replace(/~/g, '%7E')
+  }
 
   // Build query string
   const queryString = sortedKeys
     .map((key) => {
-      const value = mergedParams[key]
-      return `${encodeURIComponent(key)}=${encodeURIComponent(String(value))}`
+      let value = allParams[key]
+      if (typeof value === 'boolean') value = value ? '1' : '0'
+      if (value === null || value === undefined) value = ''
+
+      const stringValue = String(value)
+
+      if (useRawValues) {
+        // Documentation sometimes implies raw concatenation for callbacks
+        return `${key}=${stringValue}`
+      } else {
+        // Documentation explicitly says http_build_query for API calls
+        return `${encodePHP(key)}=${encodePHP(stringValue)}`
+      }
     })
     .join('&')
 
   // Generate SHA1 HMAC
-  const signature = crypto
-    .createHmac('sha1', merchantKey)
-    .update(queryString)
-    .digest('hex')
+  const signature = crypto.createHmac('sha1', merchantKey).update(queryString).digest('hex')
 
   return signature
 }
 
 /**
- * Validate X-Sign for incoming requests
+ * Validate X-Sign for incoming callback requests
  */
 export function validateXSign(
   params: Record<string, any>,
   headers: Record<string, string>,
   receivedSign: string,
-  merchantKey: string
+  merchantKey?: string
 ): boolean {
-  const expectedSign = calculateXSign(params, headers, merchantKey)
-  return expectedSign === receivedSign
+  // Use the actual Merchant Key from environment (passed by caller)
+  if (!merchantKey) {
+    // Fallback for testing/development (should not reach here in production)
+    merchantKey = 'b83d51ea35e2620a4e29913a9059e8e5038caa64'
+  }
+
+  // Strictly only use these 3 headers for the signature
+  const authHeaderKeys = ['x-merchant-id', 'x-timestamp', 'x-nonce']
+  const normalizedHeaders: Record<string, string> = {}
+
+  for (const key in headers) {
+    const lowerKey = key.toLowerCase()
+    if (authHeaderKeys.includes(lowerKey)) {
+      let normalizedKey = key
+      // MUST match Pascal-Case exactly so sorting puts 'X-' before 'a'
+      if (lowerKey === 'x-merchant-id') normalizedKey = 'X-Merchant-Id'
+      else if (lowerKey === 'x-timestamp') normalizedKey = 'X-Timestamp'
+      else if (lowerKey === 'x-nonce') normalizedKey = 'X-Nonce'
+
+      normalizedHeaders[normalizedKey] = headers[key]
+    }
+  }
+
+  // Dual Validation Strategy:
+  // Slotegrator providers inconsistently use RAW vs. PHP-ENCODED signatures.
+  // We calculate both and succeed if either matches.
+
+  // 1. PHP-compliant url-encoding
+  const sigEncoded = calculateXSign(params, normalizedHeaders, merchantKey, false)
+  if (sigEncoded === receivedSign) return true
+
+  // 2. Raw values (no url-encoding)
+  const sigRaw = calculateXSign(params, normalizedHeaders, merchantKey, true)
+  if (sigRaw === receivedSign) return true
+
+  // If both failed, log details in development
+  if (process.env.NODE_ENV === 'development') {
+    console.error('[Casino Signature Validation Failed]')
+    console.error('Params:', JSON.stringify(params, null, 2))
+    console.error('Normalized Headers:', JSON.stringify(normalizedHeaders, null, 2))
+    console.error('Received:', receivedSign)
+    console.error('Candidate (Encoded):', sigEncoded)
+    console.error('Candidate (Raw):', sigRaw)
+  }
+
+  return false
 }
 
 /**
@@ -109,7 +187,7 @@ function generateAuthHeaders(
   const timestamp = Math.floor(Date.now() / 1000).toString()
   const nonce = crypto.randomBytes(16).toString('hex')
 
-  const headers = {
+  const headers: Record<string, string> = {
     'X-Merchant-Id': merchantId,
     'X-Timestamp': timestamp,
     'X-Nonce': nonce,
@@ -136,7 +214,7 @@ async function makeCasinoRequest<T>(
   bodyParams?: Record<string, any>
 ): Promise<T> {
   const config = getCasinoConfig()
-  
+
   // For GET requests, params go in URL query string
   // For POST requests, params go in body
   let url = `${config.baseUrl}${endpoint}`
@@ -147,12 +225,15 @@ async function makeCasinoRequest<T>(
 
   if (method === 'GET' && params) {
     const queryString = new URLSearchParams(
-      Object.entries(params).reduce((acc, [key, value]) => {
-        if (value !== undefined && value !== null) {
-          acc[key] = String(value)
-        }
-        return acc
-      }, {} as Record<string, string>)
+      Object.entries(params).reduce(
+        (acc, [key, value]) => {
+          if (value !== undefined && value !== null) {
+            acc[key] = String(value)
+          }
+          return acc
+        },
+        {} as Record<string, string>
+      )
     ).toString()
     if (queryString) {
       url += (endpoint.includes('?') ? '&' : '?') + queryString
@@ -177,7 +258,7 @@ async function makeCasinoRequest<T>(
   // Prepare request
   const headers: Record<string, string> = {
     ...authHeaders,
-    'Accept': 'application/json',
+    Accept: 'application/json',
   }
 
   // Only add Content-Type for POST requests
@@ -257,7 +338,7 @@ async function makeCasinoRequest<T>(
   if (!response.ok) {
     let errorMessage = `Casino API request failed: ${response.status} ${response.statusText}`
     let errorDetails: any = responseBody || {}
-    
+
     if (responseBody && typeof responseBody === 'object') {
       errorMessage = responseBody.message || responseBody.name || responseBody.error || errorMessage
       errorDetails = responseBody
@@ -275,7 +356,7 @@ async function makeCasinoRequest<T>(
     ;(detailedError as any).endpoint = endpoint
     ;(detailedError as any).requestLog = requestLog
     ;(detailedError as any).responseLog = responseLog
-    
+
     const errorLog = {
       endpoint,
       method,
@@ -289,7 +370,7 @@ async function makeCasinoRequest<T>(
     console.error('[Casino API Error]', JSON.stringify(errorLog, null, 2))
     // Write to file
     writeApiLog('error', `${method} ${endpoint}`, errorLog)
-    
+
     throw detailedError
   }
 
@@ -302,18 +383,15 @@ async function makeCasinoRequest<T>(
 
 /**
  * POST /self-validate - Self Validation
- * 
+ *
  * Allows integrator to check if implementation is correct.
  * Requires active game session (opened within 15 minutes).
- * 
+ *
  * @returns Validation result with success status and log messages
  */
 export async function selfValidate(): Promise<SelfValidateResponse> {
   try {
-    const response = await makeCasinoRequest<SelfValidateResponse>(
-      '/self-validate',
-      'POST'
-    )
+    const response = await makeCasinoRequest<SelfValidateResponse>('/self-validate', 'POST')
 
     return response
   } catch (error) {
@@ -373,10 +451,10 @@ export interface GamesResponse {
 
 /**
  * GET /games - Retrieve Games List
- * 
+ *
  * Returns collection of games available for your Merchant ID.
  * Supports pagination to fetch all games.
- * 
+ *
  * @param options.expand - Additional object expansions (tags, parameters, images, related_games)
  * @param options.fetchAll - If true, fetches all pages (default: false)
  * @param options.maxPages - Maximum number of pages to fetch (default: 200)
@@ -388,7 +466,7 @@ export async function getGames(options?: {
 }): Promise<GamesResponse> {
   try {
     const queryParams: Record<string, any> = {}
-    
+
     if (options?.expand) {
       queryParams.expand = options.expand
     }
@@ -415,7 +493,9 @@ export async function getGames(options?: {
 
     // Log what we're doing
     if (maxPages > 1) {
-      console.log(`Fetching games: ${totalPages} total pages, ${firstPage._meta?.totalCount || 0} total games, fetching up to ${maxPages} pages (maxPages=${maxPages})`)
+      console.log(
+        `Fetching games: ${totalPages} total pages, ${firstPage._meta?.totalCount || 0} total games, fetching up to ${maxPages} pages (maxPages=${maxPages})`
+      )
     }
 
     // Fetch remaining pages if there are more
@@ -424,31 +504,29 @@ export async function getGames(options?: {
     while (currentPage < totalPages && currentPage < maxPages) {
       try {
         currentPage++
-        
+
         // CRITICAL: Check if we've exceeded maxPages before making the request
         if (currentPage > maxPages) {
           console.log(`Stopping: currentPage (${currentPage}) > maxPages (${maxPages})`)
           break
         }
-        
+
         // Add delay to avoid rate limiting (10ms = 100 req/sec max)
         if (currentPage > 1) {
-          await new Promise(resolve => setTimeout(resolve, 10))
+          await new Promise((resolve) => setTimeout(resolve, 10))
         }
 
         const nextParams: Record<string, any> = { ...queryParams, page: currentPage }
 
-        const nextPage = await makeCasinoRequest<GamesResponse>(
-          '/games',
-          'GET',
-          nextParams
-        )
+        const nextPage = await makeCasinoRequest<GamesResponse>('/games', 'GET', nextParams)
 
         allGames.push(...nextPage.items)
 
         // Log progress every 10 pages
         if (currentPage % 10 === 0) {
-          console.log(`Fetched ${currentPage}/${maxPages} pages (max), ${allGames.length} games so far...`)
+          console.log(
+            `Fetched ${currentPage}/${maxPages} pages (max), ${allGames.length} games so far...`
+          )
         }
 
         // Break if no more items
@@ -493,16 +571,13 @@ export interface MerchantLimit {
 
 /**
  * GET /limits - Get Merchant Limits
- * 
+ *
  * Returns list of limits for merchant, including enabled providers per currency.
  * This can be used to filter games to only show games from enabled providers.
  */
 export async function getMerchantLimits(): Promise<MerchantLimit[]> {
   try {
-    const response = await makeCasinoRequest<MerchantLimit[]>(
-      '/limits',
-      'GET'
-    )
+    const response = await makeCasinoRequest<MerchantLimit[]>('/limits', 'GET')
     return response
   } catch (error) {
     console.error('Error fetching merchant limits:', error)
@@ -513,11 +588,11 @@ export async function getMerchantLimits(): Promise<MerchantLimit[]> {
 
 /**
  * Get enabled providers for a specific currency
- * 
+ *
  * IMPORTANT: Providers are enabled PER CURRENCY. A provider enabled for EUR
  * may not be enabled for USD. This function returns providers enabled for the
  * specified currency only.
- * 
+ *
  * @param currency - Currency code (e.g., 'USD', 'EUR')
  * @returns Set of enabled provider names for the specified currency
  */
@@ -525,44 +600,53 @@ export async function getEnabledProviders(currency: string = 'USD'): Promise<Set
   try {
     const limits = await getMerchantLimits()
     const enabledProviders = new Set<string>()
-    
+
     console.log(`[Provider Filter] Fetching enabled providers for currency: ${currency}`)
     console.log(`[Provider Filter] Limits response:`, JSON.stringify(limits, null, 2))
-    
+
     // FIRST: Find limits for the SPECIFIC currency requested
-    const currencyLimits = limits.filter(limit => 
-      limit.currency && limit.currency.toUpperCase() === currency.toUpperCase()
+    const currencyLimits = limits.filter(
+      (limit) => limit.currency && limit.currency.toUpperCase() === currency.toUpperCase()
     )
-    
+
     if (currencyLimits.length > 0) {
       // Found limits for the requested currency
-      currencyLimits.forEach(limit => {
+      currencyLimits.forEach((limit) => {
         if (limit.providers && Array.isArray(limit.providers)) {
-          limit.providers.forEach(provider => {
+          limit.providers.forEach((provider) => {
             enabledProviders.add(provider.trim())
           })
         }
       })
-      console.log(`[Provider Filter] Found ${enabledProviders.size} providers enabled for ${currency}`)
+      console.log(
+        `[Provider Filter] Found ${enabledProviders.size} providers enabled for ${currency}`
+      )
     } else {
       // No limits found for requested currency
-      console.warn(`[Provider Filter] No providers found for currency ${currency}. Available currencies:`, 
-        limits.map(l => l.currency).filter(Boolean))
-      
+      console.warn(
+        `[Provider Filter] No providers found for currency ${currency}. Available currencies:`,
+        limits.map((l) => l.currency).filter(Boolean)
+      )
+
       // Fallback: collect from all currencies (but log warning)
       // This is a fallback behavior - ideally we should match by currency
-      limits.forEach(limit => {
+      limits.forEach((limit) => {
         if (limit.providers && Array.isArray(limit.providers)) {
-          limit.providers.forEach(provider => {
+          limit.providers.forEach((provider) => {
             enabledProviders.add(provider.trim())
           })
         }
       })
-      console.warn(`[Provider Filter] Using fallback: collected ${enabledProviders.size} providers from all currencies`)
+      console.warn(
+        `[Provider Filter] Using fallback: collected ${enabledProviders.size} providers from all currencies`
+      )
     }
-    
-    console.log(`[Provider Filter] Found ${enabledProviders.size} enabled providers for ${currency}:`, Array.from(enabledProviders))
-    
+
+    console.log(
+      `[Provider Filter] Found ${enabledProviders.size} enabled providers for ${currency}:`,
+      Array.from(enabledProviders)
+    )
+
     return enabledProviders
   } catch (error) {
     console.error('[Provider Filter] Error getting enabled providers:', error)
@@ -586,25 +670,27 @@ interface LobbyResponse {
     dealerName?: string
     dealerAvatar?: string
     technology?: string
-    limits?: Array<{
-      currency: string
-      min: number
-      max: number
-    }> | {
-      currency: string
-      min: number
-      max: number
-    }
+    limits?:
+      | Array<{
+          currency: string
+          min: number
+          max: number
+        }>
+      | {
+          currency: string
+          min: number
+          max: number
+        }
     tableId?: string
   }
 }
 
 /**
  * GET /games/lobby - Get Lobby Tables
- * 
+ *
  * Returns list of tables for games with lobby.
  * Required before calling /games/init for games with has_lobby === 1
- * 
+ *
  * @param gameUuid - Game UUID from /games
  * @param currency - Player currency
  * @param technology - Optional: "html5" or "flash"
@@ -619,17 +705,13 @@ export async function getGameLobby(
       game_uuid: gameUuid,
       currency,
     }
-    
+
     if (technology) {
       params.technology = technology
     }
-    
-    const response = await makeCasinoRequest<LobbyResponse>(
-      '/games/lobby',
-      'GET',
-      params
-    )
-    
+
+    const response = await makeCasinoRequest<LobbyResponse>('/games/lobby', 'GET', params)
+
     return response
   } catch (error) {
     console.error('Error fetching game lobby:', error)
@@ -660,9 +742,9 @@ interface InitGameResponse {
 
 /**
  * Initialize game session with casino provider
- * 
+ *
  * Calls POST /games/init to get the game URL for player redirection.
- * 
+ *
  * @param gameId - Game UUID from Slotegrator
  * @param userId - User ID on integrator side
  * @param balance - Player balance (for validation)
@@ -684,53 +766,62 @@ export async function initializeGameSession(
 ): Promise<GameSessionInitResponse> {
   try {
     const config = getCasinoConfig()
-    
+
     // Generate unique session ID
     const sessionId = `session_${userId}_${Date.now()}_${Math.random().toString(36).substring(7)}`
-    
+
     // Get user info from database
     const { queryOne } = await import('@/lib/db')
-    
+
     // Get user email and username
     const user = await queryOne<{ email: string; username: string | null }>(
       'SELECT email, username FROM users WHERE id = ?',
       [userId]
     )
-    
+
     if (!user) {
       throw new Error('User not found')
     }
-    
+
     // Get user profile for currency and language
-    const profile = await queryOne<{ currency: string; language: string; first_name: string | null; last_name: string | null }>(
-      'SELECT currency, language, first_name, last_name FROM user_profiles WHERE user_id = ?',
-      [userId]
-    )
-    
+    const profile = await queryOne<{
+      currency: string
+      language: string
+      first_name: string | null
+      last_name: string | null
+    }>('SELECT currency, language, first_name, last_name FROM user_profiles WHERE user_id = ?', [
+      userId,
+    ])
+
     // Prepare parameters for /games/init
     const params: InitGameParams = {
       game_uuid: gameId,
       player_id: userId,
-      player_name: options?.playerName || 
-                   (profile?.first_name && profile?.last_name 
-                     ? `${profile.first_name} ${profile.last_name}` 
-                     : user.username || user.email.split('@')[0] || 'Player'),
+      player_name:
+        options?.playerName ||
+        (profile?.first_name && profile?.last_name
+          ? `${profile.first_name} ${profile.last_name}`
+          : user.username || user.email.split('@')[0] || 'Player'),
       // Use currency from options, profile, or environment variable, default to USD
       // Note: Currency must be enabled in your Slotegrator contract
       // Common supported currencies: USD, EUR, GBP, CAD, AUD, etc.
-      currency: options?.currency || profile?.currency || process.env.CASINO_DEFAULT_CURRENCY || 'USD',
+      currency:
+        options?.currency || profile?.currency || process.env.CASINO_DEFAULT_CURRENCY || 'USD',
       session_id: sessionId,
       device: options?.device || 'desktop',
-      return_url: options?.returnUrl || process.env.CASINO_TEST_AREA_URL || `${process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'}/casino`,
+      return_url:
+        options?.returnUrl ||
+        process.env.CASINO_TEST_AREA_URL ||
+        `${process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'}/casino`,
       language: options?.language || profile?.language || 'fr',
       email: options?.email || user.email,
     }
-    
+
     // Add lobby_data if provided (for games with lobby)
     if (options?.lobbyData) {
       params.lobby_data = options.lobbyData
     }
-    
+
     // Call POST /games/init
     const response = await makeCasinoRequest<InitGameResponse>(
       '/games/init',
@@ -738,11 +829,11 @@ export async function initializeGameSession(
       undefined,
       params
     )
-    
+
     if (!response.url) {
       throw new Error('No game URL returned from Slotegrator')
     }
-    
+
     return {
       sessionId,
       gameUrl: response.url,
@@ -753,4 +844,3 @@ export async function initializeGameSession(
     throw error
   }
 }
-

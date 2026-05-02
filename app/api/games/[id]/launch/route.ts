@@ -229,13 +229,40 @@ export async function POST(
     // Get user's wallet balance
     launchLog.steps.push({ step: 'get_wallet_balance', status: 'in_progress' })
     
-    const wallet = await queryOne<{ 
-      balance: number
-      bonus_balance: number
-    }>(
-      'SELECT balance, bonus_balance FROM wallets WHERE user_id = ?',
-      [userId]
-    )
+    let wallet: { balance: number; bonus_balance?: number } | null = null
+    let bonusBalance = 0
+    
+    try {
+      // Try to get wallet with bonus_balance column (if it exists)
+      wallet = await queryOne<{ 
+        balance: number
+        bonus_balance?: number
+      }>(
+        'SELECT balance, bonus_balance FROM wallets WHERE user_id = ?',
+        [userId]
+      )
+      
+      if (wallet && wallet.bonus_balance !== undefined && wallet.bonus_balance !== null) {
+        bonusBalance = parseFloat(String(wallet.bonus_balance || '0'))
+      }
+    } catch (error: any) {
+      // Fallback: bonus_balance column doesn't exist, query without it
+      launchLog.steps.push({
+        step: 'get_wallet_balance_retry',
+        status: 'info',
+        reason: 'bonus_balance column not found, retrying without it'
+      })
+      
+      if (error.message && error.message.includes('no such column: bonus_balance')) {
+        wallet = await queryOne<{ balance: number }>(
+          'SELECT balance FROM wallets WHERE user_id = ?',
+          [userId]
+        )
+        bonusBalance = 0
+      } else {
+        throw error
+      }
+    }
 
     if (!wallet) {
       launchLog.steps.push({ step: 'get_wallet_balance', status: 'failed', error: 'Wallet not found' })
@@ -246,10 +273,10 @@ export async function POST(
       )
     }
 
-    const totalBalance = wallet.balance + wallet.bonus_balance
+    const totalBalance = (wallet.balance || 0) + bonusBalance
     launchLog.wallet = {
       balance: wallet.balance,
-      bonus_balance: wallet.bonus_balance,
+      bonus_balance: bonusBalance,
       totalBalance
     }
     launchLog.steps.push({ step: 'get_wallet_balance', status: 'success', totalBalance })

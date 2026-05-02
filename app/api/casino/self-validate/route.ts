@@ -1,95 +1,57 @@
 import { NextRequest, NextResponse } from 'next/server'
+import crypto from 'crypto'
 import { queryOne } from '@/lib/db'
-import { selfValidate } from '@/lib/casino-api'
 
 /**
  * POST /api/casino/self-validate
  * 
- * Self-validation endpoint for Casino API integration
- * 
- * This endpoint:
- * 1. Checks for an active game session (opened within 15 minutes)
- * 2. Calls the Casino API self-validation endpoint
- * 3. Returns validation results with log messages
- * 
- * Requirements:
- * - Active game session must exist (opened within 15 minutes)
- * - Casino API credentials must be configured
+ * Direct self-validation endpoint that calls Slotegrator's /self-validate
+ * without requiring a database session.
  */
 export async function POST(request: NextRequest) {
   try {
-    // Check for active game session (opened within 15 minutes)
-    // The session_token in game_sessions should match a session from the Casino API
-    const activeSession = await queryOne<{
-      id: string
-      user_id: string
-      game_id: string
-      session_token: string
-      started_at: string
-    }>(
-      `SELECT id, user_id, game_id, session_token, started_at 
-       FROM game_sessions 
-       WHERE started_at > datetime('now', '-15 minutes')
-       ORDER BY started_at DESC 
-       LIMIT 1`
-    )
+    const MERCHANT_ID = process.env.CASINO_MERCHANT_ID
+    const MERCHANT_KEY = process.env.CASINO_MERCHANT_KEY
+    const BASE_URL = process.env.CASINO_API_BASE_URL || 'https://staging.slotegrator.com/api/index.php/v1'
 
-    if (!activeSession) {
+    if (!MERCHANT_ID || !MERCHANT_KEY) {
       return NextResponse.json(
-        {
-          success: false,
-          log: [
-            'No active game session found',
-            'Please launch a game first and ensure the session was opened within the last 15 minutes',
-          ],
-        },
-        { status: 400 }
-      )
-    }
-
-    // Call Casino API self-validation
-    try {
-      const validationResult = await selfValidate()
-
-      return NextResponse.json({
-        success: validationResult.success,
-        log: [
-          `Active session found: ${activeSession.id}`,
-          `Game ID: ${activeSession.game_id}`,
-          `Session started: ${activeSession.started_at}`,
-          ...validationResult.log,
-        ],
-      })
-    } catch (error) {
-      const errorMessage =
-        error instanceof Error ? error.message : 'Unknown error'
-
-      return NextResponse.json(
-        {
-          success: false,
-          log: [
-            `Active session found: ${activeSession.id}`,
-            `Game ID: ${activeSession.game_id}`,
-            `Session started: ${activeSession.started_at}`,
-            `Self-validation failed: ${errorMessage}`,
-            'Please check your Casino API credentials and configuration',
-          ],
-        },
+        { error: 'Missing merchant credentials' },
         { status: 500 }
       )
     }
-  } catch (error) {
-    console.error('Self-validation route error:', error)
-    const errorMessage = error instanceof Error ? error.message : 'Unknown error'
 
-    return NextResponse.json(
-      {
-        success: false,
-        log: [
-          `Error during self-validation: ${errorMessage}`,
-          'Please check your database connection and configuration',
-        ],
+    // Generate auth headers
+    const timestamp = Math.floor(Date.now() / 1000).toString()
+    const nonce = crypto.randomBytes(16).toString('hex')
+    const body = {}
+
+    const signatureData = `${MERCHANT_ID}${timestamp}${nonce}${JSON.stringify(body)}`
+    const signature = crypto
+      .createHash('sha1')
+      .update(signatureData + MERCHANT_KEY)
+      .digest('hex')
+
+    // Call Slotegrator
+    const response = await fetch(`${BASE_URL}/self-validate`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Merchant-Id': MERCHANT_ID,
+        'X-Timestamp': timestamp,
+        'X-Nonce': nonce,
+        'X-Sign': signature,
       },
+      body: JSON.stringify(body),
+    })
+
+    const data = await response.json()
+
+    return NextResponse.json(data, { status: response.status })
+  } catch (error: any) {
+    console.error('Self-validate error:', error)
+    return NextResponse.json(
+      { error: error.message || 'Self-validation failed' },
       { status: 500 }
     )
   }

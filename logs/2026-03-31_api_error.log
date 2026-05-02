@@ -1,0 +1,268 @@
+{
+  "timestamp": "2026-03-31T21:51:40.234Z",
+  "type": "error",
+  "endpoint": "/games/init",
+  "method": "POST",
+  "status": 404,
+  "statusText": "Not Found",
+  "errorMessage": "This provider is not enabled for your contract",
+  "errorDetails": {
+    "name": "Not Found",
+    "message": "This provider is not enabled for your contract",
+    "code": 0,
+    "status": 404
+  },
+  "request": {
+    "timestamp": "2026-03-31T21:51:40.062Z",
+    "endpoint": "POST /games/init",
+    "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+    "headers": {
+      "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+      "X-Timestamp": "1774993900",
+      "X-Nonce": "5099198d462f2b7b8f155b8ba74d2be1",
+      "X-Sign": "cb840bf8...",
+      "Accept": "application/json",
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    "body": "game_uuid=7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15&player_id=5fbW-EgviQlSB0qgLmM0Z&player_name=nanami&currency=USD&session_id=session_5fbW-EgviQlSB0qgLmM0Z_1774993900053_ouzqu&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=nanami%40gmail.com",
+    "params": {
+      "game_uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+      "player_id": "5fbW-EgviQlSB0qgLmM0Z",
+      "player_name": "nanami",
+      "currency": "USD",
+      "session_id": "session_5fbW-EgviQlSB0qgLmM0Z_1774993900053_ouzqu",
+      "device": "desktop",
+      "return_url": "https://boztestarea.ngrok.app",
+      "language": "fr",
+      "email": "nanami@gmail.com"
+    }
+  },
+  "response": {
+    "timestamp": "2026-03-31T21:51:40.228Z",
+    "endpoint": "POST /games/init",
+    "status": 404,
+    "statusText": "Not Found",
+    "headers": {
+      "access-control-expose-headers": "",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9e5293b3390c12a2-MRS",
+      "connection": "keep-alive",
+      "content-encoding": "gzip",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Tue, 31 Mar 2026 21:51:42 GMT",
+      "server": "cloudflare",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding"
+    },
+    "body": {
+      "name": "Not Found",
+      "message": "This provider is not enabled for your contract",
+      "code": 0,
+      "status": 404
+    },
+    "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-03-31T21:51:40.488Z",
+  "type": "error",
+  "endpoint": "/games/init",
+  "method": "POST",
+  "status": 404,
+  "statusText": "Not Found",
+  "errorMessage": "This provider is not enabled for your contract",
+  "errorDetails": {
+    "name": "Not Found",
+    "message": "This provider is not enabled for your contract",
+    "code": 0,
+    "status": 404
+  },
+  "request": {
+    "timestamp": "2026-03-31T21:51:40.210Z",
+    "endpoint": "POST /games/init",
+    "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+    "headers": {
+      "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+      "X-Timestamp": "1774993900",
+      "X-Nonce": "c7656277cb7cb01434e0f52c50c5102b",
+      "X-Sign": "b129ba83...",
+      "Accept": "application/json",
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    "body": "game_uuid=7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15&player_id=5fbW-EgviQlSB0qgLmM0Z&player_name=nanami&currency=USD&session_id=session_5fbW-EgviQlSB0qgLmM0Z_1774993900208_n8x3mf&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=nanami%40gmail.com",
+    "params": {
+      "game_uuid": "7487f0fac9049c9ee0dd0635a8ce5f5bfe04cd15",
+      "player_id": "5fbW-EgviQlSB0qgLmM0Z",
+      "player_name": "nanami",
+      "currency": "USD",
+      "session_id": "session_5fbW-EgviQlSB0qgLmM0Z_1774993900208_n8x3mf",
+      "device": "desktop",
+      "return_url": "https://boztestarea.ngrok.app",
+      "language": "fr",
+      "email": "nanami@gmail.com"
+    }
+  },
+  "response": {
+    "timestamp": "2026-03-31T21:51:40.481Z",
+    "endpoint": "POST /games/init",
+    "status": 404,
+    "statusText": "Not Found",
+    "headers": {
+      "access-control-expose-headers": "",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9e5293b428d46a1b-MRS",
+      "connection": "keep-alive",
+      "content-encoding": "gzip",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Tue, 31 Mar 2026 21:51:42 GMT",
+      "server": "cloudflare",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding"
+    },
+    "body": {
+      "name": "Not Found",
+      "message": "This provider is not enabled for your contract",
+      "code": 0,
+      "status": 404
+    },
+    "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-03-31T21:54:07.729Z",
+  "type": "error",
+  "endpoint": "/games/init",
+  "method": "POST",
+  "status": 404,
+  "statusText": "Not Found",
+  "errorMessage": "This provider is not enabled for your contract",
+  "errorDetails": {
+    "name": "Not Found",
+    "message": "This provider is not enabled for your contract",
+    "code": 0,
+    "status": 404
+  },
+  "request": {
+    "timestamp": "2026-03-31T21:54:07.575Z",
+    "endpoint": "POST /games/init",
+    "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+    "headers": {
+      "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+      "X-Timestamp": "1774994047",
+      "X-Nonce": "605fabd78689755bbce1c2b9cacd406f",
+      "X-Sign": "e670c02a...",
+      "Accept": "application/json",
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    "body": "game_uuid=5111b171119b9d8dddf0a7d20f013aab936fad6e&player_id=5fbW-EgviQlSB0qgLmM0Z&player_name=nanami&currency=USD&session_id=session_5fbW-EgviQlSB0qgLmM0Z_1774994047573_y51huk&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=nanami%40gmail.com",
+    "params": {
+      "game_uuid": "5111b171119b9d8dddf0a7d20f013aab936fad6e",
+      "player_id": "5fbW-EgviQlSB0qgLmM0Z",
+      "player_name": "nanami",
+      "currency": "USD",
+      "session_id": "session_5fbW-EgviQlSB0qgLmM0Z_1774994047573_y51huk",
+      "device": "desktop",
+      "return_url": "https://boztestarea.ngrok.app",
+      "language": "fr",
+      "email": "nanami@gmail.com"
+    }
+  },
+  "response": {
+    "timestamp": "2026-03-31T21:54:07.725Z",
+    "endpoint": "POST /games/init",
+    "status": 404,
+    "statusText": "Not Found",
+    "headers": {
+      "access-control-expose-headers": "",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9e52974d2ec9169b-MRS",
+      "connection": "keep-alive",
+      "content-encoding": "gzip",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Tue, 31 Mar 2026 21:54:10 GMT",
+      "server": "cloudflare",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding"
+    },
+    "body": {
+      "name": "Not Found",
+      "message": "This provider is not enabled for your contract",
+      "code": 0,
+      "status": 404
+    },
+    "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+  }
+}
+================================================================================
+
+{
+  "timestamp": "2026-03-31T21:54:08.093Z",
+  "type": "error",
+  "endpoint": "/games/init",
+  "method": "POST",
+  "status": 404,
+  "statusText": "Not Found",
+  "errorMessage": "This provider is not enabled for your contract",
+  "errorDetails": {
+    "name": "Not Found",
+    "message": "This provider is not enabled for your contract",
+    "code": 0,
+    "status": 404
+  },
+  "request": {
+    "timestamp": "2026-03-31T21:54:07.845Z",
+    "endpoint": "POST /games/init",
+    "fullUrl": "https://staging.slotegrator.com/api/index.php/v1/games/init",
+    "headers": {
+      "X-Merchant-Id": "dbb46701285c1a2e24a0bf92f00501e5",
+      "X-Timestamp": "1774994047",
+      "X-Nonce": "c53c25d9f06e02080a791f48d18ad1aa",
+      "X-Sign": "7b2e45de...",
+      "Accept": "application/json",
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    "body": "game_uuid=5111b171119b9d8dddf0a7d20f013aab936fad6e&player_id=5fbW-EgviQlSB0qgLmM0Z&player_name=nanami&currency=USD&session_id=session_5fbW-EgviQlSB0qgLmM0Z_1774994047844_9w4hkf&device=desktop&return_url=https%3A%2F%2Fboztestarea.ngrok.app&language=fr&email=nanami%40gmail.com",
+    "params": {
+      "game_uuid": "5111b171119b9d8dddf0a7d20f013aab936fad6e",
+      "player_id": "5fbW-EgviQlSB0qgLmM0Z",
+      "player_name": "nanami",
+      "currency": "USD",
+      "session_id": "session_5fbW-EgviQlSB0qgLmM0Z_1774994047844_9w4hkf",
+      "device": "desktop",
+      "return_url": "https://boztestarea.ngrok.app",
+      "language": "fr",
+      "email": "nanami@gmail.com"
+    }
+  },
+  "response": {
+    "timestamp": "2026-03-31T21:54:08.090Z",
+    "endpoint": "POST /games/init",
+    "status": 404,
+    "statusText": "Not Found",
+    "headers": {
+      "access-control-expose-headers": "",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "9e52974edb78489e-LIS",
+      "connection": "keep-alive",
+      "content-encoding": "gzip",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Tue, 31 Mar 2026 21:54:10 GMT",
+      "server": "cloudflare",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding"
+    },
+    "body": {
+      "name": "Not Found",
+      "message": "This provider is not enabled for your contract",
+      "code": 0,
+      "status": 404
+    },
+    "rawBody": "{\"name\":\"Not Found\",\"message\":\"This provider is not enabled for your contract\",\"code\":0,\"status\":404}"
+  }
+}
+================================================================================
+

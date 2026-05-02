@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slotegrator Validation - Step by Step</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 28px;
+        }
+        .steps {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        .step {
+            display: flex;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .step.completed {
+            background: #e8f5e9;
+            border-left-color: #4caf50;
+        }
+        .step-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: #667eea;
+            color: white;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .step.completed .step-number {
+            background: #4caf50;
+        }
+        .step-content {
+            flex: 1;
+        }
+        .step-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        .step-desc {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .step-action {
+            margin-top: 12px;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .btn-secondary {
+            background: #4caf50;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+        }
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+        #result {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #ddd;
+            white-space: pre-wrap;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            max-height: 400px;
+            overflow-y: auto;
+            display: none;
+            margin-top: 20px;
+        }
+        #result.success {
+            border-color: #4caf50;
+            background: #f1f8f4;
+        }
+        #result.error {
+            border-color: #f44336;
+            background: #fef0f0;
+        }
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #856404;
+        }
+        .checkmark {
+            color: #4caf50;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Slotegrator Validation Guide</h1>
+        
+        <div class="note">
+            <strong>⚠️ Important:</strong> Follow these steps exactly as described by Slotegrator support.
+        </div>
+
+        <ol class="steps">
+            <li class="step" id="step1">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <div class="step-title">Launch Game with /games/init</div>
+                    <div class="step-desc">
+                        Open the /games/init endpoint in your browser to create a game session.
+                    </div>
+                    <div class="step-action">
+                        <button class="btn btn-primary" onclick="openGameInit()">
+                            Open /games/init in Browser
+                        </button>
+                    </div>
+                </div>
+            </li>
+
+            <li class="step" id="step2">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <div class="step-title">Wait for Game to Load</div>
+                    <div class="step-desc">
+                        Do NOT interact with the game. Just wait for it to fully load and stay on the game page.
+                    </div>
+                    <div class="step-action">
+                        <button class="btn btn-secondary" onclick="completeStep(2)">
+                            Game is Ready ✓
+                        </button>
+                    </div>
+                </div>
+            </li>
+
+            <li class="step" id="step3">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <div class="step-title">Send POST /self-validate</div>
+                    <div class="step-desc">
+                        Send the validation request. This will test your callback handlers.
+                    </div>
+                    <div class="step-action">
+                        <button class="btn btn-primary" id="validateBtn" onclick="sendValidate()" disabled>
+                            Send /self-validate
+                        </button>
+                    </div>
+                </div>
+            </li>
+
+            <li class="step" id="step4">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <div class="step-title">Check Results</div>
+                    <div class="step-desc">
+                        Look for the keyword "failed" in the log, or check for status: 1 and success: true
+                    </div>
+                </div>
+            </li>
+        </ol>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        let currentStep = 1;
+
+        function openGameInit() {
+            // Create a hidden form to POST to /games/init
+            const form = document.createElement('form');
+            form.method = 'POST';
+            form.action = 'https://staging.slotegrator.com/api/index.php/v1/games/init';
+            form.target = 'casino_game';
+            form.style.display = 'none';
+            
+            const params = {
+                game_uuid: 'fe38b9de0f44ac5892261d426ba39cd1aa410807',
+                player_id: 'P1',
+                player_name: 'A',
+                currency: 'EUR',
+                session_id: 'S_' + Date.now(),
+                device: 'desktop',
+                return_url: 'http://localhost:3000',
+                language: 'en',
+                email: 'a@b.c'
+            };
+            
+            // Open window first
+            window.open('', 'casino_game', 'width=800,height=600');
+            
+            // Add parameters to form
+            for (const [key, value] of Object.entries(params)) {
+                const input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = key;
+                input.value = value;
+                form.appendChild(input);
+            }
+            
+            // Submit form
+            document.body.appendChild(form);
+            form.submit();
+            document.body.removeChild(form);
+            
+            completeStep(1);
+        }
+
+        function completeStep(step) {
+            const stepEl = document.getElementById(`step${step}`);
+            stepEl.classList.add('completed');
+            
+            if (step === 2) {
+                document.getElementById('validateBtn').disabled = false;
+            }
+        }
+
+        async function sendValidate() {
+            const resultDiv = document.getElementById('result');
+            const btn = document.getElementById('validateBtn');
+            
+            btn.disabled = true;
+            btn.textContent = '⏳ Sending request...';
+            resultDiv.style.display = 'block';
+            resultDiv.textContent = 'Sending validation request...';
+            resultDiv.className = '';
+
+            try {
+                const response = await fetch('/api/casino/self-validate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({})
+                });
+
+                const data = await response.json();
+                
+                // Display results
+                let output = '';
+                if (data.success === true && data.status === 1) {
+                    output = '✅ VALIDATION PASSED!\n\n';
+                    resultDiv.className = 'success';
+                    completeStep(4);
+                } else if (data.log) {
+                    output = '❌ VALIDATION FAILED\n\n';
+                    resultDiv.className = 'error';
+                    output += 'Errors/Issues Found:\n';
+                    const failedItems = data.log.filter(item => 
+                        item.toLowerCase().includes('failed')
+                    );
+                    if (failedItems.length > 0) {
+                        failedItems.forEach(item => {
+                            output += `❌ ${item}\n`;
+                        });
+                    } else {
+                        output += 'No "failed" keyword found\n\n';
+                    }
+                    output += '\nFull Log:\n';
+                    data.log.forEach((msg, idx) => {
+                        output += `[${idx + 1}] ${msg}\n`;
+                    });
+                } else {
+                    resultDiv.className = 'error';
+                    output = '❌ Error: ' + (data.error || 'Unknown error');
+                }
+
+                output += '\n---\nFull JSON Response:\n' + JSON.stringify(data, null, 2);
+                resultDiv.textContent = output;
+            } catch (err) {
+                resultDiv.className = 'error';
+                resultDiv.textContent = '❌ Error: ' + err.message;
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Send /self-validate';
+            }
+        }
+    </script>
+</body>
+</html>
