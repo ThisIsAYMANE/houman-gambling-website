@@ -56,8 +56,8 @@
 #*.db-wal
 
 # Logs
-#/logs/
-#*.log
+/logs/
+*.log
 
 
 
